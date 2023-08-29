@@ -102,7 +102,7 @@ const Github = () => {
                                                             info.name === "Projet_3_OC" ? (<Image className={styles.imageCard} src={SohpieProject} width={350} height={200} priority alt={`${info.name}-image`} />) :
                                                                 info.name === "todo-list-VIte" ? (<Image className={styles.imageCard} src={ViteTodo} width={350} height={200} priority alt={`${info.name}-image`} />) :
                                                                     info.name === "Projet_3_OC" ? (<Image className={styles.imageCard} src={SohpieProject} width={350} height={200} priority alt={`${info.name}-image`} />) :
-                                                                        info.name === "portfolio_P08_OC" ? (<Image className={styles.imageCard} src={portfolio} width={350} height={200} priority alt={`${info.name}-image`} />) :
+                                                                        info.name === "oc-p08" ? (<Image className={styles.imageCard} src={portfolio} width={350} height={200} priority alt={`${info.name}-image`} />) :
                                                                             <Image src={defaultPic} width={350} height={200} priority alt={`${info.name}-image`} />
 
                                         }
