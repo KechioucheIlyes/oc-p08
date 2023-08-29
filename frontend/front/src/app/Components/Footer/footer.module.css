@@ -1,0 +1,497 @@
+@charset "UTF-8";
+.footer p {
+  color: white;
+}
+.footer .svgContainer {
+  position: relative;
+  top: 45px;
+}
+.footer .footerContains {
+  background-color: black;
+  position: relative;
+}
+.footer .footerContains h1 {
+  font-size: 44px;
+  text-align: center;
+  color: white;
+}
+.footer .footerContains .contact {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footerContains .contact .email {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.footer .footerContains .contact .email .link {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+.footer .footerContains .contact .email button {
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+.footer .footerContains .contact .fomulaire {
+  color: white;
+}
+.footer .footerContains .contact .fomulaire form .emailForm {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footerContains .contact .fomulaire form .emailForm label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer .footerContains .contact .fomulaire form .emailForm input {
+  height: 46px;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 3px;
+  box-sizing: border-box;
+}
+.footer .footerContains .contact .fomulaire form .emailForm input:focus {
+  outline: none;
+  border: 3px solid #7451ea;
+}
+.footer .footerContains .contact .fomulaire form .textForm {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footerContains .contact .fomulaire form .textForm label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer .footerContains .contact .fomulaire form .textForm textarea {
+  resize: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  padding-top: 7px;
+}
+.footer .footerContains .contact .fomulaire form .textForm textarea:focus {
+  outline: none;
+  border: 3px solid #7451ea;
+}
+.footer .footerContains .contact .fomulaire form .buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.footer .footerContains .contact .fomulaire form .buttonContainer button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  font-weight: bolder;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.footer .footerContains .contact .buttonLike {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footerContains .contact .buttonLike .infos {
+  width: 55%;
+  margin-bottom: 50px;
+}
+.footer .footerContains .contact .buttonLike .infos h4 {
+  color: white;
+  text-align: center;
+}
+.footer .footerContains .contact .buttonLike .infos h4 .link {
+  color: #7451ea;
+  text-decoration: none;
+}
+.footer .footerContains .contact .buttonLike .heart {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+}
+.footer .footerContains .contact .buttonLike .heart.is-active {
+  transition-duration: 1s;
+  background-position: -2800px 0;
+}
+.footer .footerContains .contact .copyyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footerContains .contact .copyyright h4 {
+  color: white;
+}
+.footer .footerContains .contact .copyyright .logo {
+  margin: 10px;
+}
+.footer .footerContains .svgBottom {
+  position: relative;
+  top: 20px;
+}
+
+.scrollEffect {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scrollEffect.visible {
+  opacity: 1;
+}
+
+/* Styles pour les appareils mobiles (jusqu'à 767px) */
+@media screen and (max-width: 767px) {
+  .footer h3 {
+    font-size: 10px;
+  }
+  .footer .svgContainer {
+    position: relative;
+    top: 45px;
+  }
+  .footer .footerContains {
+    background-color: black;
+    position: relative;
+  }
+  .footer .footerContains h1 {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+  }
+  .footer .footerContains .contact {
+    padding: 15px;
+    height: 113vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footerContains .contact .email {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+  .footer .footerContains .contact .email .link {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+  }
+  .footer .footerContains .contact .email button {
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+  }
+  .footer .footerContains .contact .fomulaire {
+    color: white;
+  }
+  .footer .footerContains .contact .fomulaire form .emailForm {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerContains .contact .fomulaire form .emailForm label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .footer .footerContains .contact .fomulaire form .emailForm input {
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 3px;
+    box-sizing: border-box;
+  }
+  .footer .footerContains .contact .fomulaire form .emailForm input:focus {
+    outline: none;
+    border: 3px solid #7451ea;
+  }
+  .footer .footerContains .contact .fomulaire form .textForm {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerContains .contact .fomulaire form .textForm label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .footer .footerContains .contact .fomulaire form .textForm textarea {
+    resize: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    padding-top: 7px;
+  }
+  .footer .footerContains .contact .fomulaire form .textForm textarea:focus {
+    outline: none;
+    border: 3px solid #7451ea;
+  }
+  .footer .footerContains .contact .fomulaire form .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+  }
+  .footer .footerContains .contact .fomulaire form .buttonContainer button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    font-weight: bolder;
+    color: black;
+  }
+  .footer .footerContains .contact .buttonLike {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footerContains .contact .buttonLike .infos {
+    width: 55%;
+    margin-bottom: 50px;
+  }
+  .footer .footerContains .contact .buttonLike .infos h4 {
+    color: white;
+    text-align: center;
+    font-size: 9px;
+  }
+  .footer .footerContains .contact .buttonLike .infos h4 .link {
+    color: #7451ea;
+    text-decoration: none;
+  }
+  .footer .footerContains .contact .buttonLike button {
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+  }
+  .footer .footerContains .contact .buttonLike button svg {
+    height: 30px;
+    width: 30px;
+  }
+  .footer .footerContains .contact .copyyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footerContains .contact .copyyright h4 {
+    color: white;
+    font-size: 9px;
+  }
+  .footer .footerContains .contact .copyyright .logo {
+    margin: 10px;
+  }
+  .footer .footerContains .contact .copyyright img {
+    height: 40px;
+    width: 40px;
+  }
+  .footer .footerContains .svgBottom {
+    position: relative;
+    top: 20px;
+  }
+}
+/* Styles pour les tablettes (768px à 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer h3 {
+    font-size: 10px;
+  }
+  .footer .svgContainer {
+    position: relative;
+    top: 45px;
+  }
+  .footer .footerContains {
+    background-color: black;
+    position: relative;
+  }
+  .footer .footerContains h1 {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+  }
+  .footer .footerContains .contact {
+    height: 113vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footerContains .contact .email {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+  .footer .footerContains .contact .email .link {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+  }
+  .footer .footerContains .contact .email button {
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+  }
+  .footer .footerContains .contact .fomulaire {
+    color: white;
+  }
+  .footer .footerContains .contact .fomulaire form .emailForm {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerContains .contact .fomulaire form .emailForm label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .footer .footerContains .contact .fomulaire form .emailForm input {
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 3px;
+    box-sizing: border-box;
+  }
+  .footer .footerContains .contact .fomulaire form .emailForm input:focus {
+    outline: none;
+    border: 3px solid #7451ea;
+  }
+  .footer .footerContains .contact .fomulaire form .textForm {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerContains .contact .fomulaire form .textForm label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .footer .footerContains .contact .fomulaire form .textForm textarea {
+    resize: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    padding-top: 7px;
+  }
+  .footer .footerContains .contact .fomulaire form .textForm textarea:focus {
+    outline: none;
+    border: 3px solid #7451ea;
+  }
+  .footer .footerContains .contact .fomulaire form .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+  }
+  .footer .footerContains .contact .fomulaire form .buttonContainer button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    font-weight: bolder;
+  }
+  .footer .footerContains .contact .buttonLike {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footerContains .contact .buttonLike .infos {
+    width: 55%;
+    margin-bottom: 50px;
+  }
+  .footer .footerContains .contact .buttonLike .infos h4 {
+    color: white;
+    text-align: center;
+    font-size: 9px;
+  }
+  .footer .footerContains .contact .buttonLike .infos h4 .link {
+    color: #7451ea;
+    text-decoration: none;
+  }
+  .footer .footerContains .contact .copyyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footerContains .contact .copyyright h4 {
+    color: white;
+    font-size: 9px;
+  }
+  .footer .footerContains .contact .copyyright .logo {
+    margin: 10px;
+  }
+  .footer .footerContains .contact .copyyright img {
+    height: 40px;
+    width: 40px;
+  }
+  .footer .footerContains .svgBottom {
+    position: relative;
+    top: 20px;
+  }
+  .footer .sent {
+    background-color: #00cc00 !important;
+    transform: scale(1.1);
+    color: white;
+  }
+  .footer .notSent {
+    background-color: #f34d4d !important;
+    transform: scale(1.1);
+    color: white;
+  }
+  .footer .manyReq {
+    background-color: #f3924d !important;
+    transform: scale(1.1);
+    color: white;
+  }
+  .footer .mailV {
+    background-color: #ae2929 !important;
+    transform: scale(1.1);
+    color: white;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 361px) {
+  .contact {
+    height: 113vh !important;
+  }
+  .footer .svgContainer {
+    position: relative;
+    bottom: -1145px;
+  }
+}
+.sent {
+  background-color: #00cc00 !important;
+  transform: scale(1.1);
+  color: white;
+}
+
+.notSent {
+  background-color: #f34d4d !important;
+  transform: scale(1.1);
+  color: white;
+}
+
+.manyReq {
+  background-color: #f3924d !important;
+  transform: scale(1.1);
+  color: white;
+}
+
+.mailV {
+  background-color: #ae2929 !important;
+  transform: scale(1.1);
+  color: white;
+}/*# sourceMappingURL=footer.module.css.map */

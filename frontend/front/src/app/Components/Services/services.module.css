@@ -1,0 +1,71 @@
+@charset "UTF-8";
+.serviceContainer .title {
+  font-size: 34px;
+  text-align: center;
+}
+.serviceContainer .serviceCardsContainer {
+  width: 100%;
+}
+.serviceContainer .serviceCardsContainer .serviceCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.serviceContainer .serviceCardsContainer .serviceCard .CardTilte {
+  text-align: center;
+}
+
+.scrollEffect {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scrollEffect.visible {
+  opacity: 1;
+}
+
+/* Styles pour les appareils mobiles (jusqu'à 767px) */
+@media screen and (max-width: 767px) {
+  .serviceContainer .title {
+    font-size: 14px;
+    text-align: center;
+  }
+  .serviceContainer .serviceCardsContainer .serviceCard .CardTilte {
+    text-align: center;
+    font-size: 14px;
+  }
+  .serviceContainer .serviceCardsContainer .serviceCard img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 361px) {
+  .serviceContainer .title {
+    font-size: 14px;
+    text-align: center;
+  }
+  .serviceContainer .serviceCardsContainer .serviceCard .CardTilte {
+    text-align: center;
+    font-size: 14px;
+  }
+  .serviceContainer .serviceCardsContainer .serviceCard img {
+    width: 150px;
+    height: 150px;
+  }
+}
+/* Styles pour les tablettes (768px à 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .serviceContainer .title {
+    font-size: 24px;
+    text-align: center;
+  }
+  .serviceContainer .serviceCardsContainer .serviceCard .CardTilte {
+    text-align: center;
+    font-size: 16px;
+  }
+  .serviceContainer .serviceCardsContainer .serviceCard img {
+    width: 330px;
+    height: 330px;
+  }
+}/*# sourceMappingURL=services.module.css.map */

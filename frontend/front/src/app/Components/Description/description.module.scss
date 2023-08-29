@@ -1,0 +1,296 @@
+.descriptionContainer {
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    margin-top: 100px;
+
+
+    .svgContainer {
+        width: 100%;
+        position: absolute;
+        top: 6.5px;
+        /* Adjust this value to control the vertical position above the section */
+        left: 0;
+        right: 0;
+        display: flex;
+
+        z-index: -1;
+        /* Make sure the SVG is behind the content */
+    }
+
+    svg {
+        position: absolute;
+        bottom: 0;
+
+    }
+
+    .informationContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70vh;
+
+        .textInfo {
+
+            width: 50%;
+            padding: 20px;
+
+            .tag {
+                color: black;
+                background-color: white;
+            }
+        }
+
+        p {
+            color: white;
+            font-size: 24px;
+
+        }
+    }
+
+
+    .borderSquare {
+        border: 3px solid white;
+        height: 260px;
+        width: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .square,
+        .square::before,
+        .square::after {
+            height: 250px;
+            width: 250px;
+            background-color: white;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+.crossAnimation {
+    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.scrollEffect {
+    opacity: 0;
+
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scrollEffect.visible {
+    opacity: 1;
+
+}
+
+@media screen and (max-width: 767px) {
+    .descriptionContainer {
+        width: 100% !important;
+        background-color: black;
+        height: 60vh;
+        position: relative;
+        margin-top: 100px;
+
+
+        .svgContainer {
+            width: 100%;
+            position: absolute;
+            top: 6.5px;
+            /* Adjust this value to control the vertical position above the section */
+            left: 0;
+            right: 0;
+            display: flex;
+
+            z-index: -1;
+            /* Make sure the SVG is behind the content */
+        }
+
+        svg {
+            position: absolute;
+            bottom: 0;
+
+        }
+
+        .informationContainer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            height: 45vh;
+
+            .textInfo {
+
+                width: 100%;
+
+                
+
+                .tag {
+                    color: black;
+                    background-color: white;
+                }
+            }
+
+            p {
+                color: white;
+                font-size: 10px;
+
+            }
+        }
+
+
+        .borderSquare {
+            border: 3px solid white;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .square,
+            .square::before,
+            .square::after {
+                height: 80px;
+                width: 80px;
+                background-color: white;
+
+
+            }
+        }
+
+
+    }
+
+    .crossAnimation {
+        height: 90px;
+        width: 90px;
+    }
+
+}
+
+/* Styles pour les tablettes (768px à 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .descriptionContainer {
+        width: 100% !important;
+        background-color: black;
+        height: 60vh;
+        position: relative;
+        margin-top: 100px;
+
+
+        .svgContainer {
+            width: 100%;
+            position: absolute;
+            top: 6.5px;
+            /* Adjust this value to control the vertical position above the section */
+            left: 0;
+            right: 0;
+            display: flex;
+
+            z-index: -1;
+            /* Make sure the SVG is behind the content */
+        }
+
+        svg {
+            position: absolute;
+            bottom: 0;
+
+        }
+
+        .informationContainer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            height: 45vh;
+
+            .textInfo {
+
+                width: 100%;
+
+                
+
+                .tag {
+                    color: black;
+                    background-color: white;
+                }
+            }
+
+            p {
+                color: white;
+                font-size: 13px;
+
+            }
+        }
+
+
+        .borderSquare {
+            border: 3px solid white;
+            height: 130px;
+            width: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .square,
+            .square::before,
+            .square::after {
+                height: 100px;
+                width: 100px;
+                background-color: white;
+
+
+            }
+        }
+
+
+    }
+
+    .crossAnimation {
+        height: 100px;
+        width: 100px;
+    }
+}

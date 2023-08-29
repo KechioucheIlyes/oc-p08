@@ -1,0 +1,300 @@
+@charset "UTF-8";
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 1000;
+  height: 64px;
+  border-bottom: 2px solid #ccc;
+  /* navbar.module.css */
+  /* Styles for the toggle switch */
+}
+.header .toggle {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 40px;
+  margin-left: 20px;
+}
+.header .checkbox {
+  display: none;
+}
+.header .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  border-radius: 20px;
+  transition: background-color 0.4s, transform 0.4s;
+}
+.header .checkbox:checked + .slider {
+  background-color: #2196F3;
+  transform: translateX(40px);
+  /* Utilisation de translateX pour déplacer le slider */
+}
+.header .slider:before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+.header .checkbox:checked + .slider:before {
+  transform: translateX(40px);
+  /* Ajustez la valeur pour correspondre à la position du slider activé */
+}
+
+.scrolling .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  border-radius: 20px;
+  transition: background-color 0.4s, transform 0.4s;
+  border: 2px solid black;
+}
+.scrolling .slider:before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 0.5px;
+  bottom: 0;
+  background-color: black;
+  border-radius: 50%;
+  transition: transform 0.4s;
+  transform: translateX(40px);
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 1000;
+    height: 40px;
+    border-bottom: 2px solid #ccc;
+    /* navbar.module.css */
+    /* Styles for the toggle switch */
+  }
+  .header .toggle {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    margin-left: 20px;
+  }
+  .header .checkbox {
+    display: none;
+  }
+  .header .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    border-radius: 20px;
+    transition: background-color 0.4s, transform 0.4s;
+  }
+  .header .checkbox:checked + .slider {
+    background-color: #2196F3;
+    transform: translateX(10px);
+  }
+  .header .slider:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+  }
+  .header .checkbox:checked + .slider:before {
+    transform: translateX(40px);
+    /* Ajustez la valeur pour correspondre à la position du slider activé */
+  }
+  .scrolling .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border-radius: 20px;
+    transition: background-color 0.4s, transform 0.4s;
+    border: 2px solid black;
+  }
+  .scrolling .slider:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0.5px;
+    bottom: 0;
+    background-color: black;
+    border-radius: 50%;
+    transition: transform 0.4s;
+    transform: translateX(19px);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 361px) {
+  .header {
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 1000;
+    height: 30px;
+    border-bottom: 2px solid #ccc;
+    /* navbar.module.css */
+    /* Styles for the toggle switch */
+  }
+  .header .toggle {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 12px;
+    margin-left: 20px;
+  }
+  .header .checkbox {
+    display: none;
+  }
+  .header .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    border-radius: 20px;
+    transition: background-color 0.4s, transform 0.4s;
+  }
+  .header .checkbox:checked + .slider {
+    background-color: #2196F3;
+    transform: translateX(10px);
+  }
+  .header .slider:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+  }
+  .header .checkbox:checked + .slider:before {
+    transform: translateX(40px);
+    /* Ajustez la valeur pour correspondre à la position du slider activé */
+  }
+  .scrolling .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border-radius: 20px;
+    transition: background-color 0.4s, transform 0.4s;
+    border: 2px solid black;
+  }
+  .scrolling .slider:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 0.5px;
+    bottom: 0;
+    background-color: black;
+    border-radius: 50%;
+    transition: transform 0.4s;
+    transform: translateX(13px);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 1000;
+    height: 40px;
+    border-bottom: 2px solid #ccc;
+    /* navbar.module.css */
+    /* Styles for the toggle switch */
+  }
+  .header .toggle {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 27px;
+    margin-left: 20px;
+  }
+  .header .checkbox {
+    display: none;
+  }
+  .header .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    border-radius: 20px;
+    transition: background-color 0.4s, transform 0.4s;
+  }
+  .header .checkbox:checked + .slider {
+    background-color: #2196F3;
+    transform: translateX(10px);
+  }
+  .header .slider:before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+  }
+  .header .checkbox:checked + .slider:before {
+    transform: translateX(40px);
+    /* Ajustez la valeur pour correspondre à la position du slider activé */
+  }
+  .scrolling .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border-radius: 20px;
+    transition: background-color 0.4s, transform 0.4s;
+    border: 2px solid black;
+  }
+  .scrolling .slider:before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 0.5px;
+    bottom: 0;
+    background-color: black;
+    border-radius: 50%;
+    transition: transform 0.4s;
+    transform: translateX(32px);
+  }
+}/*# sourceMappingURL=navbar.module.css.map */

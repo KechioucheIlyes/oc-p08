@@ -1,0 +1,667 @@
+.footer {
+    p {
+        color: white;
+    }
+
+    .svgContainer {
+        position: relative;
+        top: 45px;
+    }
+
+    .footerContains {
+        background-color: black;
+        position: relative;
+
+        h1 {
+            font-size: 44px;
+            text-align: center;
+            color: white;
+        }
+
+        .contact {
+            height: 120vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .email {
+                color: white;
+                display: flex;
+                align-items: center;
+
+                .link {
+                    color: white;
+                    text-decoration: none;
+                    margin: 10px;
+                }
+
+                button {
+                    background-color: black;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                    margin: 10px;
+                }
+            }
+
+            .fomulaire {
+                color: white;
+
+                form {
+                    .emailForm {
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+
+                        input {
+                            height: 46px;
+                            border-radius: 5px;
+                            padding-left: 15px;
+                            padding-top: 3px;
+                            box-sizing: border-box;
+
+                            &:focus {
+                                outline: none;
+
+                                border: 3px solid #7451ea
+                            }
+
+
+                        }
+
+                    }
+
+                    .textForm {
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+
+                        }
+
+                        textarea {
+                            resize: none;
+                            border-radius: 5px;
+                            padding-left: 15px;
+                            box-sizing: border-box;
+                            padding-top: 7px;
+
+                            &:focus {
+                                outline: none;
+
+                                border: 3px solid #7451ea
+                            }
+                        }
+                    }
+
+                    .buttonContainer {
+                        display: flex;
+                        justify-content: center;
+                        margin: 50px;
+
+                        button {
+                            padding: 10px 20px;
+                            cursor: pointer;
+                            background-color: white;
+                            border: none;
+                            font-weight: bolder;
+                            transition: background-color 0.3s, transform 0.3s;
+
+
+                        }
+                    }
+                }
+            }
+
+            .buttonLike {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .infos {
+
+                    width: 55%;
+                    margin-bottom: 50px;
+
+                    h4 {
+                        color: white;
+                        text-align: center;
+
+                        .link {
+                            color: #7451ea;
+                            text-decoration: none;
+
+                        }
+                    }
+
+
+                }
+
+
+
+                .heart {
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+                    background-position: 0 0;
+                    cursor: pointer;
+                    transition: background-position 1s steps(28);
+                    transition-duration: 0s;
+
+                    &.is-active {
+                        transition-duration: 1s;
+                        background-position: -2800px 0;
+                    }
+                }
+
+
+            }
+
+            .copyyright {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                h4 {
+                    color: white;
+                }
+
+                .logo {
+                    margin: 10px;
+                }
+            }
+        }
+
+
+
+
+
+        .svgBottom {
+            position: relative;
+            top: 20px;
+        }
+    }
+}
+
+
+.scrollEffect {
+    opacity: 0;
+
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scrollEffect.visible {
+    opacity: 1;
+
+}
+
+/* Styles pour les appareils mobiles (jusqu'à 767px) */
+@media screen and (max-width: 767px) {
+    .footer {
+        h3 {
+            font-size: 10px;
+        }
+
+        .svgContainer {
+            position: relative;
+            top: 45px;
+        }
+
+        .footerContains {
+            background-color: black;
+            position: relative;
+
+
+            h1 {
+                font-size: 24px;
+                text-align: center;
+                color: white;
+            }
+
+            .contact {
+                padding: 15px;
+                height: 113vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .email {
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+
+                    .link {
+                        color: white;
+                        text-decoration: none;
+                        margin: 10px;
+
+
+                    }
+
+                    button {
+                        background-color: black;
+                        border: none;
+                        color: white;
+                        cursor: pointer;
+                        margin: 10px;
+
+                    }
+                }
+
+                .fomulaire {
+                    color: white;
+
+                    form {
+                        .emailForm {
+                            display: flex;
+                            flex-direction: column;
+
+                            label {
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                                font-size: 10px;
+                            }
+
+                            input {
+                                height: 30px;
+                                border-radius: 5px;
+                                padding-left: 15px;
+                                padding-top: 3px;
+                                box-sizing: border-box;
+
+                                &:focus {
+                                    outline: none;
+
+                                    border: 3px solid #7451ea
+                                }
+
+
+                            }
+
+                        }
+
+                        .textForm {
+                            display: flex;
+                            flex-direction: column;
+
+                            label {
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                                font-size: 10px;
+                            }
+
+                            textarea {
+                                resize: none;
+                                border-radius: 5px;
+                                padding-left: 15px;
+                                box-sizing: border-box;
+                                padding-top: 7px;
+
+                                &:focus {
+                                    outline: none;
+
+                                    border: 3px solid #7451ea
+                                }
+                            }
+                        }
+
+                        .buttonContainer {
+                            display: flex;
+                            justify-content: center;
+                            margin: 50px;
+
+                            button {
+                                padding: 10px 20px;
+                                cursor: pointer;
+                                background-color: white;
+                                border: none;
+                                font-weight: bolder;
+                                color: black;
+
+
+                            }
+                        }
+                    }
+                }
+
+                .buttonLike {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .infos {
+
+                        width: 55%;
+                        margin-bottom: 50px;
+
+                        h4 {
+                            color: white;
+                            text-align: center;
+                            font-size: 9px;
+
+                            .link {
+                                color: #7451ea;
+                                text-decoration: none;
+
+                            }
+                        }
+
+
+                    }
+
+                    button {
+
+                        background-color: white;
+                        border: none;
+                        color: black;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        bottom: 20px;
+
+                        svg {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+                }
+
+                .copyyright {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    h4 {
+                        color: white;
+                        font-size: 9px;
+                    }
+
+                    .logo {
+                        margin: 10px;
+                    }
+
+                    img {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+
+            .svgBottom {
+                position: relative;
+                top: 20px;
+            }
+        }
+    }
+}
+
+/* Styles pour les tablettes (768px à 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer {
+        h3 {
+            font-size: 10px;
+        }
+
+        .svgContainer {
+            position: relative;
+            top: 45px;
+        }
+
+        .footerContains {
+            background-color: black;
+            position: relative;
+
+
+            h1 {
+                font-size: 24px;
+                text-align: center;
+                color: white;
+            }
+
+            .contact {
+
+                height: 113vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .email {
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+
+                    .link {
+                        color: white;
+                        text-decoration: none;
+                        margin: 10px;
+
+
+                    }
+
+                    button {
+                        background-color: black;
+                        border: none;
+                        color: white;
+                        cursor: pointer;
+                        margin: 10px;
+
+                    }
+                }
+
+                .fomulaire {
+                    color: white;
+
+                    form {
+                        .emailForm {
+                            display: flex;
+                            flex-direction: column;
+
+                            label {
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                                font-size: 10px;
+                            }
+
+                            input {
+                                height: 30px;
+                                border-radius: 5px;
+                                padding-left: 15px;
+                                padding-top: 3px;
+                                box-sizing: border-box;
+
+                                &:focus {
+                                    outline: none;
+
+                                    border: 3px solid #7451ea
+                                }
+
+
+                            }
+
+                        }
+
+                        .textForm {
+                            display: flex;
+                            flex-direction: column;
+
+                            label {
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                                font-size: 10px;
+                            }
+
+                            textarea {
+                                resize: none;
+                                border-radius: 5px;
+                                padding-left: 15px;
+                                box-sizing: border-box;
+                                padding-top: 7px;
+
+                                &:focus {
+                                    outline: none;
+
+                                    border: 3px solid #7451ea
+                                }
+                            }
+                        }
+
+                        .buttonContainer {
+                            display: flex;
+                            justify-content: center;
+                            margin: 50px;
+
+                            button {
+                                padding: 10px 20px;
+                                cursor: pointer;
+                                background-color: white;
+                                border: none;
+                                font-weight: bolder;
+
+
+                            }
+                        }
+                    }
+                }
+
+                .buttonLike {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .infos {
+
+                        width: 55%;
+                        margin-bottom: 50px;
+
+                        h4 {
+                            color: white;
+                            text-align: center;
+                            font-size: 9px;
+
+                            .link {
+                                color: #7451ea;
+                                text-decoration: none;
+
+                            }
+                        }
+
+
+                    }
+
+
+                }
+
+                .copyyright {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    h4 {
+                        color: white;
+                        font-size: 9px;
+                    }
+
+                    .logo {
+                        margin: 10px;
+                    }
+
+                    img {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+
+            .svgBottom {
+                position: relative;
+                top: 20px;
+            }
+        }
+
+        .sent {
+            background-color: #00cc00 !important;
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .notSent {
+            background-color: #f34d4d !important;
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .manyReq {
+            background-color: #f3924d !important;
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .mailV {
+            background-color: #ae2929 !important;
+            transform: scale(1.1);
+            color: white;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 361px) {
+    .contact {
+
+        height: 113vh !important;
+    }
+
+    .footer {
+
+
+
+
+        .svgContainer {
+            position: relative;
+            bottom: -1145px;
+        }
+    }
+}
+
+.sent {
+    background-color: #00cc00 !important;
+    transform: scale(1.1);
+    color: white;
+}
+
+.notSent {
+    background-color: #f34d4d !important;
+    transform: scale(1.1);
+    color: white;
+}
+
+.manyReq {
+    background-color: #f3924d !important;
+    transform: scale(1.1);
+    color: white;
+}
+
+.mailV {
+    background-color: #ae2929 !important;
+    transform: scale(1.1);
+    color: white;
+}

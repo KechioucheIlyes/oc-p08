@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/* loader.module.css */
+.githubContainer h1 {
+  text-align: center;
+  font-size: 44px;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+}
+.cardsContainer .githubList {
+  list-style-type: none;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+.cardsContainer .githubList .githubItem {
+  margin-bottom: 20px;
+  display: flex;
+}
+.cardsContainer .githubList .githubItem .card {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: 20px;
+  padding: 16px;
+  background-color: #fff;
+  height: 330px;
+}
+.cardsContainer .githubList .githubItem .card .cardHeader {
+  height: 150px;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 16px;
+}
+.cardsContainer .githubList .githubItem .card .cardHeader .imageCard {
+  border: 1px solid #ccc;
+  border-radius: 20px 20px 0 0;
+}
+.cardsContainer .githubList .githubItem .card .cardBodyContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+}
+.cardsContainer .githubList .githubItem .card .cardBodyContainer .sidebar {
+  width: 2px;
+  height: 120px;
+  border: 1px solid #ccc;
+  position: relative;
+  top: 30px;
+  left: 13px;
+  background-color: #ccc;
+}
+.cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody {
+  margin-bottom: 16px;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: space-around;
+  height: 130px;
+  width: 50%;
+}
+.cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardTitle {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardTitle span {
+  margin-left: 5px;
+}
+.cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .second {
+  position: relative;
+  top: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardText {
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  height: 20px;
+}
+.cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardText .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10px;
+}
+.cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardFooter {
+  height: 12px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardFooter span {
+  background-color: rgb(20, 198, 20);
+  padding: 3px 15px;
+  color: white;
+  border-radius: 20px;
+}
+
+.scrollEffect {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scrollEffect.visible {
+  opacity: 1;
+}
+
+/* Styles pour les appareils mobiles (jusqu'à 767px) */
+@media screen and (max-width: 767px) {
+  .githubContainer h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+  .cardsContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .cardsContainer .githubList {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .cardsContainer .githubList .githubItem {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .cardsContainer .githubList .githubItem .card {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 20px;
+    padding: 16px;
+    background-color: #fff;
+    height: 230px;
+  }
+  .cardsContainer .githubList .githubItem .card .cardHeader {
+    height: 130px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+  }
+  .cardsContainer .githubList .githubItem .card .cardHeader .imageCard {
+    border: 1px solid #ccc;
+    border-radius: 20px 20px 0 0;
+    height: 130px;
+    width: 250px;
+  }
+  .cardsContainer .githubList .githubItem .card .cardBodyContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .cardsContainer .githubList .githubItem .card .cardBodyContainer .sidebar {
+    width: 1px;
+    height: 80px;
+    border: 1px solid #ccc;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: #ccc;
+  }
+  .cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody {
+    margin-bottom: 10px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: space-around;
+    height: 88px;
+    width: 50%;
+  }
+  .cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardTitle {
+    height: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+  }
+  .cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardTitle span {
+    margin-left: 5px;
+  }
+  .cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardTitle svg {
+    height: 15px;
+  }
+  .cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .second {
+    position: relative;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardText {
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+  }
+  .cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardText .logo {
+    display: flex;
+  }
+  .cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardText .logo img {
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+  }
+  .cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardFooter {
+    height: 12px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+  }
+  .cardsContainer .githubList .githubItem .card .cardBodyContainer .cardBody .cardFooter span {
+    background-color: rgb(20, 198, 20);
+    padding: 3px 15px;
+    color: white;
+    border-radius: 20px;
+  }
+}
+/* Styles pour les tablettes (768px à 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .githubContainer h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=github.module.css.map */

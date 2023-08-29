@@ -1,0 +1,241 @@
+@charset "UTF-8";
+.formationContainer {
+  background-color: black;
+  position: relative;
+  height: 160vh;
+  margin-top: 150px;
+}
+.formationContainer .svgContainer {
+  width: 100%;
+  position: absolute;
+  top: 6.5px;
+  /* Adjust this value to control the vertical position above the section */
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: -1;
+  /* Make sure the SVG is behind the content */
+}
+.formationContainer svg {
+  position: absolute;
+  bottom: 0;
+}
+.formationContainer .svgBottom svg {
+  position: absolute;
+  bottom: 0;
+}
+.formationContainer .cardContainer {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.formationContainer .cardContainer .OC {
+  background: url("../../assets/openclassrooms.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.formationContainer .cardContainer .UDEMY {
+  background: url("../../assets/Udemy-1.png");
+  background-size: cover;
+  background-position: center;
+}
+.formationContainer .cardContainer .UFR {
+  width: 50%;
+  /* Ajustez la largeur selon vos besoins */
+  height: auto;
+  /* Pour conserver le ratio d'aspect de l'image */
+  background: url("../../assets/logo-univ-rouen-800x450.jpeg");
+  background-size: contain;
+  /* Pour ajuster la taille tout en conservant l'aspect */
+  background-position: center;
+}
+.formationContainer .cardContainer .card {
+  margin: 20px;
+  height: 400px;
+  background-color: aliceblue;
+  width: 600px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.formationContainer .cardContainer .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.title h1 {
+  color: aliceblue;
+  font-size: 44px;
+  text-align: center;
+}
+
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalContent {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  color: #6d41fb;
+}
+
+.scrollEffect {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scrollEffect.visible {
+  opacity: 1;
+}
+
+/* Styles pour les appareils mobiles (jusqu'à 767px) */
+@media screen and (max-width: 767px) {
+  .formationContainer {
+    background-color: black;
+    position: relative;
+    height: 140vh;
+    margin-top: 100px;
+  }
+  .formationContainer .svgBottom svg {
+    position: absolute;
+    bottom: 0;
+  }
+  .formationContainer .cardContainer {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .formationContainer .cardContainer .OC {
+    background: url("../../assets/openclassrooms.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .formationContainer .cardContainer .UDEMY {
+    background: url("../../assets/Udemy-1.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .formationContainer .cardContainer .UFR {
+    width: 50%;
+    /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    /* Pour conserver le ratio d'aspect de l'image */
+    background: url("../../assets/logo-univ-rouen-800x450.jpeg");
+    background-size: contain;
+    /* Pour ajuster la taille tout en conservant l'aspect */
+    background-position: center;
+  }
+  .formationContainer .cardContainer .card {
+    margin: 20px;
+    height: 200px;
+    background-color: aliceblue;
+    width: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .formationContainer .cardContainer .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  .title h1 {
+    color: aliceblue;
+    font-size: 24px;
+    text-align: center;
+  }
+  .svgContainer {
+    width: 100%;
+    position: absolute;
+    top: 6.5px;
+    /* Adjust this value to control the vertical position above the section */
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: -1;
+    /* Make sure the SVG is behind the content */
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .formationContainer {
+    background-color: black;
+    position: relative;
+    height: 130vh;
+    margin-top: 100px;
+  }
+  .formationContainer .svgBottom svg {
+    position: absolute;
+    bottom: 0;
+  }
+  .formationContainer .cardContainer {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .formationContainer .cardContainer .OC {
+    background: url("../../assets/openclassrooms.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .formationContainer .cardContainer .UDEMY {
+    background: url("../../assets/Udemy-1.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .formationContainer .cardContainer .UFR {
+    width: 50%;
+    /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    /* Pour conserver le ratio d'aspect de l'image */
+    background: url("../../assets/logo-univ-rouen-800x450.jpeg");
+    background-size: contain;
+    /* Pour ajuster la taille tout en conservant l'aspect */
+    background-position: center;
+  }
+  .formationContainer .cardContainer .card {
+    margin: 20px;
+    height: 200px;
+    background-color: aliceblue;
+    width: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .formationContainer .cardContainer .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  .title h1 {
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+  }
+  .svgContainer {
+    width: 100%;
+    position: absolute;
+    top: 6.5px;
+    /* Adjust this value to control the vertical position above the section */
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: -1;
+    /* Make sure the SVG is behind the content */
+  }
+}/*# sourceMappingURL=formatiion.module.css.map */

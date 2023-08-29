@@ -1,0 +1,388 @@
+.competencesContainer {
+
+
+    .competencesContains {
+        background-color: black;
+        position: relative;
+        top: -45px;
+
+
+        h1 {
+            text-align: center;
+            font-size: 44px;
+            color: white;
+        }
+
+        .stacks {
+
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            .backendContainer {
+
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .backendTitle {
+                    h2 {
+                        color: white;
+                    }
+                }
+
+                .backend {
+
+                    height: 130px;
+                    width: 80%;
+                    border: 3px solid #ccc;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                }
+            }
+
+            .frontContainer {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .frontTitle {
+                    h2 {
+                        color: white;
+                    }
+                }
+
+
+
+                .frontend {
+
+                    height: 130px;
+                    width: 80%;
+                    border: 3px solid #ccc;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+
+                }
+            }
+
+
+        }
+
+        .svgBottom {
+            position: relative;
+            top: 20px;
+        }
+    }
+
+
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    /* Ajustez en fonction de la largeur totale des images */
+    overflow: hidden;
+    height: 100px;
+    /* Ajustez en fonction de la hauteur de vos images */
+
+    display: flex;
+
+}
+
+.slide-animation {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-around;
+
+    transition: transform 0.3s ease;
+}
+
+.image-item {
+    transition: transform 0.3s ease;
+}
+
+.image-item img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Applique le filtre de gris uniquement aux images dans .slide-animation sauf l'image survolée */
+.slide-animation:hover .image-item:not(:hover) img {
+    filter: grayscale(100%);
+}
+
+/* Restaurez l'apparence normale de l'image survolée */
+.image-item:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.scrollEffect {
+    opacity: 0;
+
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scrollEffect.visible {
+    opacity: 1;
+
+}
+
+/* Styles pour les appareils mobiles (jusqu'à 767px) */
+@media screen and (max-width: 767px) {
+    .competencesContainer {
+
+
+        .competencesContains {
+            background-color: black;
+            position: relative;
+            top: -45px;
+
+
+            h1 {
+                text-align: center;
+                font-size: 24px;
+                color: white;
+            }
+
+            .stacks {
+                
+                height: 70vh;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+
+                .backendContainer {
+
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .backendTitle {
+                        h2 {
+                            color: white;
+                            font-size: 19px;
+                        }
+                    }
+
+                    .backend {
+
+                        height: 100px;
+                        width: 80%;
+                        border: 3px solid #ccc;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+                    }
+                }
+
+                .frontContainer {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .frontTitle {
+                        h2 {
+                            color: white;
+                            font-size: 19px;
+                        }
+                    }
+
+
+
+                    .frontend {
+
+                        height: 100px;
+                        width: 80%;
+                        border: 3px solid #ccc;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+
+                    }
+                }
+
+
+            }
+
+            .svgBottom {
+                position: relative;
+                top: 20px;
+            }
+        }
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .slide-animation {
+            display: flex;
+            width: 100%;
+
+            justify-content: space-around;
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            /* Ajustez en fonction de la largeur totale des images */
+            overflow: hidden;
+            height: 100px;
+            /* Ajustez en fonction de la hauteur de vos images */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+    }
+
+
+}
+
+/* Styles pour les tablettes (768px à 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media screen and (min-width: 320px) and (max-width: 361px) {
+    .svgContainer {
+        position: relative;
+        bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .competencesContainer {
+        .competencesContains {
+
+
+            h1 {
+                text-align: center;
+                font-size: 30px;
+                color: white;
+            }
+
+            .stacks {
+                height: 70vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+
+                .backendContainer {
+
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .backendTitle {
+                        h2 {
+                            color: white;
+                            font-size: 19px;
+                        }
+                    }
+
+                    .backend {
+
+                        height: 100px;
+                        width: 80%;
+                        border: 3px solid #ccc;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+                    }
+                }
+
+                .frontContainer {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .frontTitle {
+                        h2 {
+                            color: white;
+                            font-size: 19px;
+                        }
+                    }
+
+
+
+                    .frontend {
+
+                        height: 100px;
+                        width: 80%;
+                        border: 3px solid #ccc;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+
+                    }
+                }
+
+
+            }
+        }
+
+        img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .slide-animation {
+            display: flex;
+            width: 100%;
+
+            justify-content: space-around;
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            /* Ajustez en fonction de la largeur totale des images */
+            overflow: hidden;
+            height: 100px;
+            /* Ajustez en fonction de la hauteur de vos images */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+}

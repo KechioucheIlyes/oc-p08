@@ -1,0 +1,387 @@
+@charset "UTF-8";
+.btnBlackAndWhite {
+  background-color: black;
+  padding: 9px 12px;
+  color: aliceblue;
+  border: 3px solid white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.btnWhiteAndBlack {
+  background-color: aliceblue;
+  padding: 9px 12px;
+  color: black;
+  border: 3px solid black;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.animateBorder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  /* Définit le positionnement relatif */
+  z-index: 2;
+}
+.animateBorder .img-banner {
+  margin-right: 200px;
+}
+
+.infos {
+  margin: 20px;
+}
+
+.fullName {
+  width: 450px;
+}
+.fullName h1 {
+  font-size: 70px;
+}
+
+.description {
+  width: 450px;
+}
+.description h3 {
+  font-weight: 300;
+}
+
+.shapes {
+  top: 50%;
+  left: 50%;
+  margin-right: 100px;
+}
+
+.shape {
+  float: left;
+  margin-right: 5px;
+  position: relative;
+}
+
+.shape:last-child {
+  margin-left: 0;
+}
+
+.shape::before,
+.shape::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.shape::before {
+  animation: static1 1s forwards, pause 4s forwards;
+}
+
+.shape::after {
+  animation: static2 1s forwards, pause 4s;
+}
+
+.triangle,
+.triangle::before,
+.triangle::after {
+  height: 0;
+  width: 0;
+  border-top: 150px solid transparent;
+  border-right: 75px solid transparent;
+  border-left: 75px solid transparent;
+  border-bottom: 150px solid black;
+  margin-top: -150px;
+}
+
+.triangle::before {
+  border-bottom: 150px solid rgba(255, 92, 66, 0.75);
+}
+
+.triangle::after {
+  border-bottom: 150px solid rgba(0, 180, 217, 0.75);
+}
+
+.triangle::before,
+.triangle::after {
+  margin-left: -75px;
+}
+
+.square,
+.square::before,
+.square::after {
+  height: 150px;
+  width: 150px;
+  background-color: black;
+}
+
+.circle,
+.circle::before,
+.circle::after {
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+
+.circle::before,
+.square::before {
+  background: rgba(255, 92, 66, 0.75);
+}
+
+.circle::after,
+.square::after {
+  background: rgba(0, 180, 217, 0.75);
+}
+
+/* static 1 */
+@keyframes static1 {
+  0%, 100% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: -5px;
+    left: -5px;
+  }
+  40% {
+    top: 5px;
+    left: -5px;
+  }
+  60% {
+    top: 5px;
+    left: 5px;
+  }
+  80% {
+    top: 5px;
+    left: -5px;
+  }
+}
+/* static 2 */
+@keyframes static2 {
+  0%, 100% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: 5px;
+    left: 5px;
+  }
+  40% {
+    top: -5px;
+    left: 5px;
+  }
+  60% {
+    top: -5px;
+    left: -5px;
+  }
+  80% {
+    top: -5px;
+    left: 5px;
+  }
+}
+/*  pause */
+@keyframes pause {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.scrollEffect {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scrollEffect.visible {
+  opacity: 1;
+}
+
+/* Styles pour les appareils mobiles (jusqu'à 767px) */
+@media screen and (max-width: 767px) {
+  #about {
+    width: 100%;
+  }
+  .fullName {
+    width: 100%;
+  }
+  .fullName h1 {
+    font-size: 30px;
+  }
+  .fullName h2 {
+    font-size: 15px;
+  }
+  .description {
+    width: 100%;
+  }
+  .description h3 {
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .shapes {
+    margin-right: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .triangle,
+  .triangle::before,
+  .triangle::after {
+    height: 0;
+    width: 0;
+    border-top: 0px solid transparent;
+    border-right: 14px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 33px solid black;
+    margin-top: 0px;
+  }
+  .triangle::before,
+  .triangle::after {
+    display: none;
+  }
+  .square,
+  .square::before,
+  .square::after {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+  }
+  .circle,
+  .circle::before,
+  .circle::after {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 100px;
+    margin-right: 10px;
+  }
+  .circle::before,
+  .square::before {
+    background: rgba(255, 92, 66, 0.75);
+  }
+  .circle::after,
+  .square::after {
+    background: rgba(0, 180, 217, 0.75);
+  }
+  .btnBlackAndWhite {
+    font-size: 12px;
+  }
+  .btnWhiteAndBlack {
+    font-size: 12px;
+  }
+  .btnWhiteAndBlack img {
+    height: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 361px) {
+  .btnBlackAndWhite {
+    background-color: black;
+    padding: 7px 10px;
+    color: aliceblue;
+    border: 3px solid white;
+    font-size: 8px;
+    cursor: pointer;
+  }
+  .btnWhiteAndBlack {
+    background-color: aliceblue;
+    padding: 7px 10px;
+    color: black;
+    border: 3px solid black;
+    font-size: 8px;
+    text-decoration: none;
+    margin: 15px;
+  }
+  .btnWhiteAndBlack img {
+    height: 8px;
+  }
+}
+/* Styles pour les tablettes (768px à 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .fullName {
+    width: 100%;
+  }
+  .fullName h1 {
+    font-size: 45px;
+  }
+  .fullName h2 {
+    font-size: 27px;
+  }
+  .description {
+    width: 100%;
+  }
+  .description h3 {
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .shapes {
+    margin-right: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .triangle,
+  .triangle::before,
+  .triangle::after {
+    height: 0;
+    width: 0;
+    border-top: 30px solid transparent;
+    border-right: 44px solid transparent;
+    border-left: 45px solid transparent;
+    border-bottom: 63px solid black;
+    margin-top: -30px;
+  }
+  .triangle::before,
+  .triangle::after {
+    display: none;
+  }
+  .square,
+  .square::before,
+  .square::after {
+    height: 70px;
+    width: 70px;
+    background-color: black;
+  }
+  .circle,
+  .circle::before,
+  .circle::after {
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    border-radius: 100px;
+    margin-right: 10px;
+  }
+  .circle::before,
+  .square::before {
+    background: rgba(255, 92, 66, 0.75);
+  }
+  .circle::after,
+  .square::after {
+    background: rgba(0, 180, 217, 0.75);
+  }
+  .btnBlackAndWhite {
+    background-color: black;
+    padding: 7px 10px;
+    color: aliceblue;
+    border: 3px solid white;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .btnWhiteAndBlack {
+    background-color: aliceblue;
+    padding: 7px 10px;
+    color: black;
+    border: 3px solid black;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 15px;
+  }
+  .btnWhiteAndBlack img {
+    height: 8px;
+  }
+}/*# sourceMappingURL=about.module.css.map */

@@ -1,0 +1,329 @@
+.reseauxContainer {
+    h1 {
+        text-align: center;
+        font-size: 44px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .reseauCards {
+
+        height: 50vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
+
+        .gitContainer {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+
+            .gitCard {
+                border: 2px solid black;
+                width: 400px;
+                height: 100px;
+                background-color: black;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+
+
+        .xContainer {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+
+            .X {
+                border: 2px solid black;
+                width: 400px;
+                height: 100px;
+                background-color: black;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+            }
+        }
+
+        .discordContainer {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+
+            .discord {
+                border: 2px solid black;
+                width: 400px;
+                height: 100px;
+                background-color: #404eed;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+            }
+        }
+
+
+        .linkedinContainer {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+
+            .linkedin {
+                border: 2px solid black;
+                width: 400px;
+                height: 100px;
+                background-color: #0b66c2;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+            }
+        }
+    }
+}
+
+.scrollEffect {
+    opacity: 0;
+
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scrollEffect.visible {
+    opacity: 1;
+
+}
+
+/* Styles pour les appareils mobiles (jusqu'à 767px) */
+@media screen and (max-width: 767px) {
+    .reseauxContainer {
+        
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .reseauCards {
+
+            height: 50vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+
+            .gitContainer {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+
+                .gitCard {
+                    border: 2px solid black;
+                    width: 200px;
+                    height: 70px;
+                    background-color: black;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+
+                svg {
+                    height: 30px;
+                }
+            }
+
+
+            .xContainer {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+
+                .X {
+                    border: 2px solid black;
+                    width: 200px;
+                    height: 70px;
+                    background-color: black;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                }
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+            .discordContainer {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+
+                .discord {
+                    border: 2px solid black;
+                    width: 200px;
+                    height: 70px;
+                    background-color: #404eed;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                }
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+
+            .linkedinContainer {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+
+                .linkedin {
+                    border: 2px solid black;
+                    width: 200px;
+                    height: 70px;
+                    background-color: #0b66c2;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                }
+
+                svg {
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+/* Styles pour les tablettes (768px à 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .reseauxContainer {
+        
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .reseauCards {
+
+            height: 50vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+
+            .gitContainer {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+
+                .gitCard {
+                    border: 2px solid black;
+                    width: 230px;
+                    height: 70px;
+                    background-color: black;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+
+                svg {
+                    height: 30px;
+                }
+            }
+
+
+            .xContainer {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+
+                .X {
+                    border: 2px solid black;
+                    width: 230px;
+                    height: 70px;
+                    background-color: black;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                }
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+            .discordContainer {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+
+                .discord {
+                    border: 2px solid black;
+                    width: 230px;
+                    height: 70px;
+                    background-color: #404eed;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                }
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+
+            .linkedinContainer {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+
+                .linkedin {
+                    border: 2px solid black;
+                    width: 230px;
+                    height: 70px;
+                    background-color: #0b66c2;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                }
+
+                svg {
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

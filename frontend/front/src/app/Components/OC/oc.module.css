@@ -1,0 +1,187 @@
+@charset "UTF-8";
+.sectionOc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionOc .title {
+  color: white;
+  font-size: 44px;
+  text-align: center;
+}
+.sectionOc .description {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  width: 60%;
+}
+.sectionOc .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.sectionOc .content h3 {
+  color: white;
+}
+.sectionOc .content .ulLogo {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.sectionOc .content ul li {
+  color: white;
+  list-style: decimal;
+  margin: 15px;
+}
+
+/* Styles pour les appareils mobiles (jusqu'à 767px) */
+@media screen and (max-width: 767px) {
+  .sectionOc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionOc .title {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  }
+  .sectionOc .description {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    width: 60%;
+  }
+  .sectionOc .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .sectionOc .content h3 {
+    color: white;
+    font-size: 12px;
+  }
+  .sectionOc .content .ulLogo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .sectionOc .content .ulLogo img {
+    height: 40px;
+    width: 40px;
+  }
+  .sectionOc .content .ulLogo .gitlogo {
+    height: 40px;
+    width: 40px;
+  }
+  .sectionOc .content ul li {
+    color: white;
+    list-style: decimal;
+    margin: 15px;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 361px) {
+  .sectionOc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionOc .title {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .sectionOc .description {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    width: 60%;
+  }
+  .sectionOc .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .sectionOc .content h3 {
+    color: white;
+    font-size: 10px;
+  }
+  .sectionOc .content .ulLogo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .sectionOc .content .ulLogo img {
+    height: 30px;
+    width: 30px;
+  }
+  .sectionOc .content .ulLogo .gitlogo {
+    height: 30px;
+    width: 30px;
+  }
+  .sectionOc .content ul li {
+    color: white;
+    list-style: decimal;
+    margin: 15px;
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .sectionOc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionOc .title {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .sectionOc .description {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    width: 60%;
+  }
+  .sectionOc .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .sectionOc .content h3 {
+    color: white;
+    font-size: 10px;
+  }
+  .sectionOc .content .ulLogo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .sectionOc .content .ulLogo img {
+    height: 30px;
+    width: 30px;
+  }
+  .sectionOc .content .ulLogo .gitlogo {
+    height: 30px;
+    width: 30px;
+  }
+  .sectionOc .content ul li {
+    color: white;
+    list-style: decimal;
+    margin: 15px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=oc.module.css.map */
