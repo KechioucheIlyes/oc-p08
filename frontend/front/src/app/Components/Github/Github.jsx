@@ -52,13 +52,13 @@ const Github = () => {
 
 
     useEffect(() => {
-        fetch("http://192.168.0.25:3333/github/infos")
+        fetch("https://fast-badlands-66658-0e87e9cb071d.herokuapp.com/github/infos")
             .then(response => response.json())
             .then(data => {
                 setInfos(data);
 
                 Promise.all(data.map(info =>
-                    fetch(`https://api.github.com/repos/KechioucheIlyes/${info.name}/commits`)
+                    fetch(`https://fast-badlands-66658-0e87e9cb071d.herokuapp.com/${info.name}/commits`)
                         .then(response => response.json())
                         .then(data2 => data2.length)
                         .catch(error => {

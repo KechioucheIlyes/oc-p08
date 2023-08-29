@@ -1,11 +1,11 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "clear && nodemon"
+    "dev": "clear && nodemon",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +19,8 @@
     "mongoose": "^7.4.5",
     "nodemailer": "^6.9.4",
     "nodemon": "^3.0.1"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
 }
