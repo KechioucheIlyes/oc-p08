@@ -5,7 +5,7 @@ import { ClipboardCheck, Copy, Heart, Link } from 'lucide-react';
 import Link2 from 'next/link';
 import Image from 'next/image';
 import nextLogo from "../../assets/nextjs.png"
-import vercelogo from "../../assets/vercels.png" 
+import vercelogo from "../../assets/vercels.png"
 
 const Footer = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -20,7 +20,7 @@ const Footer = () => {
     const handleLikes = () => {
         setIsActive(true);
         setTimeout(() => setIsActive(false), 2000);
-        fetch("http://192.168.0.25:3333/likes/post", { method: "POST" })
+        fetch("https://fast-badlands-66658-0e87e9cb071d.herokuapp.com/likes/post", { method: "POST" })
             .then(response => response.json())
             .then(data => {
                 console.log(data.like.nbLikes);
@@ -30,7 +30,7 @@ const Footer = () => {
     };
 
     useEffect(() => {
-        fetch("http://192.168.0.25:3333/likes/get", { method: "GET" })
+        fetch("/likes/get", { method: "GET" })
             .then(response => response.json())
             .then(data => {
                 console.log(data.like.nbLikes);
@@ -102,7 +102,7 @@ const Footer = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        fetch("http://192.168.0.25:3333/contact", {
+        fetch("https://fast-badlands-66658-0e87e9cb071d.herokuapp.com/contact", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
