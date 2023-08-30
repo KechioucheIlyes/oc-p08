@@ -6,14 +6,12 @@ nav {
   justify-content: center;
   align-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 
 * {
   font-family: "Sora", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
   padding: 0;
   margin-right: 0px;
-  margin-left: -11px;
 }
 
 header {

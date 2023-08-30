@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "routes": [
+        {
+            "src": "/api/.*",
+            "dest": "backend/app.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "front/.next"
+        }
+    ]
+}

@@ -20,7 +20,7 @@ const Footer = () => {
     const handleLikes = () => {
         setIsActive(true);
         setTimeout(() => setIsActive(false), 2000);
-        fetch("http://localhost:3001/likes/post", { method: "POST" })
+        fetch("/api/likes/post", { method: "POST" })
             .then(response => response.json())
             .then(data => {
                 console.log(data.like.nbLikes);
@@ -30,7 +30,7 @@ const Footer = () => {
     };
 
     useEffect(() => {
-        fetch("http://localhost:3001/likes/get", { method: "GET" })
+        fetch("/api/likes/get", { method: "GET" })
             .then(response => response.json())
             .then(data => {
                 console.log(data.like.nbLikes);
@@ -102,7 +102,7 @@ const Footer = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        fetch("http://localhost:3001/contact", {
+        fetch("/api/contact", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

@@ -3,6 +3,6 @@ const app = require("./app")
 
 const server = http.createServer(app)
 
-server.listen(process.env.PORT || 5001, () => {
+server.listen(3001, () => {
     console.log("reussis")
 })
