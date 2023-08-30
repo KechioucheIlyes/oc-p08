@@ -20,7 +20,7 @@ const Footer = () => {
     const handleLikes = () => {
         setIsActive(true);
         setTimeout(() => setIsActive(false), 2000);
-        fetch("/api/likes/post", { method: "POST" })
+        fetch("https://votre-backend.herokuapp.com/api/likes/post", { method: "POST" })
             .then(response => response.json())
             .then(data => {
                 console.log(data.like.nbLikes);
@@ -30,7 +30,7 @@ const Footer = () => {
     };
 
     useEffect(() => {
-        fetch("/api/likes/get", { method: "GET" })
+        fetch("https://votre-backend.herokuapp.com/api/likes/get", { method: "GET" })
             .then(response => response.json())
             .then(data => {
                 console.log(data.like.nbLikes);
