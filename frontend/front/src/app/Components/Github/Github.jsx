@@ -54,7 +54,7 @@ const Github = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:3001/github/infos")
+        fetch("https://backend-rho-blue.vercel.app/api/github/infos")
             .then(response => response.json())
             .then(data => {
                 setInfos(data);
