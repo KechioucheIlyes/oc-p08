@@ -20,7 +20,7 @@ const Footer = () => {
     const handleLikes = () => {
         setIsActive(true);
         setTimeout(() => setIsActive(false), 2000);
-        fetch("https://votre-backend.herokuapp.com/api/likes/post", { method: "POST" })
+        fetch("https://backend-rho-blue.vercel.app/api/likes/post", { method: "POST" })
             .then(response => response.json())
             .then(data => {
                 console.log(data.like.nbLikes);
@@ -30,7 +30,7 @@ const Footer = () => {
     };
 
     useEffect(() => {
-        fetch("https://votre-backend.herokuapp.com/api/likes/get", { method: "GET" })
+        fetch("https://backend-rho-blue.vercel.app/api/likes/get", { method: "GET" })
             .then(response => response.json())
             .then(data => {
                 console.log(data.like.nbLikes);
@@ -102,7 +102,7 @@ const Footer = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        fetch("/api/contact", {
+        fetch("https://backend-rho-blue.vercel.app/api/contact", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
