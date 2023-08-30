@@ -20,7 +20,7 @@ const Footer = () => {
     const handleLikes = () => {
         setIsActive(true);
         setTimeout(() => setIsActive(false), 2000);
-        fetch("https://fast-badlands-66658-0e87e9cb071d.herokuapp.com/likes/post", { method: "POST" })
+        fetch("http://localhost:3001/likes/post", { method: "POST" })
             .then(response => response.json())
             .then(data => {
                 console.log(data.like.nbLikes);
@@ -30,7 +30,7 @@ const Footer = () => {
     };
 
     useEffect(() => {
-        fetch("/likes/get", { method: "GET" })
+        fetch("http://localhost:3001/likes/get", { method: "GET" })
             .then(response => response.json())
             .then(data => {
                 console.log(data.like.nbLikes);
@@ -102,7 +102,7 @@ const Footer = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        fetch("https://fast-badlands-66658-0e87e9cb071d.herokuapp.com/contact", {
+        fetch("http://localhost:3001/contact", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

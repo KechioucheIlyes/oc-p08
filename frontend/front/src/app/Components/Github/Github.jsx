@@ -28,6 +28,8 @@ const Github = () => {
     const [isDataLoaded, setIsDataLoaded] = useState(false);
     const [test, setTest] = useState([])
 
+
+
     useEffect(() => {
         const observerOptions = {
             root: null,
@@ -52,13 +54,13 @@ const Github = () => {
 
 
     useEffect(() => {
-        fetch("https://fast-badlands-66658-0e87e9cb071d.herokuapp.com/github/infos")
+        fetch("http://localhost:3001/github/infos")
             .then(response => response.json())
             .then(data => {
                 setInfos(data);
 
                 Promise.all(data.map(info =>
-                    fetch(`https://fast-badlands-66658-0e87e9cb071d.herokuapp.com/${info.name}/commits`)
+                    fetch(`https://api.github.com/repos/KechioucheIlyes/${info.name}/commits`)
                         .then(response => response.json())
                         .then(data2 => data2.length)
                         .catch(error => {

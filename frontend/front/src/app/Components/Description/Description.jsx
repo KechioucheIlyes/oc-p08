@@ -5,6 +5,7 @@ import Image from 'next/image';
 import cross from "../../assets/cross.svg"
 const Description = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const [test, setTest] = useState([])
 
     useEffect(() => {
         const observerOptions = {
@@ -48,7 +49,7 @@ const Description = () => {
 
                         Portfolio axé sur l'innovation, l'adaptabilité et le souci du détail. Projets ambitieux bienvenus ! Contactez-moi pour discuter de vos idées !
 
-                        <br></br><span className={styles.tag}>Créons ensemble le web de demain.</span></p>
+                        <br></br><span className={styles.tag}>Créons ensemble le web de demain.</span> {test ? test : null}</p>
                 </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
