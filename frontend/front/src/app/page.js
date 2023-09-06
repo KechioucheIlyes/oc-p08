@@ -14,8 +14,11 @@ export default function Home() {
   return (
     <>
 
-      
+
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHJ9GBEJY6"></script>
+
+      <Navbar />
+
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments)}
@@ -23,9 +26,6 @@ export default function Home() {
 
         gtag('config', 'G-MHJ9GBEJY6');
       </script>
-
-      <Navbar />
-
 
 
       <main >
