@@ -8,6 +8,7 @@ import Github from "./Components/Github/Github";
 import Navbar from "./Components/NavBar/Navbar";
 import Reseaux from "./Components/Reseaux/Reseaux";
 import Services from "./Components/Services/Services";
+import Home from "./Components/Home/Home";
 import './globals.css'
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
     <>
 
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHJ9GBEJY6"></script>
+
 
       <Navbar />
 
