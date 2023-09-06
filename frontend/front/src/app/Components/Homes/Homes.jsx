@@ -1,6 +1,6 @@
 import Script from 'next/script'
 
-function Home() {
+function Homes() {
     return (
         <div className="container">
             <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" />
@@ -17,4 +17,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Homes

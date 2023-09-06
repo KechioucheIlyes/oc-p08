@@ -8,19 +8,16 @@ import Github from "./Components/Github/Github";
 import Navbar from "./Components/NavBar/Navbar";
 import Reseaux from "./Components/Reseaux/Reseaux";
 import Services from "./Components/Services/Services";
-import Home from "./Components/Home/Home";
+import Homes from "./Components/Homes/Homes";
 import './globals.css'
 
 export default function Home() {
   return (
     <>
 
-
-
-
       <Navbar />
 
-      <Home />
+      <Homes />
 
       <main >
 
