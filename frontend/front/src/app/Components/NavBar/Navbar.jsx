@@ -19,12 +19,12 @@ const Navbar = () => {
             </label>
             <nav className={styles.navbar} >
                 <ul>
-                    <li><Link className='link'  href={"#"}>À propos</Link></li>
-                    <li><Link className='link'  href={"#"}>Services</Link></li>
-                    <li><Link className='link'  href={"#"}>Formation</Link></li>
-                    <li><Link className='link'  href={"#"}>API Github</Link></li>
-                    <li><Link className='link'  href={"#"}>Competences</Link></li>
-                    <li><Link className='link'  href={"#"}>Contact</Link></li>
+                    <li><Link className='link'  href={"#about"}>À propos</Link></li>
+                    <li><Link className='link'  href={"#services"}>Services</Link></li>
+                    <li><Link className='link'  href={"#formation"}>Formation</Link></li>
+                    <li><Link className='link'  href={"#github"}>API Github</Link></li>
+                    <li><Link className='link'  href={"#competences"}>Competences</Link></li>
+                    <li><Link className='link'  href={"#contact"}>Contact</Link></li>
 
                 </ul>
 
