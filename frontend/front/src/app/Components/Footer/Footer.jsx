@@ -142,7 +142,7 @@ const Footer = () => {
             })
     };
     return (
-        <section id='contact' className={`${styles.footer} ${isVisible ? styles.visible : ''} ${styles.scrollEffect}`}>
+        <section id='contact' className={`${styles.footer} ${isVisible ? styles.visible : ''} ${styles.scrollEffect}`} style={{ scrollBehavior: 'smooth' }}>
             <div className={styles.svgContainer}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fillOpacity="1" d="M0,192L48,181.3C96,171,192,149,288,165.3C384,181,480,235,576,229.3C672,224,768,160,864,122.7C960,85,1056,75,1152,101.3C1248,128,1344,192,1392,224L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
             </div>
