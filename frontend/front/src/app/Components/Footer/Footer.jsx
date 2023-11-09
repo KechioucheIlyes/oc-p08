@@ -206,7 +206,7 @@ const Footer = () => {
                     <div className={styles.buttonLike}>
                         <div className={styles.infos}>
 
-                            <h4>Ce site a été créé manuellement et ne recueille aucune donnée. Vous pouvez accéder directement au code source sur <Link2 className={styles.link} target='_blank' href={"https://github.com/KechioucheIlyes/portfolio_P08_OC"}>GitHub</Link2>. Si vous avez apprécié le contenu, n'hésitez pas à laisser un petit cœur. Merci !</h4>
+                        <h4>Ce site a été créé manuellement et receuille une seule et unique donnees (Google Analytics) et ceci est fait simple en terme d'apprentissage. Vous pouvez accéder directement au code source sur <Link2 className={styles.link} target='_blank' href={"https://github.com/KechioucheIlyes/portfolio_P08_OC"}>GitHub</Link2>. Si vous avez apprécié le contenu, n'hésitez pas à laisser un petit cœur. Merci !</h4>
                         </div>
 
 
