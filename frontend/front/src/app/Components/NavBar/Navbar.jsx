@@ -9,29 +9,7 @@ import { useEffect, useState } from 'react';
 
 
 const Navbar = () => {
-    const [scrolling, setScrolling] = useState(false);
-
-    const handleScroll = () => {
-        if (window.scrollY > 0) {
-            setScrolling(true);
-        } else {
-            setScrolling(false);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    const handleScrollToSection = (sectionId) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+    
     return (
         <header className={`${styles.header} ${scrolling ? styles.scrolling : ''}`}>
             
@@ -41,12 +19,12 @@ const Navbar = () => {
             </label>
             <nav className={styles.navbar} >
                 <ul>
-                    <li><Link className='link' onClick={() => handleScrollToSection('about')} href={"#"}>À propos</Link></li>
-                    <li><Link className='link' onClick={() => handleScrollToSection('services')} href={"#"}>Services</Link></li>
-                    <li><Link className='link' onClick={() => handleScrollToSection('formation')} href={"#"}>Formation</Link></li>
-                    <li><Link className='link' onClick={() => handleScrollToSection('github')} href={"#"}>API Github</Link></li>
-                    <li><Link className='link' onClick={() => handleScrollToSection('competences')} href={"#"}>Competences</Link></li>
-                    <li><Link className='link' onClick={() => handleScrollToSection('contact')} href={"#"}>Contact</Link></li>
+                    <li><Link className='link'  href={"#"}>À propos</Link></li>
+                    <li><Link className='link'  href={"#"}>Services</Link></li>
+                    <li><Link className='link'  href={"#"}>Formation</Link></li>
+                    <li><Link className='link'  href={"#"}>API Github</Link></li>
+                    <li><Link className='link'  href={"#"}>Competences</Link></li>
+                    <li><Link className='link'  href={"#"}>Contact</Link></li>
 
                 </ul>
 
