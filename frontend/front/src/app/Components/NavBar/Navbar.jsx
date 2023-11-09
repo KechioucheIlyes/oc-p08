@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 const Navbar = () => {
     
     return (
-        <header className={`${styles.header} ${scrolling ? styles.scrolling : ''}`}>
+        <header className={`${styles.header}}`}>
             
             <label className={styles.toggle} >
                 <input className={styles.checkbox} />
