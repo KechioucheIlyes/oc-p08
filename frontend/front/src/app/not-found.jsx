@@ -34,12 +34,12 @@ export default function Notfound(){
             </div>
             <div className="number-0">
               {images.map((image, index) => (
-                <Image key={index} src={image} width={110} height={80} alt={`Block ${index + 1}`} />
+                <Image className='images' key={index} src={image} width={110} height={80} alt={`Block ${index + 1}`} />
               ))}
             </div>
             <div className="number-4">
               {images.map((image, index) => (
-                <Image key={index} src={image} width={110} height={80} alt={`Block ${index + 1}`} />
+                <Image className='images' key={index} src={image} width={110} height={80} alt={`Block ${index + 1}`} />
               ))}
             </div>
           </div>
