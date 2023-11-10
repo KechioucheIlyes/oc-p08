@@ -20,14 +20,13 @@ export default function CirclePic({ image, index, totalImages }) {
       borderRadius: '50%', 
       backgroundImage: `url(${image})`, 
       backgroundSize: 'cover',
-      width: '50px',
-      height: '50px',
+
     };
   
     return (
       <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
         <div className="circle" style={circleStyle}>
-            <Image src={image} alt={`Image ${index}`} width={110} height={90} />     
+            <Image src={image} alt={`Image ${index}`} width={110} height={90} style={{ borderRadius : '20px',  border:"1px solid black" }}/>     
         </div>
       </div>
     );
