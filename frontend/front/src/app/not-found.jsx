@@ -35,10 +35,9 @@ export default function Notfound(){
               {images.map((image, index) => (
                 <Image className='images' key={index} src={image} width={90} height={70} alt={`Block ${index + 1}`} />
               ))}
-              <div class="number-container">
-                <div class="horizontal-bar"></div>
-                <div class="vertical-bar"></div>
-                <div class="vertical-bar"></div>
+              <div class="number-four">
+                <div class="bar-vertical"></div>
+                <div class="bar-horizontal"></div>
               </div>
             </div>
             <div className="number-4">
