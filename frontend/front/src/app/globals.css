@@ -229,3 +229,7 @@ html {
   align-items: center !important;
 
 }
+
+.circle-contain{
+  border: 1px solid red;
+}

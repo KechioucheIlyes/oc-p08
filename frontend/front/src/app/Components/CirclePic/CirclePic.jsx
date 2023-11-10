@@ -22,8 +22,11 @@ export default function CirclePic({ image, index, totalImages }) {
     };
   
     return (
-      <div className="circle" style={circleStyle}>
-        {/* Vous pouvez également ajouter du contenu à l'intérieur du cercle si nécessaire */}
-      </div>
+        <div className="circle-contain">
+            <div className="circle" style={circleStyle}>
+
+                </div>
+        </div>
+      
     );
   }
