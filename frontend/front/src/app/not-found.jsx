@@ -21,7 +21,6 @@ export default function Notfound(){
         ViteTodo,
         defaultPic,
         
-        // ... ajoutez autant d'images que nécessaire
       ];
     
       return (
@@ -30,7 +29,7 @@ export default function Notfound(){
           <p>Sorry, the page you are looking for does not exist.</p>
           <div className="number-4">
             {images.map((image, index) => (
-              <Image key={index} src={image} alt={`Block ${index + 1}`} />
+              <Image key={index} src={image} width={200} height={200} alt={`Block ${index + 1}`} />
             ))}
           </div>
         </div>
