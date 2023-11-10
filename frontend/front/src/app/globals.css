@@ -196,3 +196,9 @@ html {
   display: flex;
 
 }
+
+.images{
+  border: 1px solid black;
+  border-radius: 20px;
+  
+}
