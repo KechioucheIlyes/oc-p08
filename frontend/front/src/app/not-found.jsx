@@ -25,7 +25,6 @@ export default function Notfound(){
     
       return (
         <>
-          <p>Vous avez attérie dans une page qui n'existe pas vous avez tout de meme le choix entre consulter mes projet Git ou de revenir a l'acceuil !</p>
           <div className='not-found-wrapper'>
             <div className="number-4">
               {images.map((image, index) => (
@@ -34,15 +33,16 @@ export default function Notfound(){
             </div>
             <div className="number-0">
               {images.map((image, index) => (
-                <Image className='images' key={index} src={image} width={110} height={80} alt={`Block ${index + 1}`} />
+                <Image className='images' key={index} src={image} width={90} height={70} alt={`Block ${index + 1}`} />
               ))}
             </div>
             <div className="number-4">
               {images.map((image, index) => (
-                <Image className='images' key={index} src={image} width={110} height={80} alt={`Block ${index + 1}`} />
+                <Image className='images' key={index} src={image} width={90} height={70} alt={`Block ${index + 1}`} />
               ))}
             </div>
           </div>
+          <p>Vous avez attérie dans une page qui n'existe pas vous avez tout de meme le choix entre consulter mes projet Git ou de revenir a l'acceuil !</p>
         </>
       );
 }
