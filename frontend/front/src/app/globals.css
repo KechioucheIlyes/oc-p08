@@ -208,7 +208,7 @@ html {
 .number-0{
   border: 1px solid red;
 }
-::selection:{
+::selection{
   color: inherit;
   background-color: inherit;
 }
