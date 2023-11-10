@@ -27,7 +27,7 @@ export default function CirclePic({ image, index, totalImages }) {
     return (
       <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
         <div className="circle" style={circleStyle}>
-            <Image src={image} alt={`Image ${index}`} width={50} height={50} />     
+            <Image src={image} alt={`Image ${index}`} width={110} height={90} />     
         </div>
       </div>
     );
