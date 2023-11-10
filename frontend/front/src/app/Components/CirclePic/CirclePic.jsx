@@ -6,8 +6,8 @@ export default function CirclePic({ image, index, totalImages }) {
   
     // Calculez les coordonnées du cercle
     const theta = (index / totalImages) * 2 * Math.PI;
-    const x = 50 + (20 * Math.cos(theta))
-    const y = 50 + (20 * Math.sin(theta))
+    const x = 50 + (25 * Math.cos(theta))
+    const y = 50 + (25 * Math.sin(theta))
   
   
     const circleStyle = {
