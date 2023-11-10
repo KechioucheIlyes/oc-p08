@@ -189,9 +189,9 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px; 
+  
 }
 
 .number-4 img {
-  width: 40px; 
+  border: 1px solid black;
 }
