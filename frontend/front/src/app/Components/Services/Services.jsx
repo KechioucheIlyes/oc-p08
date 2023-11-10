@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import styles from "../Services/services.module.css"
 import Image from 'next/image'
 import KasaProject from "../../assets/kasa-project.png"
-import api from "../../assets/API.png"
+import api from "../../assets/api.svg"
 import surMesure from "../../assets/Sur-mesure.png"
 import design from "../../assets/deisgn.svg"
 import { Swiper, SwiperSlide } from "swiper/react"
