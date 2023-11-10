@@ -102,7 +102,7 @@ const Services = () => {
 
                                 Développement d'API et intégrations
                             </div>
-                            <Image src={api} alt='api' priority width={500} height={500} />
+                            <Image src={api} alt='api' priority width={500} height={600} />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
