@@ -190,7 +190,7 @@ html {
 
 
 .not-found-wrapper{
-  min-height: 100vh;
+  min-height: 90vh;
   width: 100%;
   border: 1px solid red;
   display: flex;
@@ -200,5 +200,5 @@ html {
 .images{
   border: 1px solid black;
   border-radius: 20px;
-  
+
 }
