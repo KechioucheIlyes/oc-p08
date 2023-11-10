@@ -7,7 +7,7 @@ import MVG from "./assets/P07.png"
 import Kasa from "./assets/ScreenshotKasa.png"
 import SohpieProject from "./assets/P03.png"
 import ViteTodo from "./assets/todoList.png"
-import defaultPic from "./assets/defaultpic.png"
+import defaultPic from "./assets/defaultpic.jpg"
 
 
 export default function Notfound(){
