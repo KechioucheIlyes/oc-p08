@@ -43,6 +43,12 @@ export default function Notfound(){
             </div>
           </div>
           <p>Vous avez attérie dans une page qui n'existe pas vous avez tout de meme le choix entre consulter mes projet Git ou de revenir a l'acceuil !</p>
+
+          <div class="number-container">
+            <div class="horizontal-bar"></div>
+            <div class="vertical-bar"></div>
+            <div class="vertical-bar"></div>
+          </div>
         </>
       );
 }

@@ -208,3 +208,29 @@ html {
 .number-0{
   border: 1px solid red;
 }
+
+.number-container {
+  position: relative;
+  width: 100px;
+  height: 200px;
+}
+
+.horizontal-bar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: black;
+  transform: translateY(-50%);
+}
+
+.vertical-bar {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 20px;
+  height: 100%;
+  background-color: black;
+  transform: translateX(50%);
+}
