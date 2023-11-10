@@ -2,10 +2,7 @@ export default function CirclePic({ image, index, totalImages }) {
     const circleRadius = 100; 
   
 
-    const centerCoordinates = {
-      x: window.innerWidth / 2,
-      y: window.innerHeight / 2,
-    };
+   
   
     // Calculez les coordonnées du cercle
     const theta = (index / totalImages) * 2 * Math.PI;
