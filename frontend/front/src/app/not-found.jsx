@@ -24,9 +24,18 @@ export default function Notfound(){
       ];
     
       return (
-        <div>
-          <h1>404 - Not Found</h1>
-          <p>Sorry, the page you are looking for does not exist.</p>
+        <div className='not-found-wrapper'>
+          <h1>Vous avez attérie dans une page qui n'existe pas vous avez tout de meme le choix entre consulter mes projet Git ou de revenir a l'acceuil !.</h1>
+          <div className="number-4">
+            {images.map((image, index) => (
+              <Image key={index} src={image} width={180} height={110} alt={`Block ${index + 1}`} />
+            ))}
+          </div>
+          <div className="number-0">
+            {images.map((image, index) => (
+              <Image key={index} src={image} width={180} height={110} alt={`Block ${index + 1}`} />
+            ))}
+          </div>
           <div className="number-4">
             {images.map((image, index) => (
               <Image key={index} src={image} width={180} height={110} alt={`Block ${index + 1}`} />
