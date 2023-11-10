@@ -224,7 +224,8 @@ html {
 #circle-container{
   position: absolute;
   border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
 }
