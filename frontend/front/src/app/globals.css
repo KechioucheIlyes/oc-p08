@@ -184,3 +184,14 @@ html {
 }
 
 /*# sourceMappingURL=globals.css.map */
+
+.number-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px; 
+}
+
+.number-4 img {
+  width: 40px; 
+}
