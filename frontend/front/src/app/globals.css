@@ -192,7 +192,7 @@ html {
 .not-found-wrapper{
   min-height: 92vh;
   width: 100%;
-  border: 1px solid red;
+
   display: flex;
   
 }
@@ -201,4 +201,10 @@ html {
   border: 1px solid black;
   border-radius: 20px;
 
+}
+.number-4{
+  border: 1px solid blue;
+}
+.number-0{
+  border: 1px solid red;
 }
