@@ -5,7 +5,7 @@ import Image from 'next/image'
 import KasaProject from "../../assets/kasa-project.png"
 import api from "../../assets/API.png"
 import surMesure from "../../assets/Sur-mesure.png"
-import design from "../../assets/deisgn.png"
+import design from "../../assets/deisgn.svg"
 import { Swiper, SwiperSlide } from "swiper/react"
 
 import 'swiper/css'
