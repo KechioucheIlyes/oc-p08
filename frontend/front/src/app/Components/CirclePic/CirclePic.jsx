@@ -9,14 +9,14 @@ export default function CirclePic({ image, index, totalImages }) {
   
     // Calculez les coordonnées du cercle
     const theta = (index / totalImages) * 2 * Math.PI;
-    const x = centerCoordinates.x + circleRadius * Math.cos(theta);
-    const y = centerCoordinates.y + circleRadius * Math.sin(theta);
+    const x = 50 + (50 * Math.cos(theta))
+    const y = 50 + (50 * Math.sin(theta))
   
   
     const circleStyle = {
       position: 'absolute',
-      left: `${x}px`,
-      top: `${y}px`,
+      left: `${x}%`,
+      top: `${y}%`,
       transform: 'translate(-50%, -50%)', 
       borderRadius: '50%', 
       backgroundImage: `url(${image})`, 
