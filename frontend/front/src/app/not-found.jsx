@@ -1,12 +1,26 @@
 'use client'
+import Image from 'next/image'
+import scrapPic from "./assets/Mail_scrap.png"
+import bookiPic from "./assets/Booki.png"
+import carducciPic from "./assets/carducci.png"
+import MVG from "./assets/P07.png"
+import Kasa from "./assets/ScreenshotKasa.png"
+import SohpieProject from "./assets/P03.png"
+import ViteTodo from "./assets/todoList.png"
+import defaultPic from "./assets/defaultpic.png"
 
 
 export default function Notfound(){
     const images = [
-        'block1.jpg',
-        'block2.jpg',
-        'block3.jpg',
-        'block4.jpg',
+        scrapPic    ,
+        bookiPic,
+        carducciPic,
+        MVG,
+        Kasa,
+        SohpieProject,
+        ViteTodo,
+        defaultPic,
+        
         // ... ajoutez autant d'images que nécessaire
       ];
     
@@ -16,7 +30,7 @@ export default function Notfound(){
           <p>Sorry, the page you are looking for does not exist.</p>
           <div className="number-4">
             {images.map((image, index) => (
-              <img key={index} src={image} alt={`Block ${index + 1}`} />
+              <Image key={index} src={image} alt={`Block ${index + 1}`} />
             ))}
           </div>
         </div>
