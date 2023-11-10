@@ -221,3 +221,9 @@ html {
   border-radius: 50%;
   position: absolute;
 }
+#circle-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
