@@ -23,6 +23,8 @@ export default function Notfound(){
         defaultPic,
       ];
 
+      
+
       return (
         <>
           <div id='circle-container' className='not-found-wrapper'>
