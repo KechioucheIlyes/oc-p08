@@ -214,14 +214,15 @@ html {
 }
 
 .circle{
-  border: 1px solid black;
+  border: 1px solid whitesmoke;
   width: 20px;
   height: 20px;
   background-color: black;
   border-radius: 50%;
-  
+  position: relative;
 }
 #circle-container{
+  position: absolute;
   border: 1px solid black;
   display: flex;
   justify-content: center;
