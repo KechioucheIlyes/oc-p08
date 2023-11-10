@@ -24,23 +24,25 @@ export default function Notfound(){
       ];
     
       return (
-        <div className='not-found-wrapper'>
-          <h1>Vous avez attérie dans une page qui n'existe pas vous avez tout de meme le choix entre consulter mes projet Git ou de revenir a l'acceuil !.</h1>
-          <div className="number-4">
-            {images.map((image, index) => (
-              <Image key={index} src={image} width={180} height={110} alt={`Block ${index + 1}`} />
-            ))}
+        <>
+          <p>Vous avez attérie dans une page qui n'existe pas vous avez tout de meme le choix entre consulter mes projet Git ou de revenir a l'acceuil !</p>
+          <div className='not-found-wrapper'>
+            <div className="number-4">
+              {images.map((image, index) => (
+                <Image key={index} src={image} width={110} height={80} alt={`Block ${index + 1}`} />
+              ))}
+            </div>
+            <div className="number-0">
+              {images.map((image, index) => (
+                <Image key={index} src={image} width={110} height={80} alt={`Block ${index + 1}`} />
+              ))}
+            </div>
+            <div className="number-4">
+              {images.map((image, index) => (
+                <Image key={index} src={image} width={110} height={80} alt={`Block ${index + 1}`} />
+              ))}
+            </div>
           </div>
-          <div className="number-0">
-            {images.map((image, index) => (
-              <Image key={index} src={image} width={180} height={110} alt={`Block ${index + 1}`} />
-            ))}
-          </div>
-          <div className="number-4">
-            {images.map((image, index) => (
-              <Image key={index} src={image} width={180} height={110} alt={`Block ${index + 1}`} />
-            ))}
-          </div>
-        </div>
+        </>
       );
 }

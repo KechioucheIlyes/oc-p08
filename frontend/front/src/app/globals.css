@@ -185,21 +185,14 @@ html {
 
 /*# sourceMappingURL=globals.css.map */
 
-.number-4 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid black;
-}
 
-.number-4 img {
-  border: 1px solid black;
-}
+
+
 
 .not-found-wrapper{
   min-height: 100vh;
   width: 100%;
   border: 1px solid red;
   display: flex;
-  
+
 }
