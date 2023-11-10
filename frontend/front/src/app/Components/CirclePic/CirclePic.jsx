@@ -22,11 +22,11 @@ export default function CirclePic({ image, index, totalImages }) {
   
     // Appliquez les styles pour le conteneur Flexbox
     const containerStyle = {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh', 
-    };
+        position: 'absolute',
+        left: '50%',
+        top: '50%',
+        transform: 'translate(-50%, -50%)',
+      };
   
     return (
       <div style={containerStyle}>
