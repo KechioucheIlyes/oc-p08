@@ -8,6 +8,7 @@ import Kasa from "./assets/ScreenshotKasa.png"
 import SohpieProject from "./assets/P03.png"
 import ViteTodo from "./assets/todoList.png"
 import defaultPic from "./assets/defaultpic.jpg"
+import CirclePic from './Components/CirclePic/CirclePic'
 
 
 export default function Notfound(){
@@ -20,13 +21,16 @@ export default function Notfound(){
         SohpieProject,
         ViteTodo,
         defaultPic,
-        
       ];
 
       return (
         <>
           <div id='circle-container' className='not-found-wrapper'>
-            
+              
+              { images.map((element) => {
+                  return <CirclePic/>
+              }) }
+
           </div>
           <p>Vous avez attérie dans une page qui n'existe pas vous avez tout de meme le choix entre consulter mes projet Git ou de revenir a l'acceuil !</p>
             

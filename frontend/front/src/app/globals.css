@@ -212,3 +212,11 @@ html {
   color: whitesmoke;
   background-color: black;
 }
+
+.circle{
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
