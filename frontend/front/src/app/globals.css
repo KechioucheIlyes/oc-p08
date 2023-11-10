@@ -209,6 +209,6 @@ html {
   border: 1px solid red;
 }
 ::selection{
-  color: inherit;
-  background-color: inherit;
+  color: whitesmoke;
+  background-color: black;
 }
