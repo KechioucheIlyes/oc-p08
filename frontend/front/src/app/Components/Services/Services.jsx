@@ -7,7 +7,7 @@ import api from "../../assets/api.svg"
 import surMesure from "../../assets/Sur-mesure.png"
 import design from "../../assets/deisgn.svg"
 import { Swiper, SwiperSlide } from "swiper/react"
-
+import macAir from "./../../assets/macAir-2.svg"
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
@@ -80,7 +80,7 @@ const Services = () => {
                                 Développement d'applications web sur mesure
                             </div>
 
-                            <Image src={surMesure} alt='sur-mesure' priority width={700} height={700} />
+                            <Image src={macAir} alt='sur-mesure' priority width={700} height={700} />
                         </div>
 
                     </SwiperSlide>

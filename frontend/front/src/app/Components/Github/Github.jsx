@@ -21,6 +21,7 @@ import CSS from "../../assets/css.svg"
 import portfolio from "../../assets/portfolio.png"
 import SCSS from "../../assets/Sass.png"
 import NextJs from "../../assets/nextBlack.png"
+
 const Github = () => {
     const [infos, setInfos] = useState([])
     const [infos2, setInfos2] = useState([])
