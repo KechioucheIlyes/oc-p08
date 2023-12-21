@@ -58,12 +58,11 @@ const Github = () => {
         fetch("https://api.github.com/user/repos", {
             method: "GET",
             headers: {
-                "Authorization": `Bearer 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`
+                "Authorization": "BEARER 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"
             }
         })
             .then(response => response.json())
             .then(data => {
-                console.log(data)
                 setInfos(data);
 
 
@@ -85,8 +84,7 @@ const Github = () => {
 
                     <ul className={styles.githubList}>
 
-                        {infos.map((info, index) =>  (
-                            
+                        {infos.map((info, index) => (
                             <li className={styles.githubItem} key={info.id}>
                                 <Link href={`${info.html_url}`} target='_blank' className={styles.card}>
                                     <div className={styles.cardHeader}>
@@ -155,7 +153,6 @@ const Github = () => {
                                             </div>
                                             <div className={styles.cardFooter}>
                                                 {info.private ? null : <span>Public</span>}
-
                                             </div>
                                         </div>
                                     </div>

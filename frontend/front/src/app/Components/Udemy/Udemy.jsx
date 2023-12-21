@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import styles from "./udemy.module.css"
 import Image from 'next/image'

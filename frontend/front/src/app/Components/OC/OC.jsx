@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import styles from "./oc.module.css"
 import { Github, Gitlab } from 'lucide-react'

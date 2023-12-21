@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import styles from "./ufr.module.css"
 import Image from 'next/image'
