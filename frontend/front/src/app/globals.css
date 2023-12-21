@@ -12,6 +12,8 @@ nav {
   font-family: "Sora", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
   padding: 0;
   margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0;
 }
 
 header {
@@ -189,31 +191,34 @@ html {
 
 
 
-.not-found-wrapper{
+.not-found-wrapper {
   min-height: 92vh;
   width: 100%;
 
   display: flex;
-  
+
 }
 
-.images{
+.images {
   border: 1px solid black;
   border-radius: 20px;
 
 }
-.number-4{
+
+.number-4 {
   border: 1px solid blue;
 }
-.number-0{
+
+.number-0 {
   border: 1px solid red;
 }
-::selection{
+
+::selection {
   color: whitesmoke;
   background-color: black;
 }
 
-.circle{
+.circle {
   border: 1px solid black;
   width: 20px;
   height: 20px;
@@ -221,7 +226,8 @@ html {
   position: relative;
 
 }
-#circle-container{
+
+#circle-container {
   position: absolute;
   border: 1px solid black;
   display: flex !important;
@@ -229,4 +235,3 @@ html {
   align-items: center !important;
 
 }
-
