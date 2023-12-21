@@ -58,7 +58,7 @@ const Github = () => {
         fetch("https://api.github.com/user/repos", {
             method: "GET",
             headers: {
-                "Authorization": "BEARER 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"
+                "Authorization": "BEARER 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"
             }
         })
             .then(response => response.json())

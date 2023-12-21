@@ -39,7 +39,7 @@ const Navbar = () => {
                     <li><Link className='link' href={"#about"}>À propos</Link></li>
                     <li><Link className='link' href={"#services"}>Services</Link></li>
                     <li><Link className='link' href={"#formation"}>Formation</Link></li>
-                    <li><Link className='link' href={"#github"}>API Github</Link></li>
+                    <li><Link className='link' href={"#github"}>Github</Link></li>
                     <li><Link className='link' href={"#competences"}>Competences</Link></li>
                     <li><Link className='link' href={"#contact"}>Contact</Link></li>
 
