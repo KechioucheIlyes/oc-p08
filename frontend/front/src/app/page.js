@@ -13,30 +13,26 @@ import './globals.css'
 
 export default function Home() {
   return (
-    <>
+    <main>
 
       <Navbar />
 
-      <main >
+      <About />
 
-        <About />
+      <Description />
 
-        <Description />
+      <Services />
 
-        <Services />
+      <Formation />
 
-        <Formation />
+      <Github />
 
-        <Github />
+      <Competences />
 
-        <Competences />
-
-        <Reseaux />
-
-      </main>
+      <Reseaux />
 
       <Footer />
-    </>
+    </main>
 
   )
 }

@@ -63,8 +63,8 @@ const Github = () => {
 
                     <ul className={styles.githubList}>
 
-                        {fichierGit.map((info, index) => (
-                            <li className={styles.githubItem} key={info.id}>
+                        {fichierGit.map((info, index) => {
+                            return (<li className={styles.githubItem} key={info.id}>
                                 <Link href={`${info.html_url}`} target='_blank' className={styles.card}>
                                     <div className={styles.cardHeader}>
                                         {info.name === "BOOKI" ? (<Image className={styles.imageCard} src={bookiPic} width={350} height={200} priority alt={`${info.name}-image`} />) :
@@ -113,7 +113,8 @@ const Github = () => {
                                                                 </div>) :
 
                                                                 info.language
-                                            }</div>
+                                            }
+                                            </div>
                                             <div className={styles.cardFooter}>Créé le : {info.created_at.slice(8, 10)}/{info.created_at.slice(5, 7)}/{info.created_at.slice(0, 4)}</div>
 
                                         </div>
@@ -138,8 +139,8 @@ const Github = () => {
 
 
                                 </Link>
-                            </li>
-                        ))}
+                            </li>)
+                        })}
                     </ul>
                 ) : (
                     <div className={styles.loaderContainer}>

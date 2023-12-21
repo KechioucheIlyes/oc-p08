@@ -29,7 +29,6 @@ const Navbar = () => {
 
     return (
         <header className={`${styles.header} ${scrolling ? styles.scrolling : ''}`}>
-
             <label className={styles.toggle} >
                 <input className={styles.checkbox} />
                 <span className={styles.slider} ></span>
@@ -42,15 +41,9 @@ const Navbar = () => {
                     <li><Link className='link' href={"#github"}>Github</Link></li>
                     <li><Link className='link' href={"#competences"}>Competences</Link></li>
                     <li><Link className='link' href={"#contact"}>Contact</Link></li>
-
                 </ul>
-
-
             </nav>
         </header>
-
-
-
 
     )
 }
