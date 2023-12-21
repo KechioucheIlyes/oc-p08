@@ -55,26 +55,18 @@ const Github = () => {
 
 
     useEffect(() => {
-        fetch("https://backend-rho-blue.vercel.app/api/github/infos")
+        fetch("https://api.github.com/user/repos", {
+            method: "GET",
+            headers: {
+                "Authorization": `Bearer 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`
+            }
+        })
             .then(response => response.json())
             .then(data => {
+                console.log(data)
                 setInfos(data);
 
-                Promise.all(data.map(info =>
-                    fetch(`https://api.github.com/repos/KechioucheIlyes/${info.name}/commits`)
-                        .then(response => response.json())
-                        .then(data2 => data2.length)
-                        .catch(error => {
-                            console.log(error);
-                            return 0;
-                        })
-                ))
-                    .then(lengths => {
-                        setInfos2(lengths);
-                    })
-                    .catch(error => {
-                        console.log(error);
-                    });
+
             })
             .catch(error => {
                 console.log(error);
@@ -93,7 +85,8 @@ const Github = () => {
 
                     <ul className={styles.githubList}>
 
-                        {infos.map((info, index) => (
+                        {infos.map((info, index) =>  (
+                            
                             <li className={styles.githubItem} key={info.id}>
                                 <Link href={`${info.html_url}`} target='_blank' className={styles.card}>
                                     <div className={styles.cardHeader}>
