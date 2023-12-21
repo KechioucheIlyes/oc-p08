@@ -21,7 +21,7 @@ import CSS from "../../assets/css.svg"
 import portfolio from "../../assets/portfolio.png"
 import SCSS from "../../assets/Sass.png"
 import NextJs from "../../assets/nextBlack.png"
-
+import fichierGit from "./../../fichier.json"
 const Github = () => {
     const [infos, setInfos] = useState([])
     const [infos2, setInfos2] = useState([])
@@ -53,38 +53,17 @@ const Github = () => {
     }, []);
 
 
-
-    useEffect(() => {
-        fetch("https://api.github.com/user/repos", {
-            method: "GET",
-            headers: {
-                "Authorization": "BEARER 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"
-            }
-        })
-            .then(response => response.json())
-            .then(data => {
-                setInfos(data);
-
-
-            })
-            .catch(error => {
-                console.log(error);
-            });
-
-    }, []);
-
-
     return (
         <section id='github' className={`${styles.githubContainer} ${isVisible ? styles.visible : ''} ${styles.scrollEffect}`}>
             <h1>Github</h1>
 
             <div className={styles.cardsContainer}>
 
-                {infos.length > 0 ? (
+                {fichierGit.length > 0 ? (
 
                     <ul className={styles.githubList}>
 
-                        {infos.map((info, index) => (
+                        {fichierGit.map((info, index) => (
                             <li className={styles.githubItem} key={info.id}>
                                 <Link href={`${info.html_url}`} target='_blank' className={styles.card}>
                                     <div className={styles.cardHeader}>
