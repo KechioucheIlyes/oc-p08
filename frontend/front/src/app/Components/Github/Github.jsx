@@ -187,9 +187,7 @@ const Github = () => {
                                     
                                     </Typography>
                                     <Typography id="modal-desc" textColor="text.tertiary">
-                                        {infos ?  infos.map(el => {
-                                            console.log(el)
-                                        }) : null }
+                                        {console.log(infos)}
                                     </Typography>
                                     </Sheet>
                                 </Modal>
