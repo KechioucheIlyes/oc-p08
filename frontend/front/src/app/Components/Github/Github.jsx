@@ -201,16 +201,16 @@ const Github = () => {
 
                                         <div className={styles.modalText}>
                                             <div className={styles.annee}>
-                                            <h2> <span className={styles.descriptif}> Année : </span>  {infos ? infos.annee : null}  </h2>  
+                                            <h2> <span className={styles.descriptif}> Année  </span> : {infos ? infos.annee : null}  </h2>  
                                             </div>
                                             <div className={styles.mission}>
-                                                <h2><span className={styles.descriptif}> Mission : </span> {infos ? infos.mission : null}  </h2>  
+                                                <h2><span className={styles.descriptif}> Mission </span> :  {infos ? infos.mission : null}  </h2>  
                                             </div>
                                             <div className={styles.problematique}>
-                                                <h2><span className={styles.descriptif}> Problematiques  : </span> {infos ? infos.problematique : null} </h2> 
+                                                <h2><span className={styles.descriptif}> Problematiques  </span> :  {infos ? infos.problematique : null} </h2> 
                                             </div>
                                             <div className={styles.problematique}>
-                                                <h2><span className={styles.descriptif}> Techno  : </span> {infos ?  infos.pics_url ?  infos.Techno.map(tech => {
+                                                <h2><span className={styles.descriptif}> Techno  </span> : {infos ?  infos.pics_url ?  infos.Techno.map(tech => {
                                                 return (
                                                     <div className={styles.tech}>
                                                         <p>{tech}</p>
