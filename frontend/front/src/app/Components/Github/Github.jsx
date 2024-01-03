@@ -193,9 +193,7 @@ const Github = () => {
                                          <code>aria-labelledby</code> on the modal dialog with an
                                         optional <code>aria-describedby</code> attribute.
                                         <div className={styles.modalPic} >
-                                            {infos ? infos.pics_url.map(pics => {
-                                                console.log(pics)
-                                            }) : null}
+                                            {infos ? infos.pics_url.length() : null}
                                         </div>
 
                                         <div className={styles.modalText}>
