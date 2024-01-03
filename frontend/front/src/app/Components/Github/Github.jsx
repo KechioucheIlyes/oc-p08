@@ -199,7 +199,8 @@ const Github = () => {
                                         </div>
 
                                         <div className={styles.modalText}>
-
+                                            {infos ? infos.mission : null}
+                                            {infos ? infos.problematique : null}
                                         </div>
 
                                         </div>

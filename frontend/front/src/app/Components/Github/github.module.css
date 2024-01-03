@@ -261,4 +261,19 @@
   -webkit-tap-highlight-color: transparent;
   -webkit-backdrop-filter: blur(1px) !important;
           backdrop-filter: blur(1px) !important;
+}
+
+.modalContainer {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalPic {
+  border: 1px solid black;
+}
+
+.modalText {
+  border: 1px solid green;
 }/*# sourceMappingURL=github.module.css.map */

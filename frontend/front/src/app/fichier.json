@@ -107,7 +107,7 @@
         },
         "mission" : "testttt" , 
         "Techno" : [""], 
-        "problematique" : "",
+        "problematique" : "test-2",
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -222,7 +222,7 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : "",
+        "problematique" : "test-2",
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -336,7 +336,7 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : "",
+        "problematique" : "test-2",
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -450,7 +450,7 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : "",
+        "problematique" : "test-2",
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -564,7 +564,7 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : "",
+        "problematique" : "test-2",
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -678,7 +678,7 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : "",
+        "problematique" : "test-2",
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -792,7 +792,7 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : "",
+        "problematique" : "test-2",
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -907,7 +907,7 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : "",
+        "problematique" : "test-2",
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
