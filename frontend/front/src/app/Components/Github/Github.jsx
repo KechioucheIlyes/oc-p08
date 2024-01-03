@@ -22,12 +22,11 @@ import portfolio from "../../assets/portfolio.png"
 import SCSS from "../../assets/Sass.png"
 import NextJs from "../../assets/nextBlack.png"
 import fichierGit from "./../../fichier.json"
-import { Transition } from 'react-transition-group';
 import Button from '@mui/joy/Button';
 import Modal from '@mui/joy/Modal';
-import ModalDialog from '@mui/joy/ModalDialog';
-import DialogTitle from '@mui/joy/DialogTitle';
-import DialogContent from '@mui/joy/DialogContent';
+import ModalClose from '@mui/joy/ModalClose';
+import Typography from '@mui/joy/Typography';
+import Sheet from '@mui/joy/Sheet';
 
 
 const Github = () => {
@@ -152,48 +151,42 @@ const Github = () => {
 
 
                                 </div>
-                                <Button variant="outlined" color="neutral" onClick={() => setOpen(true)}>Open modal</Button>
-                            <Transition in={open} timeout={400}>
-                                {(state) => (
+                                <Button variant="outlined" color="neutral" onClick={() => setOpen(true)}>
+                                    Open modal
+                                </Button>
                                 <Modal
-                                    keepMounted
-                                    open={!['exited', 'exiting'].includes(state)}
+                                    aria-labelledby="modal-title"
+                                    aria-describedby="modal-desc"
+                                    open={open}
                                     onClose={() => setOpen(false)}
-                                    slotProps={{
-                                    backdrop: {
-                                        sx: {
-                                        opacity: 0,
-                                        backdropFilter: 'none',
-                                        transition: `opacity 400ms, backdrop-filter 400ms`,
-                                        ...{
-                                            entering: { opacity: 1, backdropFilter: 'blur(8px)' },
-                                            entered: { opacity: 1, backdropFilter: 'blur(8px)' },
-                                        }[state],
-                                        },
-                                    },
-                                    }}
-                                    sx={{
-                                    visibility: state === 'exited' ? 'hidden' : 'visible',
-                                    }}
+                                    sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                                 >
-                                    <ModalDialog
+                                    <Sheet
+                                    variant="outlined"
                                     sx={{
-                                        opacity: 0,
-                                        transition: `opacity 300ms`,
-                                        ...{
-                                        entering: { opacity: 1 },
-                                        entered: { opacity: 1 },
-                                        }[state],
+                                        maxWidth: 500,
+                                        borderRadius: 'md',
+                                        p: 3,
+                                        boxShadow: 'lg',
                                     }}
                                     >
-                                    <DialogTitle>Transition modal</DialogTitle>
-                                    <DialogContent>
-                                        Using `react-transition-group` to create a fade animation.
-                                    </DialogContent>
-                                    </ModalDialog>
+                                    <ModalClose variant="plain" sx={{ m: 1 }} />
+                                    <Typography
+                                        component="h2"
+                                        id="modal-title"
+                                        level="h4"
+                                        textColor="inherit"
+                                        fontWeight="lg"
+                                        mb={1}
+                                    >
+                                        This is the modal title
+                                    </Typography>
+                                    <Typography id="modal-desc" textColor="text.tertiary">
+                                        Make sure to use <code>aria-labelledby</code> on the modal dialog with an
+                                        optional <code>aria-describedby</code> attribute.
+                                    </Typography>
+                                    </Sheet>
                                 </Modal>
-                                )}
-                            </Transition>
                             </li>)
                         })}
                     </ul>
