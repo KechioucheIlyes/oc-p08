@@ -149,7 +149,7 @@ const Github = () => {
                                         </div>
                                     </div>
                                 </Link>
-                                <Button variant="outlined" color="neutral" onClick={() => setOpen(true)}>
+                                <Button variant="outlined" color="neutral" key={info.id} onClick={() => setOpen(true)}>
                                     Plus de details sur le projet {info.name}
                                 </Button>
                                 <Modal
@@ -179,10 +179,10 @@ const Github = () => {
                                         fontWeight="lg"
                                         mb={1}
                                     >
-                                    {console.log(info.name , index)}
+                                    
                                     </Typography>
                                     <Typography id="modal-desc" textColor="text.tertiary">
-                                        <code>aria-labelledby</code> on the modal dialog with an
+                                        {info.name} <code>aria-labelledby</code> on the modal dialog with an
                                         optional <code>aria-describedby</code> attribute.
                                     </Typography>
                                     </Sheet>
