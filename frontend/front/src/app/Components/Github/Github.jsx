@@ -30,7 +30,7 @@ import Sheet from '@mui/joy/Sheet';
 
 
 const Github = () => {
-    const [infos, setInfos] = useState()
+    const [infos, setInfos] = useState([])
     const [infos2, setInfos2] = useState([])
     const [isVisible, setIsVisible] = useState(false);
     const [isDataLoaded, setIsDataLoaded] = useState(false);
@@ -184,10 +184,11 @@ const Github = () => {
                                         fontWeight="lg"
                                         mb={1}
                                     >
-                                    
+                                    {infos ? infos.name : null }
                                     </Typography>
                                     <Typography id="modal-desc" textColor="text.tertiary">
-                                        {console.log(infos)}
+                                         <code>aria-labelledby</code> on the modal dialog with an
+                                        optional <code>aria-describedby</code> attribute.
                                     </Typography>
                                     </Sheet>
                                 </Modal>
