@@ -209,6 +209,16 @@ const Github = () => {
                                             <div className={styles.problematique}>
                                                 <h2><span className={styles.descriptif}> Problematiques  : </span> {infos ? infos.problematique : null} </h2> 
                                             </div>
+                                            <div className={styles.problematique}>
+                                                <h2><span className={styles.descriptif}> Techno  : </span> {infos ?  infos.pics_url ?  infos.Techno.map(tech => {
+                                                return (
+                                                    <div className={styles.tech}>
+                                                        <p>{tech}</p>
+                                                    </div>
+                                                )
+                                            }) : null  : null} </h2> 
+                                            </div>
+                                            
                                         </div>
 
                                         </div>
