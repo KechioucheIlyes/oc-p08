@@ -211,7 +211,10 @@
             "push": true,
             "triage": true,
             "pull": true
-        }
+        },
+        "mission" : "" , 
+        "Techno" : [""], 
+        "problematique" : ""
     },
     {
         "id": 635490084,
@@ -318,7 +321,10 @@
             "push": true,
             "triage": true,
             "pull": true
-        }
+        },
+        "mission" : "" , 
+        "Techno" : [""], 
+        "problematique" : ""
     },
     {
         "id": 684711727,
@@ -425,7 +431,10 @@
             "push": true,
             "triage": true,
             "pull": true
-        }
+        },
+        "mission" : "" , 
+        "Techno" : [""], 
+        "problematique" : ""
     },
     {
         "id": 667050079,
@@ -532,7 +541,10 @@
             "push": true,
             "triage": true,
             "pull": true
-        }
+        },
+        "mission" : "" , 
+        "Techno" : [""], 
+        "problematique" : ""
     },
     {
         "id": 648561596,
@@ -639,7 +651,10 @@
             "push": true,
             "triage": true,
             "pull": true
-        }
+        },
+        "mission" : "" , 
+        "Techno" : [""], 
+        "problematique" : ""
     },
     {
         "id": 605942838,
@@ -746,7 +761,10 @@
             "push": true,
             "triage": true,
             "pull": true
-        }
+        },
+        "mission" : "" , 
+        "Techno" : [""], 
+        "problematique" : ""
     },
     {
         "id": 670221420,
@@ -853,6 +871,9 @@
             "push": true,
             "triage": true,
             "pull": true
-        }
+        },
+        "mission" : "" , 
+        "Techno" : [""], 
+        "problematique" : ""
     }
 ]
