@@ -162,10 +162,11 @@ const Github = () => {
                                     <Sheet
                                     variant="outlined"
                                     sx={{
-                                        maxWidth: '90%',
+                                        maxWidth: '500',
                                         borderRadius: 'md',
                                         p: 3,
                                         boxShadow: 'lg',
+                                        width : '100%'
                                     }}
                                     >
                                     <ModalClose variant="plain" sx={{ m: 1 }} />
