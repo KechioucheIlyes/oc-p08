@@ -105,14 +105,14 @@
             "triage": true,
             "pull": true
         },
-        "mission" : "testttt" , 
-        "Techno" : [""], 
+        "mission" : "Projet réalisé dans le cadre de ma formation OpenClassrooms en tant que developpeur web. Développement du front-end du site de location d’hébergements Booki." , 
+        "Techno" : ["HTML , CSS , "], 
         "problematique" : "test-2",
-        "annee" : "" , 
+        "annee" : "2023" , 
         "pics_url" : [
-            "frontend/front/src/app/assets/API.png" , 
-            "frontend/front/src/app/assets/API-2.png" ,
-            "frontend/front/src/app/assets/API-3.png"
+            "../../assets/Booki.png" , 
+            "../../assets/Booki.png" ,
+            "../../assets/Booki.png"
         ]
     },
     {
