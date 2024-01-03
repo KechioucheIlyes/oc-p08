@@ -30,7 +30,7 @@ import Sheet from '@mui/joy/Sheet';
 
 
 const Github = () => {
-    const [infos, setInfos] = useState([])
+    const [infos, setInfos] = useState()
     const [infos2, setInfos2] = useState([])
     const [isVisible, setIsVisible] = useState(false);
     const [isDataLoaded, setIsDataLoaded] = useState(false);
