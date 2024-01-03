@@ -179,6 +179,7 @@ const Github = () => {
                                         mb={1}
                                     >
                                         {info.name}
+                                        {info.language}
                                     </Typography>
                                     <Typography id="modal-desc" textColor="text.tertiary">
                                         Make sure to use <code>aria-labelledby</code> on the modal dialog with an
