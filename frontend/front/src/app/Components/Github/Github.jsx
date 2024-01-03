@@ -201,13 +201,13 @@ const Github = () => {
 
                                         <div className={styles.modalText}>
                                             <div className={styles.annee}>
-                                            {infos ? infos.annee : null}  
+                                            <h2> <span className={styles.descriptif}> Année : </span>  {infos ? infos.annee : null}  </h2>  
                                             </div>
                                             <div className={styles.mission}>
-                                                {infos ? infos.mission : null}  
+                                                <h2><span className={styles.descriptif}> Mission : </span> {infos ? infos.mission : null}  </h2>  
                                             </div>
                                             <div className={styles.problematique}>
-                                                {infos ? infos.problematique : null}
+                                                <h2><span className={styles.descriptif}> Problematiques  : </span> {infos ? infos.problematique : null} </h2> 
                                             </div>
                                         </div>
 

@@ -367,6 +367,8 @@
     h1{
         background-color: black;
         color: #fff;
+        font-size: 24px;
+        padding: 2px 20px;
     }
 }
 .MuiModal-backdrop.css-1ifpbx4{
@@ -395,4 +397,12 @@
     border: 1px solid green;
     width: 50%;
     
+}
+
+.descriptif{
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    padding: 2px 20px;
+    text-decoration: underline;
 }
