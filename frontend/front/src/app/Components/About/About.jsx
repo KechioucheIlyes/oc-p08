@@ -52,7 +52,7 @@ const About = () => {
                 </div>
 
                 <div className='btns-container'>
-                    <button className={styles.btnBlackAndWhite} ><Link className={styles.link} href={"#"}>Contact</Link> </button>
+                    <button className={styles.btnBlackAndWhite} ><Link className={styles.link} href={"mailto:rayanilyes75@gmail.com"}>Contact</Link> </button>
                     <Link className={styles.btnWhiteAndBlack} href={"https://github.com/KechioucheIlyes"} target='_blank'><Image src={github} width={20} height={20} alt='github' priority /> Github</Link>
 
                 </div>
