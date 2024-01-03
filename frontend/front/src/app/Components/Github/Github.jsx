@@ -37,6 +37,11 @@ const Github = () => {
     const [test, setTest] = useState([])
     const [open, setOpen] = useState(false);
 
+    const handleOpen = (info) => {
+        setOpen(true)
+        alert(info.name)
+    }
+
 
     const handleOpenModal = () => {
         alert("modal")
@@ -149,7 +154,7 @@ const Github = () => {
                                         </div>
                                     </div>
                                 </Link>
-                                <Button variant="outlined" color="neutral" key={info.id} onClick={() => setOpen(true)}>
+                                <Button variant="outlined" color="neutral" key={info.id} onClick={() => handleOpen(info)}>
                                     Plus de details sur le projet {info.name}
                                 </Button>
                                 <Modal
