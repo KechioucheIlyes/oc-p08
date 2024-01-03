@@ -20,6 +20,9 @@
 .cardsContainer .githubList .githubItem {
   margin-bottom: 20px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .cardsContainer .githubList .githubItem .card {
   text-decoration: none;

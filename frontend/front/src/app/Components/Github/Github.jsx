@@ -77,7 +77,7 @@ const Github = () => {
 
                         {fichierGit.map((info, index) => {
                             return (<li className={styles.githubItem} key={info.id}>
-                                <div onClick={handleOpenModal}  className={styles.card}>
+                                <Link href={`${info.html_url}`} target='_blank' className={styles.card}>
                                     <div className={styles.cardHeader}>
                                         {info.name === "BOOKI" ? (<Image className={styles.imageCard} src={bookiPic} width={350} height={200} priority alt={`${info.name}-image`} />) :
                                             info.name === "Mail-Scrap-Mini-project" ? (<Image className={styles.imageCard} src={ScrapPic} width={350} height={200} priority alt={`${info.name}-image`} />) :
@@ -150,9 +150,9 @@ const Github = () => {
                                     </div>
 
 
-                                </div>
+                                </Link>
                                 <Button variant="outlined" color="neutral" onClick={() => setOpen(true)}>
-                                    Open modal
+                                    Plus de details
                                 </Button>
                                 <Modal
                                     aria-labelledby="modal-title"
