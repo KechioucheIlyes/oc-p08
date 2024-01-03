@@ -187,7 +187,7 @@ const Github = () => {
                                         mb={1}
                                     >
                                     <div className={styles.modalTitle}>
-                                      {infos ? infos.name : null }
+                                      <h1>{infos ? infos.name : null }</h1> 
                                         </div> 
                                     </Typography>
                                     <Typography id="modal-desc" textColor="text.tertiary">

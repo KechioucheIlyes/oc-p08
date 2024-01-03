@@ -252,6 +252,10 @@
   align-items: center;
   justify-content: center;
 }
+.modalTitle h1 {
+  background-color: black;
+  color: #fff;
+}
 
 .MuiModal-backdrop.css-1ifpbx4 {
   z-index: -1;
