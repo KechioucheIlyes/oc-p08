@@ -178,7 +178,7 @@ const Github = () => {
                                         fontWeight="lg"
                                         mb={1}
                                     >
-                                        {console.log(info.name)}
+                                        {console.log(info[0].name)}
                                     </Typography>
                                     <Typography id="modal-desc" textColor="text.tertiary">
                                         {info.name} <code>aria-labelledby</code> on the modal dialog with an
