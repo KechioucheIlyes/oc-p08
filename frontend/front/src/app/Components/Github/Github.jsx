@@ -78,40 +78,6 @@ const Github = () => {
                         {fichierGit.map((info, index) => {
                             return (<li className={styles.githubItem} key={info.id}>
                                 <Link href={`${info.html_url}`} target='_blank' className={styles.card}>
-                                <Modal
-                                    aria-labelledby="modal-title"
-                                    aria-describedby="modal-desc"
-                                    open={open}
-                                    onClose={() => setOpen(false)}
-                                    sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-                                >
-                                    <Sheet
-                                    variant="outlined"
-                                    sx={{
-                                        maxWidth: '500',
-                                        borderRadius: 'md',
-                                        p: 3,
-                                        boxShadow: 'lg',
-                                        width : '90%'
-                                    }}
-                                    >
-                                    <ModalClose variant="plain" sx={{ m: 1 }} />
-                                    <Typography
-                                        component="h2"
-                                        id="modal-title"
-                                        level="h4"
-                                        textColor="inherit"
-                                        fontWeight="lg"
-                                        mb={1}
-                                    >
-                                        
-                                    </Typography>
-                                    <Typography id="modal-desc" textColor="text.tertiary">
-                                        {info.name} <code>aria-labelledby</code> on the modal dialog with an
-                                        optional <code>aria-describedby</code> attribute.
-                                    </Typography>
-                                    </Sheet>
-                                </Modal>
                                     <div className={styles.cardHeader}>
                                         {info.name === "BOOKI" ? (<Image className={styles.imageCard} src={bookiPic} width={350} height={200} priority alt={`${info.name}-image`} />) :
                                             info.name === "Mail-Scrap-Mini-project" ? (<Image className={styles.imageCard} src={ScrapPic} width={350} height={200} priority alt={`${info.name}-image`} />) :
@@ -186,7 +152,41 @@ const Github = () => {
                                 <Button variant="outlined" color="neutral" onClick={() => setOpen(true)}>
                                     Plus de details sur le projet
                                 </Button>
-                                
+                                <Modal
+                                    key={info.id}
+                                    aria-labelledby="modal-title"
+                                    aria-describedby="modal-desc"
+                                    open={open}
+                                    onClose={() => setOpen(false)}
+                                    sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                                >
+                                    <Sheet
+                                    variant="outlined"
+                                    sx={{
+                                        maxWidth: '500',
+                                        borderRadius: 'md',
+                                        p: 3,
+                                        boxShadow: 'lg',
+                                        width : '90%'
+                                    }}
+                                    >
+                                    <ModalClose variant="plain" sx={{ m: 1 }} />
+                                    <Typography
+                                        component="h2"
+                                        id="modal-title"
+                                        level="h4"
+                                        textColor="inherit"
+                                        fontWeight="lg"
+                                        mb={1}
+                                    >
+                                        
+                                    </Typography>
+                                    <Typography id="modal-desc" textColor="text.tertiary">
+                                        {info.name} {info.id} <code>aria-labelledby</code> on the modal dialog with an
+                                        optional <code>aria-describedby</code> attribute.
+                                    </Typography>
+                                    </Sheet>
+                                </Modal>
                             </li>)
                         })}
                     </ul>
