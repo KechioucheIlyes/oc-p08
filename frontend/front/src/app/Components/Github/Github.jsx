@@ -123,7 +123,7 @@ const Github = () => {
                                         </div>
                                         <div className={`${styles.first}`}></div>
                                         <div className={styles.cardBody}>
-                                            <div className={styles.cardTitle}><History /> <span>{info[index]} commits </span> </div>
+                                            <div className={styles.cardTitle}><History /> <span>{info[index]} commit </span> </div>
                                             <div className={`${styles.cardText} ${styles.second}`}>
                                                 {info.stargazers_count}
                                                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" className={styles.star}>
