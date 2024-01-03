@@ -195,7 +195,7 @@ const Github = () => {
                                          
                                         <div className={styles.modalPic} >
                                             {infos ?  infos.pics_url ? infos.pics_url.map(pics => {
-                                                return <Image src={pics} height={100} width={100} alt ="pics" priority/>
+                                                return <Image src={`https://kechioucheilyes.vercel.app/${pics}`} height={100} width={100} alt ="pics" priority/>
                                             }) : null  : null}
                                         </div>
 
