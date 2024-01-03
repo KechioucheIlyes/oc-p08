@@ -65,7 +65,6 @@ const Github = () => {
 
                         {fichierGit.map((info, index) => {
                             return (<li className={styles.githubItem} key={info.id}>
-                                <Link href={`${info.html_url}`} target='_blank' className={styles.card}>
                                     <div className={styles.cardHeader}>
                                         {info.name === "BOOKI" ? (<Image className={styles.imageCard} src={bookiPic} width={350} height={200} priority alt={`${info.name}-image`} />) :
                                             info.name === "Mail-Scrap-Mini-project" ? (<Image className={styles.imageCard} src={ScrapPic} width={350} height={200} priority alt={`${info.name}-image`} />) :
@@ -138,7 +137,7 @@ const Github = () => {
                                     </div>
 
 
-                                </Link>
+                                
                             </li>)
                         })}
                     </ul>
