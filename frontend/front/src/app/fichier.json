@@ -108,7 +108,11 @@
         "mission" : "testttt" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
+        "pics_url" : [
+            "frontend/front/src/app/assets/API.png" , 
+            "frontend/front/src/app/assets/API-2.png" ,
+            "frontend/front/src/app/assets/API-3.png"
+        ]
     },
     {
         "id": 669539194,
@@ -219,8 +223,11 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
-    },
+        "pics_url" : [
+            "frontend/front/src/app/assets/API.png" , 
+            "frontend/front/src/app/assets/API-2.png" ,
+            "frontend/front/src/app/assets/API-3.png"
+        ]    },
     {
         "id": 635490084,
         "node_id": "R_kgDOJeDPJA",
@@ -330,8 +337,11 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
-    },
+        "pics_url" : [
+            "frontend/front/src/app/assets/API.png" , 
+            "frontend/front/src/app/assets/API-2.png" ,
+            "frontend/front/src/app/assets/API-3.png"
+        ]    },
     {
         "id": 684711727,
         "node_id": "R_kgDOKM_fLw",
@@ -441,8 +451,11 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
-    },
+        "pics_url" : [
+            "frontend/front/src/app/assets/API.png" , 
+            "frontend/front/src/app/assets/API-2.png" ,
+            "frontend/front/src/app/assets/API-3.png"
+        ]    },
     {
         "id": 667050079,
         "node_id": "R_kgDOJ8JgXw",
@@ -552,8 +565,11 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
-    },
+        "pics_url" : [
+            "frontend/front/src/app/assets/API.png" , 
+            "frontend/front/src/app/assets/API-2.png" ,
+            "frontend/front/src/app/assets/API-3.png"
+        ]    },
     {
         "id": 648561596,
         "node_id": "R_kgDOJqhDvA",
@@ -663,8 +679,11 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
-    },
+        "pics_url" : [
+            "frontend/front/src/app/assets/API.png" , 
+            "frontend/front/src/app/assets/API-2.png" ,
+            "frontend/front/src/app/assets/API-3.png"
+        ]    },
     {
         "id": 605942838,
         "node_id": "R_kgDOJB30Ng",
@@ -774,7 +793,11 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
+        "pics_url" : [
+            "frontend/front/src/app/assets/API.png" , 
+            "frontend/front/src/app/assets/API-2.png" ,
+            "frontend/front/src/app/assets/API-3.png"
+        ]
     },
     {
         "id": 670221420,
@@ -885,6 +908,10 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
-    }
+        "pics_url" : [
+            "frontend/front/src/app/assets/API.png" , 
+            "frontend/front/src/app/assets/API-2.png" ,
+            "frontend/front/src/app/assets/API-3.png"
+        ]
+        }
 ]
