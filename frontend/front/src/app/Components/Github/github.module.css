@@ -246,4 +246,10 @@
     text-align: center;
     font-size: 30px;
   }
+}
+.modalTitle {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=github.module.css.map */
