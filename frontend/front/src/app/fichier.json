@@ -111,8 +111,8 @@
         "annee" : "2023" , 
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
-            "../../assets/Booki.png" ,
-            "../../assets/Booki.png"
+            "frontend/front/src/app/assets/api.svg" ,
+            "../../assets/P07.png"
         ]
     },
     {
