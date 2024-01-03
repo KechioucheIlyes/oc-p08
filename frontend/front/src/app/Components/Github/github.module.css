@@ -24,7 +24,7 @@
 .cardsContainer .githubList .githubItem .card {
   text-decoration: none;
   color: black;
-  border: 1px solid #ccc;
+  border: 10px solid red;
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   width: 350px;

@@ -384,4 +384,12 @@
   .btnWhiteAndBlack img {
     height: 8px;
   }
+}
+::-moz-selection {
+  color: black !important;
+  background-color: whitesmoke !important;
+}
+::selection {
+  color: black !important;
+  background-color: whitesmoke !important;
 }/*# sourceMappingURL=about.module.css.map */

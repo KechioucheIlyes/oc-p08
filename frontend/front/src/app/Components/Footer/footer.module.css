@@ -494,4 +494,8 @@
   background-color: #ae2929 !important;
   transform: scale(1.1);
   color: white;
+}
+
+#contact {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=footer.module.css.map */
