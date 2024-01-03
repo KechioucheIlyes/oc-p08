@@ -39,7 +39,7 @@ const Github = () => {
 
     const handleOpen = (info) => {
         setOpen(true)
-        alert(info.name)
+        setInfos(info)
     }
 
 
@@ -187,8 +187,9 @@ const Github = () => {
                                     
                                     </Typography>
                                     <Typography id="modal-desc" textColor="text.tertiary">
-                                        {info.name} <code>aria-labelledby</code> on the modal dialog with an
-                                        optional <code>aria-describedby</code> attribute.
+                                        {infos.map(el => {
+                                            return <p>{el}</p>
+                                        })}
                                     </Typography>
                                     </Sheet>
                                 </Modal>
