@@ -104,7 +104,11 @@
             "push": true,
             "triage": true,
             "pull": true
-        }
+        },
+        "mission" : "" , 
+        "Techno" : [""], 
+        "problematique" : "",
+        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
     },
     {
         "id": 669539194,
@@ -214,7 +218,8 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : ""
+        "problematique" : "",
+        "pics_url" : [""]
     },
     {
         "id": 635490084,
@@ -324,7 +329,8 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : ""
+        "problematique" : "",
+        "pics_url" : [""]
     },
     {
         "id": 684711727,
@@ -434,7 +440,8 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : ""
+        "problematique" : "",
+        "pics_url" : [""]
     },
     {
         "id": 667050079,
@@ -544,7 +551,8 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : ""
+        "problematique" : "",
+        "pics_url" : [""]
     },
     {
         "id": 648561596,
@@ -654,7 +662,8 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : ""
+        "problematique" : "",
+        "pics_url" : [""]
     },
     {
         "id": 605942838,
@@ -764,7 +773,8 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : ""
+        "problematique" : "",
+        "pics_url" : [""]
     },
     {
         "id": 670221420,
@@ -874,6 +884,7 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
-        "problematique" : ""
+        "problematique" : "",
+        "pics_url" : [""]
     }
 ]
