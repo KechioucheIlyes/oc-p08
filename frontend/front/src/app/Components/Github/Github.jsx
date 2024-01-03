@@ -135,7 +135,7 @@ const Github = () => {
                                         </div>
                                         <div className={`${styles.first}`}></div>
                                         <div className={styles.cardBody}>
-                                            <div className={styles.cardTitle}><History /> <span>{info[index]} commit </span> </div>
+                                            <div className={styles.cardTitle}><History /> <span>30 commits </span> </div>
                                             <div className={`${styles.cardText} ${styles.second}`}>
                                                 {info.stargazers_count}
                                                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" className={styles.star}>
@@ -150,10 +150,10 @@ const Github = () => {
                                     </div>
                                 </Link>
                                 <Button variant="outlined" color="neutral" onClick={() => setOpen(true)}>
-                                    Plus de details sur le projet
+                                    Plus de details sur le projet {info.name}
                                 </Button>
                                 <Modal
-                                    key={info.id}
+                                    
                                     aria-labelledby="modal-title"
                                     aria-describedby="modal-desc"
                                     open={open}
