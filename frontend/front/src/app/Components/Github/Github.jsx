@@ -30,7 +30,7 @@ import Sheet from '@mui/joy/Sheet';
 
 
 const Github = () => {
-    const [infos, setInfos] = useState([])
+    const [infos, setInfos] = useState()
     const [infos2, setInfos2] = useState([])
     const [isVisible, setIsVisible] = useState(false);
     const [isDataLoaded, setIsDataLoaded] = useState(false);
@@ -193,7 +193,7 @@ const Github = () => {
                                          <code>aria-labelledby</code> on the modal dialog with an
                                         optional <code>aria-describedby</code> attribute.
                                         <div className={styles.modalPic} >
-                                            {infos ? infos.pics_url : null}
+                                            
                                         </div>
 
                                         <div className={styles.modalText}>
