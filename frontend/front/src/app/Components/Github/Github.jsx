@@ -192,8 +192,7 @@ const Github = () => {
                                     </Typography>
                                     <Typography id="modal-desc" textColor="text.tertiary">
                                         <div className={styles.modalContainer}>
-                                         <code>aria-labelledby</code> on the modal dialog with an
-                                        optional <code>aria-describedby</code> attribute.
+                                         
                                         <div className={styles.modalPic} >
                                             {infos ?  infos.pics_url ? infos.pics_url.map(pics => {
                                                 return <Image src={pics} height={100} width={100} alt ="pics" priority/>
