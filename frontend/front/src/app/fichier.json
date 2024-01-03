@@ -108,6 +108,7 @@
         "mission" : "testttt" , 
         "Techno" : [""], 
         "problematique" : "test-2",
+        "annee" : "" , 
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -221,6 +222,7 @@
             "pull": true
         },
         "mission" : "" , 
+        "annee" : "" , 
         "Techno" : [""], 
         "problematique" : "test-2",
         "pics_url" : [
@@ -336,6 +338,7 @@
         },
         "mission" : "" , 
         "Techno" : [""], 
+        "annee" : "" , 
         "problematique" : "test-2",
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
@@ -451,6 +454,7 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "test-2",
+        "annee" : "" , 
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -565,6 +569,7 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "test-2",
+        "annee" : "" , 
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -679,6 +684,7 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "test-2",
+        "annee" : "" , 
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -793,6 +799,7 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "test-2",
+        "annee" : "" , 
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -908,6 +915,7 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "test-2",
+        "annee" : "" , 
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,

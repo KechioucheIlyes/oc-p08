@@ -172,7 +172,7 @@ const Github = () => {
                                         borderRadius: 'md',
                                         p: 3,
                                         boxShadow: 'lg',
-                                        width : '90%',
+                                        width : '70%',
                                         maxHeight : "90%",
                                         height : "80%"
                                     }}
@@ -200,8 +200,15 @@ const Github = () => {
                                         </div>
 
                                         <div className={styles.modalText}>
-                                            {infos ? infos.mission : null}
-                                            {infos ? infos.problematique : null}
+                                            <div className={styles.annee}>
+                                            {infos ? infos.annee : null}  
+                                            </div>
+                                            <div className={styles.mission}>
+                                                {infos ? infos.mission : null}  
+                                            </div>
+                                            <div className={styles.problematique}>
+                                                {infos ? infos.problematique : null}
+                                            </div>
                                         </div>
 
                                         </div>
