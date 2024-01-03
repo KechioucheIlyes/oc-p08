@@ -31,6 +31,7 @@
   padding: 16px;
   background-color: #fff;
   height: 330px;
+  cursor: pointer;
 }
 .cardsContainer .githubList .githubItem .card .cardHeader {
   height: 150px;
