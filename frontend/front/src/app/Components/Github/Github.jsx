@@ -150,7 +150,7 @@ const Github = () => {
                                     </div>
                                 </Link>
                                 <Button variant="outlined" color="neutral" onClick={() => setOpen(true)}>
-                                    Plus de details sur le projet
+                                    Plus de details sur le projet {info.name}
                                 </Button>
                                 <Modal
                                     aria-labelledby="modal-title"
