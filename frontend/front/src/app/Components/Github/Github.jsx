@@ -172,7 +172,9 @@ const Github = () => {
                                         borderRadius: 'md',
                                         p: 3,
                                         boxShadow: 'lg',
-                                        width : '90%'
+                                        width : '90%',
+                                        maxHeight : "90%",
+                                        height : "80%"
                                     }}
                                     >
                                     <ModalClose variant="plain" sx={{ m: 1 }} />
