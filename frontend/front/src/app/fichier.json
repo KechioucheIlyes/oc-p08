@@ -105,7 +105,7 @@
             "triage": true,
             "pull": true
         },
-        "mission" : "" , 
+        "mission" : "testttt" , 
         "Techno" : [""], 
         "problematique" : "",
         "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
@@ -219,7 +219,7 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : [""]
+        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
     },
     {
         "id": 635490084,
@@ -330,7 +330,7 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : [""]
+        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
     },
     {
         "id": 684711727,
@@ -441,7 +441,7 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : [""]
+        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
     },
     {
         "id": 667050079,
@@ -552,7 +552,7 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : [""]
+        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
     },
     {
         "id": 648561596,
@@ -663,7 +663,7 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : [""]
+        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
     },
     {
         "id": 605942838,
@@ -774,7 +774,7 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : [""]
+        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
     },
     {
         "id": 670221420,
@@ -885,6 +885,6 @@
         "mission" : "" , 
         "Techno" : [""], 
         "problematique" : "",
-        "pics_url" : [""]
+        "pics_url" : ["frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png" , "frontend/front/src/app/assets/API.png"]
     }
 ]
