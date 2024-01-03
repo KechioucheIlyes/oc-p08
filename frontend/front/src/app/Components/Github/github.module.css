@@ -268,13 +268,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  height: 100%;
 }
 
 .modalPic {
   border: 1px solid black;
+  width: 50%;
 }
 
 .modalText {
   border: 1px solid green;
+  width: 50%;
 }/*# sourceMappingURL=github.module.css.map */
