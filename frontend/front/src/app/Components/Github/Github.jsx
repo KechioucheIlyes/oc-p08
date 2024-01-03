@@ -166,7 +166,7 @@ const Github = () => {
                                         borderRadius: 'md',
                                         p: 3,
                                         boxShadow: 'lg',
-                                        width : '100%'
+                                        width : '90%'
                                     }}
                                     >
                                     <ModalClose variant="plain" sx={{ m: 1 }} />
@@ -179,7 +179,6 @@ const Github = () => {
                                         mb={1}
                                     >
                                         {info.name}
-                                        {info.language}
                                     </Typography>
                                     <Typography id="modal-desc" textColor="text.tertiary">
                                         Make sure to use <code>aria-labelledby</code> on the modal dialog with an
