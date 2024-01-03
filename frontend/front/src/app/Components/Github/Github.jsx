@@ -179,10 +179,10 @@ const Github = () => {
                                         fontWeight="lg"
                                         mb={1}
                                     >
-                                        
+                                    {console.log(info.name)}
                                     </Typography>
                                     <Typography id="modal-desc" textColor="text.tertiary">
-                                        {info.name} {info.id} <code>aria-labelledby</code> on the modal dialog with an
+                                        <code>aria-labelledby</code> on the modal dialog with an
                                         optional <code>aria-describedby</code> attribute.
                                     </Typography>
                                     </Sheet>
