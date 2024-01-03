@@ -110,8 +110,8 @@
         "problematique" : "test-2",
         "annee" : "2023" , 
         "pics_url" : [
-            "frontend/front/src/app/assets/API.png" , 
-            "frontend/front/src/app/assets/api.svg" ,
+            "frontend/front/src/app/assets/Booki.png" , 
+            "frontend/front/src/app/assets/Booki.pngfrontend/front/src/app/assets/Booki.png" ,
             "../../assets/P07.png"
         ]
     },
