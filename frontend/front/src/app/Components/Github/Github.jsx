@@ -162,7 +162,7 @@ const Github = () => {
                                     <Sheet
                                     variant="outlined"
                                     sx={{
-                                        maxWidth: 500,
+                                        maxWidth: '90%',
                                         borderRadius: 'md',
                                         p: 3,
                                         boxShadow: 'lg',
