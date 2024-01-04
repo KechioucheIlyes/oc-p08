@@ -37,7 +37,13 @@ import carducci3 from "../../assets/carducci/nina-carducci-picture-3.webp"
 import sophie1 from "../../assets/Sophie/sophie-bluel-picture-1.webp"
 import sophie2 from "../../assets/Sophie/sophie-bluel-picture-2.webp"
 import sophie3 from "../../assets/Sophie/sophie-bluel-picture-3.webp"
-
+import mvg1 from "../../assets/MVG/mon-vieux-grimoire-picture-1.webp"
+import mvg2 from "../../assets/MVG/mon-vieux-grimoire-picture-2.webp"
+import mvg3 from "../../assets/MVG/mon-vieux-grimoire-picture-3.webp"
+import kasa1 from "../../assets/Kasa/kasa-picture-1.webp"
+import kasa2 from "../../assets/Kasa/kasa-picture-2.webp"
+import kasa3 from "../../assets/Kasa/kasa-picture-3.webp"
+import kasa4 from "../../assets/Kasa/kasa-picture-4.webp"
 
 const Github = () => {
     const [infos, setInfos] = useState()
@@ -68,9 +74,9 @@ const Github = () => {
         carducci3
     ]
     const p07_oc = [
-        sophie1,
-        sophie2,
-        sophie3
+        mvg1,
+        mvg2,
+        mvg3
     ]
     const p08_oc = [
         sophie1,
@@ -78,9 +84,11 @@ const Github = () => {
         sophie3
     ]
     const p06_oc = [
-        sophie1,
-        sophie2,
-        sophie3
+        kasa1,
+        kasa2,
+        kasa3,
+        kasa4,
+        
     ]
     const p03_oc = [
         sophie1,
@@ -88,9 +96,7 @@ const Github = () => {
         sophie3
     ]
     const todo_list = [
-        sophie1,
-        sophie2,
-        sophie3
+        ViteTodo
     ]
 
 
