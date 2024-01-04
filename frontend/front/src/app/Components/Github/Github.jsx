@@ -44,7 +44,10 @@ import kasa1 from "../../assets/Kasa/kasa-picture-1.webp"
 import kasa2 from "../../assets/Kasa/kasa-picture-2.webp"
 import kasa3 from "../../assets/Kasa/kasa-picture-3.webp"
 import kasa4 from "../../assets/Kasa/kasa-picture-4.webp"
-
+import portfolio1 from "../../assets/portfolio/portfolio1.png"
+import portfolio2 from "../../assets/portfolio/portfolio2.png"
+import portfolio3 from "../../assets/portfolio/portfolio3.png"
+import portfolio4 from "../../assets/portfolio/portfolio4.png"
 const Github = () => {
     const [infos, setInfos] = useState()
     const [infos2, setInfos2] = useState([])
@@ -79,9 +82,10 @@ const Github = () => {
         mvg3
     ]
     const p08_oc = [
-        sophie1,
-        sophie2,
-        sophie3
+        portfolio1,
+        portfolio2,
+        portfolio3,
+        portfolio4,
     ]
     const p06_oc = [
         kasa1,
