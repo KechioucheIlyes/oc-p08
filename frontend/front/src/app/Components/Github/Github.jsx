@@ -215,7 +215,7 @@ const Github = () => {
                                 </Button>
                                 <div className="custom-modal">
                                     <div className="modal-content">
-                                        <button className="modal-close" onClick={onClose}>
+                                        <button className="modal-close" onClick={() => setOpen(false)}>
                                         Close
                                         </button>
                                         <h1>{infos ? infos.name : null}</h1>
