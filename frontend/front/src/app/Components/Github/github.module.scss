@@ -360,52 +360,73 @@
     }
 }
 
-.modalTitle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h1{
-        background-color: black;
-        color: #fff;
-        font-size: 24px;
-        padding: 2px 20px;
-    }
-}
-.MuiModal-backdrop.css-1ifpbx4{
-    z-index: -1;
+
+.customModal {
     position: fixed;
-    inset: 0;
-    background-color: var(--joy-palette-background-backdrop, rgba(var(--joy-palette-neutral-darkChannel, 11 13 14) / -0.75)) !important;
-    -webkit-tap-highlight-color: transparent;
-    backdrop-filter: blur(1px) !important;
-}
-.modalContainer{
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    overflow: scroll;
-}
-
-
-.modalPic{
-    border: 1px solid black;
-    width: 50%;
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  /* Style for the modal content */
+  .modalContent {
+    background: white;
+    max-width: 500px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Style for the close button */
+  .modalClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Style for project name */
+  .modalContent h1 {
+    margin-bottom: 10px;
+  }
+  
+  /* Style for images in the modal */
+  .modalPics img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the text content */
+  .modal-text {
+    margin-top: 20px;
+  }
+  
+  /* Style for different sections in the text content */
+  .modal-text h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the technology section */
+  .modalText .techno {
+    display: flex;
     flex-wrap: wrap;
-}
-
-.modalText{
-    border: 1px solid green;
-    width: 50%;
-    
-}
-
-.descriptif{
-    
-    font-size: 18px;
-    padding: 2px 20px;
-    text-decoration: underline;
-}
+  }
+  
+  .modalText .tech {
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }

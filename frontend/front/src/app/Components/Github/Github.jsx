@@ -213,14 +213,14 @@ const Github = () => {
                                 <Button variant="outlined" color="neutral" key={info.id} onClick={() => handleOpen(info)}>
                                     Plus de details sur ce projet 
                                 </Button>
-                                {open ? (<div className="custom-modal">
-                                    <div className="modal-content">
-                                        <button className="modal-close" onClick={() => setOpen(false)}>
+                                {open ? (<div className= {styles.customModal}>
+                                    <div className= {styles.modalContent}>
+                                        <button className={styles.modalClose} onClick={() => setOpen(false)}>
                                         Close
                                         </button>
                                         <h1>{infos ? infos.name : null}</h1>
 
-                                        <div className="modal-pics">
+                                        <div  className={styles.modalPics}>
                                         {infos ? (
                                             <div>
                                             {infos.name === 'BOOKI' ? (
@@ -239,28 +239,28 @@ const Github = () => {
                                         ) : null}
                                         </div>
 
-                                        <div className="modal-text">
-                                        <div className="annee">
+                                        <div className={styles.modalText}>
+                                        <div className={styles.annee} >
                                             <h2>
-                                            <span className="descriptif">Année</span> : {infos ? infos.annee : null}
+                                            <span className={styles.descriptif}>Année</span> : {infos ? infos.annee : null}
                                             </h2>
                                         </div>
                                         <div className="mission">
                                             <h2>
-                                            <span className="descriptif">Mission</span> : {infos ? infos.mission : null}
+                                            <span className={styles.descriptif}>Mission</span> : {infos ? infos.mission : null}
                                             </h2>
                                         </div>
                                         <div className="problematique">
                                             <h2>
-                                            <span className="descriptif">Problematiques</span> : {infos ? infos.problematique : null}
+                                            <span className={styles.descriptif}>Problematiques</span> : {infos ? infos.problematique : null}
                                             </h2>
                                         </div>
                                         <div className="techno">
                                             <h2>
-                                            <span className="descriptif">Techno</span> :
+                                            <span className={styles.descriptif}>Techno</span> :
                                             {infos && infos.pics_url
                                                 ? infos.Techno.map((tech, index) => (
-                                                    <div key={index} className="tech">
+                                                    <div key={index} className={styles.tech}>
                                                     <p>{tech}</p>
                                                     </div>
                                                 ))
