@@ -219,7 +219,7 @@ const Github = () => {
                                     aria-describedby="modal-desc"
                                     open={open}
                                     onClose={() => setOpen(false)}
-                                    sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center'  }}
+                                    sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' , overflow : 'scroll'  }}
                                 >
                                     <Sheet
                                     variant="outlined"
