@@ -34,9 +34,9 @@ import booki4 from "../../assets/booki-pic/booki-4.png"
 import carducci1 from "../../assets/carducci/nina-carducci-picture-1.webp"
 import carducci2 from "../../assets/carducci/nina-carducci-picture-2.webp"
 import carducci3 from "../../assets/carducci/nina-carducci-picture-3.webp"
-import sophie1 from "../../assets/carducci/sophie-bluel-picture-1.webp"
-import sophie2 from "../../assets/carducci/sophie-bluel-picture-2.webp"
-import sophie3 from "../../assets/carducci/sophie-bluel-picture-3.webp"
+import sophie1 from "../../assets/Sophie/sophie-bluel-picture-1.webp"
+import sophie2 from "../../assets/Sophie/sophie-bluel-picture-2.webp"
+import sophie3 from "../../assets/Sophie/sophie-bluel-picture-3.webp"
 
 
 const Github = () => {
