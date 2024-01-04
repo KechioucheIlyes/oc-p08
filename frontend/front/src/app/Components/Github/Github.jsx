@@ -218,19 +218,19 @@ const Github = () => {
                                         <button className="modal-close" onClick={() => setOpen(false)}>
                                         Close
                                         </button>
-                                        <h1>{info ? info.name : null}</h1>
+                                        <h1>{infos ? infos.name : null}</h1>
 
                                         <div className="modal-pics">
-                                        {info ? (
+                                        {infos ? (
                                             <div>
-                                            {info.name === 'BOOKI' ? (
+                                            {infos.name === 'BOOKI' ? (
                                                 // Render images for BOOKI
-                                                info.pics_url.map((pic, index) => (
+                                                images_booki.map((pic, index) => (
                                                 <img key={index} src={pic} alt={`pic-${index}`} />
                                                 ))
-                                            ) : info.name === 'Mail-Scrap-Mini-project' ? (
+                                            ) : infos.name === 'Mail-Scrap-Mini-project' ? (
                                                 // Render images for Mail-Scrap-Mini-project
-                                                info.pics_url.map((pic, index) => (
+                                                mail_to_scrap.map((pic, index) => (
                                                 <img key={index} src={pic} alt={`pic-${index}`} />
                                                 ))
                                             ) : // Add conditions for other projects
@@ -242,24 +242,24 @@ const Github = () => {
                                         <div className="modal-text">
                                         <div className="annee">
                                             <h2>
-                                            <span className="descriptif">Année</span> : {info ? info.annee : null}
+                                            <span className="descriptif">Année</span> : {infos ? infos.annee : null}
                                             </h2>
                                         </div>
                                         <div className="mission">
                                             <h2>
-                                            <span className="descriptif">Mission</span> : {info ? info.mission : null}
+                                            <span className="descriptif">Mission</span> : {infos ? infos.mission : null}
                                             </h2>
                                         </div>
                                         <div className="problematique">
                                             <h2>
-                                            <span className="descriptif">Problematiques</span> : {info ? info.problematique : null}
+                                            <span className="descriptif">Problematiques</span> : {infos ? infos.problematique : null}
                                             </h2>
                                         </div>
                                         <div className="techno">
                                             <h2>
                                             <span className="descriptif">Techno</span> :
-                                            {info && info.pics_url
-                                                ? info.Techno.map((tech, index) => (
+                                            {infos && infos.pics_url
+                                                ? infos.Techno.map((tech, index) => (
                                                     <div key={index} className="tech">
                                                     <p>{tech}</p>
                                                     </div>
