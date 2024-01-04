@@ -214,7 +214,6 @@ const Github = () => {
                                     Plus de details sur le projet {index}
                                 </Button>
                                 <Modal
-                                    
                                     aria-labelledby="modal-title"
                                     aria-describedby="modal-desc"
                                     open={open}
@@ -229,8 +228,7 @@ const Github = () => {
                                         p: 3,
                                         boxShadow: 'lg',
                                         width : '70%',
-                                        maxHeight : "90%",
-                                        height : "80%"
+                                        
                                     }}
                                     >
                                     <ModalClose variant="plain" sx={{ m: 1 }} />
