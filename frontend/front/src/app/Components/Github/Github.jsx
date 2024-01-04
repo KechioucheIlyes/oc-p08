@@ -211,102 +211,65 @@ const Github = () => {
                                     </div>
                                 </Link>
                                 <Button variant="outlined" color="neutral" key={info.id} onClick={() => handleOpen(info)}>
-                                    Plus de details sur le projet {index}
+                                    Plus de details sur ce projet 
                                 </Button>
-                                <Modal
-                                    aria-labelledby="modal-title"
-                                    aria-describedby="modal-desc"
-                                    open={open}
-                                    onClose={() => setOpen(false)}
-                                    sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' , overflow : 'scroll'  }}
-                                >
-                                    <Sheet
-                                    variant="outlined"
-                                    sx={{
-                                        maxWidth: '500',
-                                        borderRadius: 'md',
-                                        p: 3,
-                                        boxShadow: 'lg',
-                                        width : '70%',
-                                        
-                                    }}
-                                    >
-                                    <ModalClose variant="plain" sx={{ m: 1 }} />
-                                    <Typography
-                                        component="h2"
-                                        id="modal-title"
-                                        level="h4"
-                                        textColor="inherit"
-                                        fontWeight="lg"
-                                        mb={1}
-                                    >
-                                    <div className={styles.modalTitle}>
-                                      <h1>{infos ? infos.name : null }</h1> 
-                                        </div> 
-                                    </Typography>
-                                    <Typography id="modal-desc" textColor="text.tertiary">
-                                        <div className={styles.modalContainer}>
-                                        {infos ? infos.name === "BOOKI" ? ( <div className={styles.modalPic} >
-                                            {images_booki.map(pics_2 => {
-                                                return <Image src={pics_2} height={180} width={330} alt ="pics" priority/>
-                                            }) }
-                                        </div> ) : infos.name === "Mail-Scrap-Mini-project" ? ( <div className={styles.modalPic} >
-                                            {mail_to_scrap.map(pics_2 => {
-                                                return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
-                                            }) } 
-                                        </div> ) : infos.name === "nina-carducci.github.io" ? ( <div className={styles.modalPic} >
-                                            {ninaCarducci.map(pics_2 => {
-                                                return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
-                                            }) } 
-                                        </div> ) : infos.name === "P07-OC" ? ( <div className={styles.modalPic} >
-                                            {p07_oc.map(pics_2 => {
-                                                return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
-                                            }) } 
-                                        </div> ) : infos.name === "P6-OC" ? ( <div className={styles.modalPic} >
-                                            {p06_oc.map(pics_2 => {
-                                                return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
-                                            }) } 
-                                        </div> ):  infos.name === "Projet_3_OC" ? ( <div className={styles.modalPic} >
-                                            {p03_oc.map(pics_2 => {
-                                                return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
-                                            }) } 
-                                        </div> ) : infos.name === "todo-list-VIte" ? ( <div className={styles.modalPic} >
-                                            {todo_list.map(pics_2 => {
-                                                return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
-                                            }) } 
-                                        </div> ) : infos.name === "oc-p08" ? ( <div className={styles.modalPic} >
-                                            {p08_oc.map(pics_2 => {
-                                                return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
-                                            }) } 
-                                        </div> ) : null : null} 
-                                        
+                                <div className="custom-modal">
+                                    <div className="modal-content">
+                                        <button className="modal-close" onClick={onClose}>
+                                        Close
+                                        </button>
+                                        <h1>{infos ? infos.name : null}</h1>
 
-                                        <div className={styles.modalText}>
-                                            <div className={styles.annee}>
-                                            <h2> <span className={styles.descriptif}> Année  </span> : {infos ? infos.annee : null}  </h2>  
+                                        <div className="modal-pics">
+                                        {infos ? (
+                                            <div>
+                                            {infos.name === 'BOOKI' ? (
+                                                // Render images for BOOKI
+                                                infos.images.map((pic, index) => (
+                                                <img key={index} src={pic} alt={`pic-${index}`} />
+                                                ))
+                                            ) : infos.name === 'Mail-Scrap-Mini-project' ? (
+                                                // Render images for Mail-Scrap-Mini-project
+                                                infos.mail_to_scrap.map((pic, index) => (
+                                                <img key={index} src={pic} alt={`pic-${index}`} />
+                                                ))
+                                            ) : // Add conditions for other projects
+                                            null}
                                             </div>
-                                            <div className={styles.mission}>
-                                                <h2><span className={styles.descriptif}> Mission </span> :  {infos ? infos.mission : null}  </h2>  
-                                            </div>
-                                            <div className={styles.problematique}>
-                                                <h2><span className={styles.descriptif}> Problematiques  </span> :  {infos ? infos.problematique : null} </h2> 
-                                            </div>
-                                            <div className={styles.problematique}>
-                                                <h2><span className={styles.descriptif}> Techno  </span> : {infos ?  infos.pics_url ?  infos.Techno.map(tech => {
-                                                return (
-                                                    <div className={styles.tech}>
-                                                        <p>{tech}</p>
+                                        ) : null}
+                                        </div>
+
+                                        <div className="modal-text">
+                                        <div className="annee">
+                                            <h2>
+                                            <span className="descriptif">Année</span> : {infos ? infos.annee : null}
+                                            </h2>
+                                        </div>
+                                        <div className="mission">
+                                            <h2>
+                                            <span className="descriptif">Mission</span> : {infos ? infos.mission : null}
+                                            </h2>
+                                        </div>
+                                        <div className="problematique">
+                                            <h2>
+                                            <span className="descriptif">Problematiques</span> : {infos ? infos.problematique : null}
+                                            </h2>
+                                        </div>
+                                        <div className="techno">
+                                            <h2>
+                                            <span className="descriptif">Techno</span> :
+                                            {infos && infos.pics_url
+                                                ? infos.Techno.map((tech, index) => (
+                                                    <div key={index} className="tech">
+                                                    <p>{tech}</p>
                                                     </div>
-                                                )
-                                            }) : null  : null} </h2> 
-                                            </div>
-                                            
+                                                ))
+                                                : null}
+                                            </h2>
                                         </div>
-
                                         </div>
-                                    </Typography>
-                                    </Sheet>
-                                </Modal>
+                                    </div>
+                                    </div>
                             </li>)
                         })}
                     </ul>
