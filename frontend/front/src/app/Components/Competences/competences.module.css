@@ -27,7 +27,7 @@
   color: white;
 }
 .competencesContainer .competencesContains .stacks .backendContainer .backend {
-  height: 130px;
+  height: 230px;
   width: 80%;
   border: 3px solid #ccc;
   border-radius: 20px;
@@ -46,7 +46,7 @@
   color: white;
 }
 .competencesContainer .competencesContains .stacks .frontContainer .frontend {
-  height: 130px;
+  height: 230px;
   width: 80%;
   border: 3px solid #ccc;
   border-radius: 20px;
@@ -64,7 +64,7 @@
   width: 100%;
   /* Ajustez en fonction de la largeur totale des images */
   overflow: hidden;
-  height: 100px;
+  height: 200px;
   /* Ajustez en fonction de la hauteur de vos images */
   display: flex;
 }
@@ -78,9 +78,16 @@
 
 .image-item {
   transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .image-item img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-item .progress {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -168,8 +175,8 @@
     top: 20px;
   }
   .competencesContainer img {
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 25px;
   }
   .competencesContainer .slide-animation {
     display: flex;
@@ -189,8 +196,22 @@
     justify-content: center;
     align-items: center;
   }
+  .progress {
+    height: 50px !important;
+    width: 50px !important;
+  }
 }
 /* Styles pour les tablettes (768px à 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .competencesContains img {
+    height: 30px !important;
+    width: 30px !important;
+  }
+  .competencesContains .progress {
+    height: 50px !important;
+    width: 50px !important;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 361px) {
   .svgContainer {
     position: relative;
