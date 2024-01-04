@@ -27,7 +27,10 @@ import Modal from '@mui/joy/Modal';
 import ModalClose from '@mui/joy/ModalClose';
 import Typography from '@mui/joy/Typography';
 import Sheet from '@mui/joy/Sheet';
-
+import booki1 from "../../assets/booki-pic/booki-1.png"
+import booki2 from "../../assets/booki-pic/booki-2.png"
+import booki3 from "../../assets/booki-pic/booki-3.png"
+import booki4 from "../../assets/booki-pic/booki-4.png"
 
 const Github = () => {
     const [infos, setInfos] = useState()
@@ -44,10 +47,10 @@ const Github = () => {
 
 
     const images_booki = [
-        Kasa, 
-        SCSS,
-        JS,
-        pythonSvg
+        booki1,
+        booki2,
+        booki3,
+        booki4
     ]
 
 
