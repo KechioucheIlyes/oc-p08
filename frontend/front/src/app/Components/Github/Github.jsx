@@ -225,12 +225,12 @@ const Github = () => {
                                             <div>
                                             {info.name === 'BOOKI' ? (
                                                 // Render images for BOOKI
-                                                info.images.map((pic, index) => (
+                                                info.pics_url.map((pic, index) => (
                                                 <img key={index} src={pic} alt={`pic-${index}`} />
                                                 ))
                                             ) : info.name === 'Mail-Scrap-Mini-project' ? (
                                                 // Render images for Mail-Scrap-Mini-project
-                                                info.mail_to_scrap.map((pic, index) => (
+                                                info.pics_url.map((pic, index) => (
                                                 <img key={index} src={pic} alt={`pic-${index}`} />
                                                 ))
                                             ) : // Add conditions for other projects
