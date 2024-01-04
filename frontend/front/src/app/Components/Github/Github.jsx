@@ -233,7 +233,7 @@ const Github = () => {
                                                 mail_to_scrap.map((pic, index) => (
                                                 <img key={index} src={pic} alt={`pic-${index}`} />
                                                 ))
-                                            ) : // Add conditions for other projects
+                                            ) : 
                                             null}
                                             </div>
                                         ) : null}
