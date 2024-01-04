@@ -31,6 +31,13 @@ import booki1 from "../../assets/booki-pic/booki-1.png"
 import booki2 from "../../assets/booki-pic/booki-2.png"
 import booki3 from "../../assets/booki-pic/booki-3.png"
 import booki4 from "../../assets/booki-pic/booki-4.png"
+import carducci1 from "../../assets/carducci/nina-carducci-picture-1.webp"
+import carducci2 from "../../assets/carducci/nina-carducci-picture-2.webp"
+import carducci3 from "../../assets/carducci/nina-carducci-picture-3.webp"
+import sophie1 from "../../assets/carducci/sophie-bluel-picture-1.webp"
+import sophie2 from "../../assets/carducci/sophie-bluel-picture-2.webp"
+import sophie3 from "../../assets/carducci/sophie-bluel-picture-3.webp"
+
 
 const Github = () => {
     const [infos, setInfos] = useState()
@@ -51,6 +58,39 @@ const Github = () => {
         booki2,
         booki3,
         booki4
+    ]
+    const mail_to_scrap = [
+        ScrapPic
+    ]
+    const ninaCarducci = [
+        carducci1,
+        carducci2,
+        carducci3
+    ]
+    const p07_oc = [
+        sophie1,
+        sophie2,
+        sophie3
+    ]
+    const p08_oc = [
+        sophie1,
+        sophie2,
+        sophie3
+    ]
+    const p06_oc = [
+        sophie1,
+        sophie2,
+        sophie3
+    ]
+    const p03_oc = [
+        sophie1,
+        sophie2,
+        sophie3
+    ]
+    const todo_list = [
+        sophie1,
+        sophie2,
+        sophie3
     ]
 
 
@@ -198,12 +238,40 @@ const Github = () => {
                                     </Typography>
                                     <Typography id="modal-desc" textColor="text.tertiary">
                                         <div className={styles.modalContainer}>
-                                         
-                                        <div className={styles.modalPic} >
+                                        {infos ? infos.name === "BOOKI" ? ( <div className={styles.modalPic} >
                                             {images_booki.map(pics_2 => {
                                                 return <Image src={pics_2} height={100} width={100} alt ="pics" priority/>
                                             }) }
-                                        </div>
+                                        </div> ) : infos.name === "Mail-Scrap-Mini-project" ? ( <div className={styles.modalPic} >
+                                            {mail_to_scrap.map(pics_2 => {
+                                                return <Image src={pics_2} height={100} width={100} alt ="pics" priority/>
+                                            }) } 
+                                        </div> ) : infos.name === "nina-carducci.github.io" ? ( <div className={styles.modalPic} >
+                                            {ninaCarducci.map(pics_2 => {
+                                                return <Image src={pics_2} height={100} width={100} alt ="pics" priority/>
+                                            }) } 
+                                        </div> ) : infos.name === "P07-OC" ? ( <div className={styles.modalPic} >
+                                            {p07_oc.map(pics_2 => {
+                                                return <Image src={pics_2} height={100} width={100} alt ="pics" priority/>
+                                            }) } 
+                                        </div> ) : infos.name === "P6-OC" ? ( <div className={styles.modalPic} >
+                                            {p06_oc.map(pics_2 => {
+                                                return <Image src={pics_2} height={100} width={100} alt ="pics" priority/>
+                                            }) } 
+                                        </div> ):  infos.name === "Projet_3_OC" ? ( <div className={styles.modalPic} >
+                                            {p03_oc.map(pics_2 => {
+                                                return <Image src={pics_2} height={100} width={100} alt ="pics" priority/>
+                                            }) } 
+                                        </div> ) : infos.name === "todo-list-VIte" ? ( <div className={styles.modalPic} >
+                                            {todo_list.map(pics_2 => {
+                                                return <Image src={pics_2} height={100} width={100} alt ="pics" priority/>
+                                            }) } 
+                                        </div> ) : infos.name === "oc-p08" ? ( <div className={styles.modalPic} >
+                                            {p08_oc.map(pics_2 => {
+                                                return <Image src={pics_2} height={100} width={100} alt ="pics" priority/>
+                                            }) } 
+                                        </div> ) : null : null} 
+                                        
 
                                         <div className={styles.modalText}>
                                             <div className={styles.annee}>
