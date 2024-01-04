@@ -213,7 +213,7 @@ const Github = () => {
                                 <Button variant="outlined" color="neutral" key={info.id} onClick={() => handleOpen(info)}>
                                     Plus de details sur ce projet 
                                 </Button>
-                                <div className="custom-modal">
+                                {open ? (<div className="custom-modal">
                                     <div className="modal-content">
                                         <button className="modal-close" onClick={() => setOpen(false)}>
                                         Close
@@ -269,7 +269,8 @@ const Github = () => {
                                         </div>
                                         </div>
                                     </div>
-                                    </div>
+                                    </div>) : null } 
+                                
                             </li>)
                         })}
                     </ul>
