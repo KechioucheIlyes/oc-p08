@@ -391,6 +391,9 @@
 .modalPic{
     border: 1px solid black;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modalText{

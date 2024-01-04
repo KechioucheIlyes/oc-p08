@@ -219,7 +219,7 @@ const Github = () => {
                                     aria-describedby="modal-desc"
                                     open={open}
                                     onClose={() => setOpen(false)}
-                                    sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' , }}
+                                    sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center'  }}
                                 >
                                     <Sheet
                                     variant="outlined"
@@ -250,7 +250,7 @@ const Github = () => {
                                         <div className={styles.modalContainer}>
                                         {infos ? infos.name === "BOOKI" ? ( <div className={styles.modalPic} >
                                             {images_booki.map(pics_2 => {
-                                                return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
+                                                return <Image src={pics_2} height={180} width={330} alt ="pics" priority/>
                                             }) }
                                         </div> ) : infos.name === "Mail-Scrap-Mini-project" ? ( <div className={styles.modalPic} >
                                             {mail_to_scrap.map(pics_2 => {
