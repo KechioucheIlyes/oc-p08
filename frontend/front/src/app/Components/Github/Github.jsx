@@ -61,6 +61,22 @@ const Github = () => {
         setInfos(info)
     }
 
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+          if (open && !event.target.closest('#modalContents')) {
+            setOpen(false);
+          }
+        };
+    
+        // Ajoute l'écouteur d'événements
+        document.addEventListener('mousedown', handleClickOutside);
+    
+        // Retire l'écouteur d'événements lors de la fermeture de la modal
+        return () => {
+          document.removeEventListener('mousedown', handleClickOutside);
+        };
+      }, [open, setOpen]);
+
 
     const images_booki = [
         booki1,
@@ -141,14 +157,14 @@ const Github = () => {
                                 <Link href={`${info.html_url}`} target='_blank' className={styles.card}>
                                     <div className={styles.cardHeader}>
                                         {info.name === "BOOKI" ? (<Image className={styles.imageCard} src={bookiPic} width={350} height={200} priority alt={`${info.name}-image`} />) :
-                                            info.name === "Mail-Scrap-Mini-project" ? (<Image className={styles.imageCard} src={ScrapPic} width={350} height={200} priority alt={`${info.name}-image`} />) :
-                                                info.name === "nina-carducci.github.io" ? (<Image className={styles.imageCard} src={carducciPic} width={350} height={200} priority alt={`${info.name}-image`} />) :
-                                                    info.name === "P07-OC" ? (<Image className={styles.imageCard} src={MVG} width={350} height={200} priority alt={`${info.name}-image`} />) :
-                                                        info.name === "P6-OC" ? (<Image className={styles.imageCard} src={Kasa} width={350} height={200} priority alt={`${info.name}-image`} />) :
-                                                            info.name === "Projet_3_OC" ? (<Image className={styles.imageCard} src={SohpieProject} width={350} height={200} priority alt={`${info.name}-image`} />) :
-                                                                info.name === "todo-list-VIte" ? (<Image className={styles.imageCard} src={ViteTodo} width={350} height={200} priority alt={`${info.name}-image`} />) :
-                                                                    info.name === "Projet_3_OC" ? (<Image className={styles.imageCard} src={SohpieProject} width={350} height={200} priority alt={`${info.name}-image`} />) :
-                                                                        info.name === "oc-p08" ? (<Image className={styles.imageCard} src={portfolio} width={350} height={200} priority alt={`${info.name}-image`} />) :
+                                            info.name === "Mail Scrapper" ? (<Image className={styles.imageCard} src={ScrapPic} width={350} height={200} priority alt={`${info.name}-image`} />) :
+                                                info.name === "Nina Carducci" ? (<Image className={styles.imageCard} src={carducciPic} width={350} height={200} priority alt={`${info.name}-image`} />) :
+                                                    info.name === "Mon Vieux Grimoire" ? (<Image className={styles.imageCard} src={MVG} width={350} height={200} priority alt={`${info.name}-image`} />) :
+                                                        info.name === "Kasa" ? (<Image className={styles.imageCard} src={Kasa} width={350} height={200} priority alt={`${info.name}-image`} />) :
+                                                            info.name === "Sophie Bluel" ? (<Image className={styles.imageCard} src={SohpieProject} width={350} height={200} priority alt={`${info.name}-image`} />) :
+                                                                info.name === "Todo List" ? (<Image className={styles.imageCard} src={ViteTodo} width={350} height={200} priority alt={`${info.name}-image`} />) :
+                                                                    info.name === "Sophie Bluel" ? (<Image className={styles.imageCard} src={SohpieProject} width={350} height={200} priority alt={`${info.name}-image`} />) :
+                                                                        info.name === "Portfolio" ? (<Image className={styles.imageCard} src={portfolio} width={350} height={200} priority alt={`${info.name}-image`} />) :
                                                                             <Image className={styles.imageCard} src={defaultPic} width={350} height={210} priority alt={`${info.name}-image`} />
 
                                         }
@@ -196,7 +212,7 @@ const Github = () => {
                                         </div>
                                         <div className={`${styles.first}`}></div>
                                         <div className={styles.cardBody}>
-                                            <div className={styles.cardTitle}><History /> <span>30 commits </span> </div>
+                                            <div className={styles.cardTitle}><History /> <span>{info.commits} commits </span> </div>
                                             <div className={`${styles.cardText} ${styles.second}`}>
                                                 {info.stargazers_count}
                                                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" className={styles.star}>
@@ -213,48 +229,47 @@ const Github = () => {
                                 <Button variant="outlined" color="neutral" key={info.id} onClick={() => handleOpen(info)}>
                                     Plus de details sur ce projet 
                                 </Button>
-                                {open ? (<div className= {styles.customModal}>
-                                    <div className= {styles.modalContent}>
+                                {open ? (<div  className= {styles.customModal}>
+                                    <div id='modalContents' className= { infos.name === 'Mail Scrapper' || infos.name === 'Todo List'  ? styles.miniModals : styles.modalContent}>
                                         <button className={styles.modalClose} onClick={() => setOpen(false)}>
-                                        Close
+                                        <span>&times;</span>
                                         </button>
                                         <h1>{infos ? infos.name : null}</h1>
-
+                                        <div className={ infos.name === 'Mail Scrapper' || infos.name === 'Todo List'  ? styles.miniModal : styles.containerModal} >
                                         <div  className={styles.modalPics}>
                                         {infos ? (
-                                            <div>
-                                            {infos.name === 'BOOKI' ? (
-                                                // Render images for BOOKI
-                                                images_booki.map((pic, index) => (
-                                                <img key={index} src={pic} alt={`pic-${index}`} />
-                                                ))
-                                            ) : infos.name === 'Mail-Scrap-Mini-project' ? (
-                                                // Render images for Mail-Scrap-Mini-project
-                                                mail_to_scrap.map((pic, index) => (
-                                                <img key={index} src={pic} alt={`pic-${index}`} />
-                                                ))
-                                            ) : 
-                                            infos.name === "nina-carducci.github.io" ? ( <div className={styles.modalPic} >
+                                            <div className={`${styles.test}` }>
+                                            {infos.name === 'BOOKI' ? (<div className={styles.modalPic} >
+                                                {images_booki.map((pic, index) => {
+                                                return  <Image key={index}  height={200} width={350} src={pic} alt={`pic-${index}`} />
+                                            })}
+                                            </div>) : infos.name === 'Mail Scrapper' ? (<div className={`${styles.miniModal} ${styles.modalPic}`} >
+
+                                                {mail_to_scrap.map((pic, index) => {
+                                                return <Image key={index} height={200} width={350} src={pic} alt={`pic-${index}`} />
+                                            })}
+                                            </div> ) : 
+                                            infos.name === "Nina Carducci" ? ( <div className={styles.modalPic} >
                                                 {ninaCarducci.map(pics_2 => {
                                                     return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
                                                 }) } 
-                                            </div> ) : infos.name === "P07-OC" ? ( <div className={styles.modalPic} >
+                                            </div> ) : infos.name === "Mon Vieux Grimoire" ? ( <div className={styles.modalPic} >
                                                 {p07_oc.map(pics_2 => {
                                                     return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
                                                 }) } 
-                                            </div> ) : infos.name === "P6-OC" ? ( <div className={styles.modalPic} >
+                                            </div> ) : infos.name === "Kasa" ? ( <div className={styles.modalPic} >
                                                 {p06_oc.map(pics_2 => {
                                                     return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
                                                 }) } 
-                                            </div> ):  infos.name === "Projet_3_OC" ? ( <div className={styles.modalPic} >
+                                            </div> ):  infos.name === "Sophie Bluel" ? ( <div className={styles.modalPic} >
                                                 {p03_oc.map(pics_2 => {
                                                     return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
                                                 }) } 
-                                            </div> ) : infos.name === "todo-list-VIte" ? ( <div className={styles.modalPic} >
+                                            </div> ) : infos.name === "Todo List" ? ( <div className={styles.modalPic} >
                                                 {todo_list.map(pics_2 => {
                                                     return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
                                                 }) } 
-                                            </div> ) : infos.name === "oc-p08" ? ( <div className={styles.modalPic} >
+                                            </div> ) : infos.name === "Portfolio" ? ( <div className={styles.modalPic} >
                                                 {p08_oc.map(pics_2 => {
                                                     return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
                                                 }) } 
@@ -266,30 +281,39 @@ const Github = () => {
                                         <div className={styles.modalText}>
                                         <div className={styles.annee} >
                                             <h2>
-                                            <span className={styles.descriptif}>Année</span> : {infos ? infos.annee : null}
+                                            <span className={styles.descriptif}>Année :</span>   {infos ? <p>{infos.annee}</p>  : null}
                                             </h2>
                                         </div>
-                                        <div className="mission">
+                                        <div className={styles.mission} >
                                             <h2>
-                                            <span className={styles.descriptif}>Mission</span> : {infos ? infos.mission : null}
+                                            <span className={styles.descriptif}>Mission :</span>  {infos ? <p>{infos.mission}</p>  : null}
                                             </h2>
                                         </div>
-                                        <div className="problematique">
+                                        <div className={styles.problematique}>
                                             <h2>
-                                            <span className={styles.descriptif}>Problematiques</span> : {infos ? infos.problematique : null}
+                                            <span className={styles.descriptif}>Problematiques :</span>  {infos ? <p>{infos.problematique}</p>  : null}
                                             </h2>
                                         </div>
-                                        <div className="techno">
+                                        <div className={styles.real}>
                                             <h2>
-                                            <span className={styles.descriptif}>Techno</span> :
-                                            {infos && infos.pics_url
-                                                ? infos.Techno.map((tech, index) => (
-                                                    <div key={index} className={styles.tech}>
-                                                    <p>{tech}</p>
-                                                    </div>
-                                                ))
-                                                : null}
+                                            <span className={styles.descriptif}>Realisation :</span>  {infos ? <p>{infos.realisation}</p>  : null}
                                             </h2>
+                                        </div>
+                                        <div className={styles.techno}>
+                                            <h2>
+                                            <span className={styles.descriptif}>Techno :</span> 
+                                            <div className={styles.technos}>
+                                                {infos && infos.pics_url
+                                                    ? infos.Techno.map((tech, index) => (
+                                                        <div key={index} className={styles.tech}>
+                                                        {tech}
+                                                        </div>
+                                                    ))
+                                                    : null}
+                                            </div>
+                                            
+                                            </h2>
+                                        </div>
                                         </div>
                                         </div>
                                     </div>

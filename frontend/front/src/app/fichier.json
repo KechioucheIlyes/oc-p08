@@ -106,9 +106,11 @@
             "pull": true
         },
         "mission" : "Projet réalisé dans le cadre de ma formation OpenClassrooms en tant que developpeur web. Développement du front-end du site de location d’hébergements Booki." , 
-        "Techno" : ["HTML" , "CSS"], 
-        "problematique" : "test-2",
-        "annee" : "2023" , 
+        "Techno" : ["HTML" , "CSS" ,"Github" , "Figma"], 
+        "problematique" : " Comment appréhender une maquette sur Figma? Comment réaliser la mise en page CSS du site pour correspondre à la maquette tout en étant responsive? Comment versionner et sauvegarder mon code?",
+        "commits" : 5,
+        "annee" : "2023" ,
+        "realisation" : "En parcourant diverses ressources en ligne et suivant des cours, j'ai acquis les compétences nécessaires pour réaliser mon projet. J'ai appris à créer des maquettes sur Figma, construit la structure HTML du site, utilisé Flexbox pour la mise en page CSS, et intégré des media queries pour la conception responsive. Enfin, j'ai maîtrisé Git pour la gestion de version, sauvegardant mon code sur GitHub. Ce processus m'a permis de développer un ensemble solide de compétences en développement web", 
         "pics_url" : [
             "frontend/front/src/app/assets/Booki.png" , 
             "frontend/front/src/app/assets/Booki.png" ,
@@ -118,7 +120,7 @@
     {
         "id": 669539194,
         "node_id": "R_kgDOJ-hbeg",
-        "name": "Mail-Scrap-Mini-project",
+        "name": "Mail Scrapper",
         "full_name": "KechioucheIlyes/Mail-Scrap-Mini-project",
         "private": false,
         "owner": {
@@ -221,10 +223,12 @@
             "triage": true,
             "pull": true
         },
-        "mission" : "" , 
-        "annee" : "" , 
-        "Techno" : [""], 
-        "problematique" : "test-2",
+        "mission" : "Projet Personnel réalisé a terme d'apprentissage en tant que developpeur web pour apprendre le Scrapping." , 
+        "annee" : "2023" ,
+        "realisation" : "J'ai résolu cette problématique en écrivant un script Python. J'ai utilisé les bibliothèques requests et BeautifulSoup pour récupérer et analyser le contenu web. En structurant le code de manière modulaire, j'ai créé une automatisation pour le crawling de données pour pouvoir recuperer par exemple tout les liens qui contienne un type d'email contentant un '@' par exemple  ", 
+        "Techno" : ["Python" , "BS4" , "NodeJs" , "REACT" , "VITE" , "React Router"], 
+        "problematique" : "Comment creer une automatisation a l'aide d'un script Python pour pouvoir crawler ? et recuperer tout les mails ",
+        "commits" : 5,
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -233,7 +237,7 @@
     {
         "id": 635490084,
         "node_id": "R_kgDOJeDPJA",
-        "name": "nina-carducci.github.io",
+        "name": "Nina Carducci",
         "full_name": "KechioucheIlyes/nina-carducci.github.io",
         "private": false,
         "owner": {
@@ -337,9 +341,11 @@
             "pull": true
         },
         "mission" : "" , 
-        "Techno" : [""], 
-        "annee" : "" , 
-        "problematique" : "test-2",
+        "Techno" : ["Javascript" ,"HTML" , "CSS" , "Github", "SEO" ,"LightHouse" ,"Wave" , "Rich Snippets"], 
+        "annee" : "2023" ,
+        "realisation" : "Lors d'un audit initial avec Google Lighthouse et Wave, j'ai identifié des opportunités d'amélioration sur le site de Nina en termes de performances, d'accessibilité et de SEO. J'ai optimisé l'accessibilité en ajoutant des attributs 'alt', des balises sémantiques, et en modifiant le design pour un meilleur contraste. Des ajustements SEO, tels que l'optimisation des images, l'ajout de balises méta, de données structurées, et l'incorporation de méta-tags pour les réseaux sociaux, ont significativement amélioré les performances du site, détaillées dans un rapport complet avec des audits avant et après.", 
+        "problematique" : "Comment améliorer l'accessibilité et les performances d'un site? Comment optimiser un site pour le SEO? Comment améliorer le référencement local? Comment améliorer l'apparence des liens d'un site lorsque ceux-ci sont partagés sur les résaux sociaux comme Twitter ou Facebook? Comment débugger du code?",
+        "commits" : 8,
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -348,7 +354,7 @@
     {
         "id": 684711727,
         "node_id": "R_kgDOKM_fLw",
-        "name": "oc-p08",
+        "name": "Portfolio",
         "full_name": "KechioucheIlyes/oc-p08",
         "private": false,
         "owner": {
@@ -451,10 +457,12 @@
             "triage": true,
             "pull": true
         },
-        "mission" : "" , 
-        "Techno" : [""], 
-        "problematique" : "test-2",
-        "annee" : "" , 
+        "mission" : "Projet effectué pendant ma formation chez OpenClassrooms en tant que développeur web. Il s'agit du développement d'un portfolio responsive avec Next.js, regroupant les projets réalisés tout au long de l'année. Ce projet a permis d'appliquer des concepts avancés de développement web, mettant en avant mes compétences acquises dans le domaine." , 
+        "Techno" : ["Nextjs" , "Javascript" , "MongoDB" , "Vercel" , "SASS" , "ExpressJs" , "Styled-Components" , "Github" , "SEO" , "Figma" ], 
+        "problematique" : "Comment le développement d'un portfolio responsive avec Next.js peut-il répondre aux défis spécifiques des projets réalisés au cours de la formation, tout en démontrant de manière optimale les compétences frontend et backend acquises en tant que développeur web?",
+        "commits" : 201,
+        "annee" : "2023" ,
+        "realisation" : "j'ai concrétisé le projet en développant un portfolio responsive avec Next.js. Cette réalisation a permis de mettre en pratique mes compétences de développeur web tout en présentant de manière dynamique les projets significatifs accomplis au cours de l'année. De plus, la conception du portfolio avec NextJs a été axée sur une navigation fluide et une présentation esthétique afin d'offrir une expérience utilisateur optimale. Les choix techniques, tels que l'utilisation de Next.js, ont été stratégiquement adoptés pour garantir une performance optimale et une visibilité accrue des réalisations.Enfin le Portefolio a été déployé sur Vercel pour plus de visibilité !", 
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -463,7 +471,7 @@
     {
         "id": 667050079,
         "node_id": "R_kgDOJ8JgXw",
-        "name": "P07-OC",
+        "name": "Mon Vieux Grimoire",
         "full_name": "KechioucheIlyes/P07-OC",
         "private": false,
         "owner": {
@@ -566,10 +574,12 @@
             "triage": true,
             "pull": true
         },
-        "mission" : "" , 
-        "Techno" : [""], 
-        "problematique" : "test-2",
-        "annee" : "" , 
+        "mission" : "La mission consiste à collaborer avec le développeur front-end, Kevin, pour créer le site 'Mon vieux grimoire'. En tant que développeur back-end, je dois mettre en place l'API avec NodeJS et Express en suivant les spécifications de Kevin. De plus, je dois optimiser les images téléchargées par les utilisateurs pour répondre aux bonnes pratiques du Green Code." , 
+        "Techno" : ["NodeJs","Express" ,"Javascript","MongoDB","Github","Postman", "API" , "Sharp"], 
+        "problematique" : "Comment réaliser le backend d'un site et mettre en place une API, en utilisant NodeJS et notamment son framework Express? Comment stocker les données de l'application? Comment optimiser des images dans le back-end?",
+        "commits" : 12,
+        "annee" : "2023" ,
+        "realisation" : "J'ai suivi les cours d'OpenClassrooms pour acquérir une compréhension approfondie de NodeJS, Express, et l'intégration de MongoDB. En initiant le projet avec NodeJS, j'ai mis en place une architecture modulaire en séparant la logique de routing et métier. Les controllers intègrent les modèles de données définis dans un dossier 'Model', assurant la modularité du code. Un dossier 'Middleware' centralise les traitements intermédiaires, renforcés par des mesures de sécurité telles que Helmet, Bcrypt, Express Mongo Sanitize, et Mongoose Unique Validator. En outre, j'ai optimisé les images en intégrant un middleware Sharp pour redimensionner et compresser les fichiers.", 
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -578,7 +588,7 @@
     {
         "id": 648561596,
         "node_id": "R_kgDOJqhDvA",
-        "name": "P6-OC",
+        "name": "Kasa",
         "full_name": "KechioucheIlyes/P6-OC",
         "private": false,
         "owner": {
@@ -681,10 +691,12 @@
             "triage": true,
             "pull": true
         },
-        "mission" : "" , 
-        "Techno" : [""], 
-        "problematique" : "test-2",
-        "annee" : "" , 
+        "mission" : "Projet réalisé dans le cadre de ma formation OpenClassrooms en tant que developpeur web. Développement du front-end du site de location Kasa en utilisant le framework React" , 
+        "Techno" : ["React" , "React Router" , "Javascript" , "SCSS" , "Github" , "NodeJs"], 
+        "problematique" : "Comment puis-je progresser efficacement dans le développement d'applications web avec ReactJS, en tenant compte de mes bases préexistantes, pour créer des interfaces utilisateur interactives et modernes de manière plus fluide et compréhensible?",
+        "commits" : 31,
+        "annee" : "2023" ,
+        "realisation" : "J'ai suivi l'ensemble des cours Openclassrooms pour apprendre ReactJS. J'ai ensuite initialisé le projet avec CRA, et j'ai architecturé mon code. J'ai construit l'application avec une logique Single Page, et la logique de routing est gérée par React Routeur dans le fichier App.js avec la création du composant App. J'ai fait le rendu du composant App dans le fichier index.js qui se trouve à la racine du projet react: c'est index.js qui crée le point d'ancrage dans le DOM (id ROOT), soit là où sera rendue l'application. Dans cette architecture, on retrouve un dossier “components“ (qui englobe l'ensemble des composants réutilisables de l'application, chaque composant a son propre fichier css et jsx), et un dossier “pages“ (qui englobe l'ensemble des composants des pages de l'application, chaque composant page a son propre fichier css et js). Ces composants réutilisables sont rendus dans les composants pages, et ces composants pages sont rendu dans le composant App.", 
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -693,7 +705,7 @@
     {
         "id": 605942838,
         "node_id": "R_kgDOJB30Ng",
-        "name": "Projet_3_OC",
+        "name": "Sophie Bluel",
         "full_name": "KechioucheIlyes/Projet_3_OC",
         "private": false,
         "owner": {
@@ -796,10 +808,12 @@
             "triage": true,
             "pull": true
         },
-        "mission" : "" , 
-        "Techno" : [""], 
-        "problematique" : "test-2",
-        "annee" : "" , 
+        "mission" : "Mes principales missions sont de développer la page de présentation des travaux, créer la page de connexion pour l'administrateur, et concevoir une modale pour l'upload de nouveaux médias, en respectant les directives fournies par Charlotte qui est la cheffe de projet." , 
+        "Techno" : ["Javascript", "NodeJs" , "Swagger API" , "HTML","CSS","Github","Figma"], 
+        "problematique" : "Comment coder de façon dynamique en utilisant JavaScript? Qu'est-ce qu'une API? Comment récupérer/envoyer/supprimer dynamiquement des données à partir d'une API déjà créé côté back-end? Qu'est-ce que le DOM? Comment construire une modale?",
+        "commits" : 10,
+        "annee" : "2023" ,
+        "realisation" : "J'ai dans un premier temps suivi l'ensemble des cours sur JavaScript qui étaient fournis par Openclassrooms, et je les ai complétée avec d'autres ressources du web, ce qui m'a permis de comprendre ce qu'étaient les variables, les fonctions, le DOM, les écouteurs d'événements, les tokens, le format JSON ou encore le format Formdata... J'ai appris comment fonctionnait une API et quel était son rôle. J'ai découvert l'utilité et le rôle de l'API Fetch, et j'ai donc utilisé sa méthode fetch (qui prend en charge plusieurs méthodes HTTP, telles que GET, POST, PUT, DELETE) pour la réalisation de mes missions. L'utilisation des différentes méthodes avec l'API Fetch m'a permis d'effectuer les requêtes HTTP nécessaires à la réalisation du site, et de traiter les réponses. Tout le développement que j'ai réalisé, à était fait de façon responsive en respectant la maquette qui m'était fournie.", 
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
@@ -809,7 +823,7 @@
     {
         "id": 670221420,
         "node_id": "R_kgDOJ_LEbA",
-        "name": "todo-list-VIte",
+        "name": "Todo List",
         "full_name": "KechioucheIlyes/todo-list-VIte",
         "private": false,
         "owner": {
@@ -912,10 +926,12 @@
             "triage": true,
             "pull": true
         },
-        "mission" : "" , 
-        "Techno" : [""], 
-        "problematique" : "test-2",
-        "annee" : "" , 
+        "mission" : "Concevoir une application de gestion de tâches avec React. Il faut créer un composant dédié aux tâches, permettre l'ajout dynamique de nouvelles listes en maintenant une indexation cohérente, et intégrer une fonction de suppression des listes sélectionnées." , 
+        "Techno" : ["React","VITE" , "SCSS"], 
+        "problematique" : "Comment concevoir une liste de tâches avec React, permettant d'ajouter autant de listes que nécessaire tout en respectant une indexation des listes créées, et offrant la possibilité de supprimer celles que l'on souhaite , tout en donnant des images random de VITE ou React qui pointent vers la documentation VITE ou React a chaques liste crée ? ",
+        "commits" : 1,
+        "annee" : "2023" ,
+        "realisation" : "Pour créer une todo list avec React,j'ai du mettre en place un composant pour les tâches, gérer dynamiquement les listes en respectant leur indexation, et intégrer une fonctionnalité de suppression des listes sélectionnées.", 
         "pics_url" : [
             "frontend/front/src/app/assets/API.png" , 
             "frontend/front/src/app/assets/API-2.png" ,
