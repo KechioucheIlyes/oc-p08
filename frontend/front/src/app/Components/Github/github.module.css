@@ -273,8 +273,8 @@
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100%;
+  overflow: scroll;
 }
 
 .modalPic {
@@ -283,6 +283,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .modalText {
