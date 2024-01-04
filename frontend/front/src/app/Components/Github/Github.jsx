@@ -43,9 +43,12 @@ const Github = () => {
     }
 
 
-    const handleOpenModal = () => {
-        alert("modal")
-    }
+    const images_booki = [
+        Kasa, 
+        SCSS,
+        JS,
+        pythonSvg
+    ]
 
 
     useEffect(() => {
@@ -194,9 +197,9 @@ const Github = () => {
                                         <div className={styles.modalContainer}>
                                          
                                         <div className={styles.modalPic} >
-                                            {infos ?  infos.pics_url ? infos.pics_url.map(pics => {
-                                                return <Image src={pics} height={100} width={100} alt ="pics" priority/>
-                                            }) : null  : null}
+                                            {images_booki.map(pics_2 => {
+                                                return <Image src={pics_2} height={100} width={100} alt ="pics" priority/>
+                                            }) }
                                         </div>
 
                                         <div className={styles.modalText}>
