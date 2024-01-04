@@ -234,7 +234,31 @@ const Github = () => {
                                                 <img key={index} src={pic} alt={`pic-${index}`} />
                                                 ))
                                             ) : 
-                                            null}
+                                            infos.name === "nina-carducci.github.io" ? ( <div className={styles.modalPic} >
+                                                {ninaCarducci.map(pics_2 => {
+                                                    return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
+                                                }) } 
+                                            </div> ) : infos.name === "P07-OC" ? ( <div className={styles.modalPic} >
+                                                {p07_oc.map(pics_2 => {
+                                                    return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
+                                                }) } 
+                                            </div> ) : infos.name === "P6-OC" ? ( <div className={styles.modalPic} >
+                                                {p06_oc.map(pics_2 => {
+                                                    return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
+                                                }) } 
+                                            </div> ):  infos.name === "Projet_3_OC" ? ( <div className={styles.modalPic} >
+                                                {p03_oc.map(pics_2 => {
+                                                    return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
+                                                }) } 
+                                            </div> ) : infos.name === "todo-list-VIte" ? ( <div className={styles.modalPic} >
+                                                {todo_list.map(pics_2 => {
+                                                    return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
+                                                }) } 
+                                            </div> ) : infos.name === "oc-p08" ? ( <div className={styles.modalPic} >
+                                                {p08_oc.map(pics_2 => {
+                                                    return <Image src={pics_2} height={200} width={350} alt ="pics" priority/>
+                                                }) } 
+                                            </div> ) : null}
                                             </div>
                                         ) : null}
                                         </div>
