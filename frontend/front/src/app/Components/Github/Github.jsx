@@ -250,7 +250,7 @@ const Github = () => {
                                         <div className={styles.modalContainer}>
                                         {infos ? infos.name === "BOOKI" ? ( <div className={styles.modalPic} >
                                             {images_booki.map(pics_2 => {
-                                                return <Image src={pics_2} height={"100%"} width={"100%"} alt ="pics" priority/>
+                                                return <Image src={pics_2} height={"50%"} width={"50%"} alt ="pics" priority/>
                                             }) }
                                         </div> ) : infos.name === "Mail-Scrap-Mini-project" ? ( <div className={styles.modalPic} >
                                             {mail_to_scrap.map(pics_2 => {
