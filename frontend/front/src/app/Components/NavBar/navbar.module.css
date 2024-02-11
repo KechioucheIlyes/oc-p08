@@ -8,7 +8,6 @@
   z-index: 1000;
   height: 64px;
   border-bottom: 2px solid #ccc;
-  border: 1px solid red;
   /* navbar.module.css */
   /* Styles for the toggle switch */
 }
@@ -84,7 +83,6 @@
 
 @media screen and (max-width: 767px) {
   .navbar {
-    border: 1px solid violet;
     height: 80px;
     display: flex;
     flex-direction: column;
