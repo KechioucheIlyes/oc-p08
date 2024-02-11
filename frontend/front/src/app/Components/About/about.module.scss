@@ -26,29 +26,30 @@
 .animateBorder {
 
 
+    position: relative;
+    top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
     /* Définit le positionnement relatif */
     z-index: 2;
-
+    
     .img-banner {
         margin-right: 200px;
     }
 
-
+    
 
 
 
 
 }
 
-.infos {
 
-    margin: 20px;
 
-}
+
+
 
 .fullName {
 

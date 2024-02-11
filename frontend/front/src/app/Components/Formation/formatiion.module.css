@@ -2,7 +2,7 @@
 .formationContainer {
   background-color: black;
   position: relative;
-  height: 160vh;
+  min-height: 160vh;
   margin-top: 150px;
 }
 .formationContainer .svgContainer {
@@ -105,7 +105,7 @@
   .formationContainer {
     background-color: black;
     position: relative;
-    height: 140vh;
+    min-height: 170vh;
     margin-top: 100px;
   }
   .formationContainer .svgBottom svg {
@@ -174,7 +174,7 @@
   .formationContainer {
     background-color: black;
     position: relative;
-    height: 130vh;
+    min-height: 130vh;
     margin-top: 100px;
   }
   .formationContainer .svgBottom svg {

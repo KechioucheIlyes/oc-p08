@@ -1,4 +1,6 @@
 .footer {
+
+
     p {
         color: white;
     }
@@ -19,20 +21,22 @@
         }
 
         .contact {
-            height: 120vh;
+            min-height: 120vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            
             .email {
                 color: white;
                 display: flex;
                 align-items: center;
-
+                h2{
+                    margin: 0;
+                }
                 .link {
                     color: white;
                     text-decoration: none;
-                    margin: 10px;
+                    
                 }
 
                 button {
@@ -40,7 +44,7 @@
                     border: none;
                     color: white;
                     cursor: pointer;
-                    margin: 10px;
+                    
                 }
             }
 
@@ -53,6 +57,7 @@
                         flex-direction: column;
 
                         label {
+                            
                             margin-top: 10px;
                             margin-bottom: 10px;
                         }
@@ -229,22 +234,25 @@
             }
 
             .contact {
-                padding: 15px;
-                height: 113vh;
+                
+                min-height: 113vh;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
+
                 .email {
+
                     color: white;
                     display: flex;
                     align-items: center;
                     font-size: 12px;
+                    justify-content: center;
 
                     .link {
                         color: white;
                         text-decoration: none;
-                        margin: 10px;
+                        
 
 
                     }
@@ -254,7 +262,7 @@
                         border: none;
                         color: white;
                         cursor: pointer;
-                        margin: 10px;
+                        
 
                     }
                 }
@@ -437,7 +445,7 @@
 
             .contact {
 
-                height: 113vh;
+                min-height: 113vh;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -627,7 +635,7 @@
 @media screen and (min-width: 320px) and (max-width: 361px) {
     .contact {
 
-        height: 113vh !important;
+        min-height: 113vh !important;
     }
 
     .footer {

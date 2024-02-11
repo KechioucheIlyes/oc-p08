@@ -10,7 +10,7 @@
   font-size: 44px;
 }
 .reseauxContainer .reseauCards {
-  height: 50vh;
+  min-height: 50vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -31,6 +31,9 @@
   justify-content: space-around;
   align-items: center;
 }
+.reseauxContainer .reseauCards .gitContainer .gitCard h2 {
+  margin: 0;
+}
 .reseauxContainer .reseauCards .xContainer {
   list-style: none;
   text-decoration: none;
@@ -44,6 +47,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.reseauxContainer .reseauCards .xContainer .X h2 {
+  margin: 0;
 }
 .reseauxContainer .reseauCards .discordContainer {
   list-style: none;
@@ -59,6 +65,9 @@
   justify-content: space-around;
   align-items: center;
 }
+.reseauxContainer .reseauCards .discordContainer .discord h2 {
+  margin: 0;
+}
 .reseauxContainer .reseauCards .linkedinContainer {
   list-style: none;
   text-decoration: none;
@@ -72,6 +81,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.reseauxContainer .reseauCards .linkedinContainer .linkedin h2 {
+  margin: 0;
 }
 
 .scrollEffect {
@@ -96,7 +108,7 @@
     font-size: 24px;
   }
   .reseauxContainer .reseauCards {
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -110,15 +122,19 @@
   }
   .reseauxContainer .reseauCards .gitContainer .gitCard {
     border: 2px solid black;
-    width: 200px;
-    height: 70px;
+    width: 150px;
+    height: 50px;
     background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
+  .reseauxContainer .reseauCards .gitContainer .gitCard h2 {
+    margin: 0;
+    font-size: 16px;
+  }
   .reseauxContainer .reseauCards .gitContainer svg {
-    height: 30px;
+    height: 20px;
   }
   .reseauxContainer .reseauCards .xContainer {
     list-style: none;
@@ -127,16 +143,20 @@
   }
   .reseauxContainer .reseauCards .xContainer .X {
     border: 2px solid black;
-    width: 200px;
-    height: 70px;
+    width: 150px;
+    height: 50px;
     background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
+  .reseauxContainer .reseauCards .xContainer .X h2 {
+    margin: 0;
+    font-size: 16px;
+  }
   .reseauxContainer .reseauCards .xContainer img {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
   }
   .reseauxContainer .reseauCards .discordContainer {
     list-style: none;
@@ -145,16 +165,20 @@
   }
   .reseauxContainer .reseauCards .discordContainer .discord {
     border: 2px solid black;
-    width: 200px;
-    height: 70px;
+    width: 150px;
+    height: 50px;
     background-color: #404eed;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
+  .reseauxContainer .reseauCards .discordContainer .discord h2 {
+    margin: 0;
+    font-size: 16px;
+  }
   .reseauxContainer .reseauCards .discordContainer img {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
   }
   .reseauxContainer .reseauCards .linkedinContainer {
     list-style: none;
@@ -163,15 +187,22 @@
   }
   .reseauxContainer .reseauCards .linkedinContainer .linkedin {
     border: 2px solid black;
-    width: 200px;
-    height: 70px;
+    width: 150px;
+    height: 50px;
     background-color: #0b66c2;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
+  .reseauxContainer .reseauCards .linkedinContainer .linkedin h2 {
+    margin: 0;
+  }
+  .reseauxContainer .reseauCards .linkedinContainer .linkedin h2 {
+    margin: 0;
+    font-size: 16px;
+  }
   .reseauxContainer .reseauCards .linkedinContainer svg {
-    height: 30px;
+    height: 20px;
   }
 }
 /* Styles pour les tablettes (768px à 1023px) */
@@ -187,7 +218,7 @@
     font-size: 30px;
   }
   .reseauxContainer .reseauCards {
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -208,6 +239,9 @@
     justify-content: space-around;
     align-items: center;
   }
+  .reseauxContainer .reseauCards .gitContainer .gitCard h2 {
+    margin: 0;
+  }
   .reseauxContainer .reseauCards .gitContainer svg {
     height: 30px;
   }
@@ -224,6 +258,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+  .reseauxContainer .reseauCards .xContainer .X h2 {
+    margin: 0;
   }
   .reseauxContainer .reseauCards .xContainer img {
     height: 30px;
@@ -243,6 +280,9 @@
     justify-content: space-around;
     align-items: center;
   }
+  .reseauxContainer .reseauCards .discordContainer .discord h2 {
+    margin: 0;
+  }
   .reseauxContainer .reseauCards .discordContainer img {
     height: 30px;
     width: 30px;
@@ -260,6 +300,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+  .reseauxContainer .reseauCards .linkedinContainer .linkedin h2 {
+    margin: 0;
   }
   .reseauxContainer .reseauCards .linkedinContainer svg {
     height: 30px;

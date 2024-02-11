@@ -16,7 +16,7 @@
   color: white;
 }
 .footer .footerContains .contact {
-  height: 120vh;
+  min-height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,17 +26,18 @@
   display: flex;
   align-items: center;
 }
+.footer .footerContains .contact .email h2 {
+  margin: 0;
+}
 .footer .footerContains .contact .email .link {
   color: white;
   text-decoration: none;
-  margin: 10px;
 }
 .footer .footerContains .contact .email button {
   background-color: black;
   border: none;
   color: white;
   cursor: pointer;
-  margin: 10px;
 }
 .footer .footerContains .contact .fomulaire {
   color: white;
@@ -169,8 +170,7 @@
     color: white;
   }
   .footer .footerContains .contact {
-    padding: 15px;
-    height: 113vh;
+    min-height: 113vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,18 +180,17 @@
     display: flex;
     align-items: center;
     font-size: 12px;
+    justify-content: center;
   }
   .footer .footerContains .contact .email .link {
     color: white;
     text-decoration: none;
-    margin: 10px;
   }
   .footer .footerContains .contact .email button {
     background-color: black;
     border: none;
     color: white;
     cursor: pointer;
-    margin: 10px;
   }
   .footer .footerContains .contact .fomulaire {
     color: white;
@@ -325,7 +324,7 @@
     color: white;
   }
   .footer .footerContains .contact {
-    height: 113vh;
+    min-height: 113vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -465,7 +464,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 361px) {
   .contact {
-    height: 113vh !important;
+    min-height: 113vh !important;
   }
   .footer .svgContainer {
     position: relative;

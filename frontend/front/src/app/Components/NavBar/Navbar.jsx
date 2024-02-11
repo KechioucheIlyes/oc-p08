@@ -29,13 +29,13 @@ const Navbar = () => {
 
     return (
         <header className={`${styles.header} ${scrolling ? styles.scrolling : ''}`}>
+            <nav className={styles.navbar} >
             <label className={styles.toggle} >
                 <input className={styles.checkbox} />
                 <span className={styles.slider} ></span>
             </label>
-            <nav className={styles.navbar} >
                 <ul>
-                    <li><Link className='link' href={"#about"}>À propos</Link></li>
+                    <li><Link className='link about'  href={"#about"}>À propos</Link></li>
                     <li><Link className='link' href={"#services"}>Services</Link></li>
                     <li><Link className='link' href={"#formation"}>Formation</Link></li>
                     <li><Link className='link' href={"#github"}>Github</Link></li>

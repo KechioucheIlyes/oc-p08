@@ -8,15 +8,21 @@
   z-index: 1000;
   height: 64px;
   border-bottom: 2px solid #ccc;
+  border: 1px solid red;
   /* navbar.module.css */
   /* Styles for the toggle switch */
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .header .toggle {
   display: inline-block;
   position: relative;
   width: 80px;
   height: 40px;
-  margin-left: 20px;
 }
 .header .checkbox {
   display: none;
@@ -77,6 +83,14 @@
 }
 
 @media screen and (max-width: 767px) {
+  .navbar {
+    border: 1px solid violet;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .header {
     width: 100%;
     top: 0;
@@ -84,7 +98,7 @@
     position: fixed;
     background-color: #ffffff;
     z-index: 1000;
-    height: 40px;
+    height: 60px;
     border-bottom: 2px solid #ccc;
     /* navbar.module.css */
     /* Styles for the toggle switch */
@@ -94,7 +108,7 @@
     position: relative;
     width: 40px;
     height: 20px;
-    margin-left: 20px;
+    top: 15px;
   }
   .header .checkbox {
     display: none;
@@ -154,10 +168,11 @@
 }
 @media screen and (min-width: 320px) and (max-width: 361px) {
   .header {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     background-color: #ffffff;
     z-index: 1000;
-    height: 30px;
     border-bottom: 2px solid #ccc;
     /* navbar.module.css */
     /* Styles for the toggle switch */
@@ -167,7 +182,7 @@
     position: relative;
     width: 25px;
     height: 12px;
-    margin-left: 20px;
+    top: 5px;
   }
   .header .checkbox {
     display: none;

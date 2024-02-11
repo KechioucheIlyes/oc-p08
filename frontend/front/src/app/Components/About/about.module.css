@@ -19,6 +19,8 @@
 }
 
 .animateBorder {
+  position: relative;
+  top: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,10 +30,6 @@
 }
 .animateBorder .img-banner {
   margin-right: 200px;
-}
-
-.infos {
-  margin: 20px;
 }
 
 .fullName {
