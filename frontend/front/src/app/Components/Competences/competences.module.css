@@ -2,7 +2,6 @@
 .competencesContainer .competencesContains {
   background-color: black;
   position: relative;
-  top: -45px;
 }
 .competencesContainer .competencesContains h1 {
   text-align: center;
@@ -116,7 +115,6 @@
   .competencesContainer .competencesContains {
     background-color: black;
     position: relative;
-    top: -45px;
   }
   .competencesContainer .competencesContains h1 {
     text-align: center;

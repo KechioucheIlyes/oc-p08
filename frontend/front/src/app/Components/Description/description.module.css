@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .descriptionContainer {
   background-color: black;
-  min-height: 130vh;
+  min-height: auto;
   position: relative;
   margin-top: 100px;
 }
@@ -85,7 +85,7 @@
   .descriptionContainer {
     width: 100% !important;
     background-color: black;
-    min-height: 60vh;
+    min-height: auto;
     position: relative;
     margin-top: 100px;
   }
