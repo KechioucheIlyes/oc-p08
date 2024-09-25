@@ -8,7 +8,7 @@ import nextLogo from "../../assets/nextjs.png"
 import vercelogo from "../../assets/vercels.png"
 
 const Footer = () => {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
     const [mailSent, setmailSent] = useState(false)
     const [mailError, setmailError] = useState(false)
     const [manyReq, setManyReq] = useState(false)
@@ -41,27 +41,6 @@ const Footer = () => {
 
 
 
-
-    useEffect(() => {
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.2,
-        };
-
-        const handleIntersection = (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                }
-            });
-        };
-
-        const observer = new IntersectionObserver(handleIntersection, observerOptions);
-        observer.observe(document.querySelector('#contact'));
-
-        return () => observer.disconnect();
-    }, []);
 
     const [emailtoCopy, setEmailtoCopy] = useState("rayanilyes75@gmail.com")
     const [copied, setCopied] = useState(false);
@@ -143,7 +122,17 @@ const Footer = () => {
     };
     return (
         <section id='contact' className={`${styles.footer} ${isVisible ? styles.visible : ''} ${styles.scrollEffect}`} style={{ scrollBehavior: 'smooth' }}>
-
+               <svg className={styles.waves} xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
+                        <defs>
+                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g className={styles.parallax}>
+                            <use href="#gentle-wave" x="48" y="0" fill="rgba(246,246,246,0.9)" />
+                            <use href="#gentle-wave" x="48" y="3" fill="rgba(246,246,246,0.5)" />
+                            <use href="#gentle-wave" x="48" y="5" fill="rgba(246,246,246,0.3)" />
+                            <use href="#gentle-wave" x="48" y="7" fill="#000" />
+                        </g>
+      </svg>
             <div className={styles.footerContains}>
                 <h1>Contact</h1>
                 <div className={styles.contact}>
@@ -163,6 +152,8 @@ const Footer = () => {
                                     onChange={handleEmailChange}
                                     required
                                     placeholder='email@exemple.fr'
+                                    className='email'
+
                                 />
                             </div>
                             <div className={styles.textForm}>
@@ -177,6 +168,7 @@ const Footer = () => {
                                     onChange={handleTextChange}
                                     placeholder='Que souhaitez vous dire ?'
                                     required
+                                    className='area'
                                 />
                             </div>
                             <div className={styles.buttonContainer}>
@@ -204,7 +196,7 @@ const Footer = () => {
                     <div className={styles.buttonLike}>
                         <div className={styles.infos}>
 
-                        <h4>Ce site a été créé manuellement et receuille une seule et unique donnees (Google Analytics) et ceci est fait simple en terme d'apprentissage. Vous pouvez accéder directement au code source sur <Link2 className={styles.link} target='_blank' href={"https://github.com/KechioucheIlyes/portfolio_P08_OC"}>GitHub</Link2>. Si vous avez apprécié le contenu, n'hésitez pas à laisser un petit cœur. Merci !</h4>
+                        <h4>Ce site a été créé manuellement et receuille une seule et unique donnees (Google Analytics) et ceci est fait simplement en terme d'apprentissage. Vous pouvez accéder directement au code source sur <Link2 className={styles.link} target='_blank' href={"https://github.com/KechioucheIlyes/portfolio_P08_OC"}>GitHub</Link2>. Si vous avez apprécié le contenu, n'hésitez pas à laisser un petit cœur. Merci !</h4>
                         </div>
 
 

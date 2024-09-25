@@ -2,19 +2,18 @@
     background-color: black;
     min-height: auto;
     position: relative;
-    margin-top: 100px;
+
+
 
     .svgContainer {
         width: 100%;
         position: absolute;
         top: 6.5px;
-        /* Adjust this value to control the vertical position above the section */
         left: 0;
         right: 0;
         display: flex;
-
         z-index: -1;
-        /* Make sure the SVG is behind the content */
+        
     }
 
     svg {
@@ -29,9 +28,13 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 70vh;
+        height: 50vh;
+
+        position: relative;
+        bottom: 40px;
 
         .textInfo {
+
             p{
                 margin: 0;
             }
@@ -136,7 +139,6 @@
         background-color: black;
         min-height: auto;
         position: relative;
-        margin-top: 100px;
 
 
         .svgContainer {
@@ -168,7 +170,9 @@
             .textInfo {
 
                 width: 100%;
-
+                p{
+                    font-size: 10.5px;
+                }
 
 
                 .tag {
@@ -180,7 +184,8 @@
             p {
                 color: white;
                 font-size: 10px;
-
+                position: relative;
+                left: 10px;
             }
         }
 
@@ -192,7 +197,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
+            position: relative;
+            left: 10px;
             .square,
             .square::before,
             .square::after {
@@ -219,35 +225,17 @@
     .descriptionContainer {
         width: 100% !important;
         background-color: black;
-        min-height: 80vh;
+
         position: relative;
-        margin-top: 100px;
 
 
-        .svgContainer {
-            width: 100%;
-            position: absolute;
-            top: 6.5px;
-            /* Adjust this value to control the vertical position above the section */
-            left: 0;
-            right: 0;
-            display: flex;
 
-            z-index: -1;
-            /* Make sure the SVG is behind the content */
-        }
 
-        svg {
-            position: absolute;
-            bottom: 0;
-
-        }
 
         .informationContainer {
             display: flex;
             justify-content: space-around;
             align-items: center;
-
             height: 45vh;
 
             .textInfo {
@@ -265,19 +253,21 @@
             p {
                 color: white;
                 font-size: 13px;
-
+                position: relative;
+                left: 10px;
             }
         }
 
-
         .borderSquare {
-            border: 3px solid white;
+            
             height: 130px;
             width: 130px;
             display: flex;
             justify-content: center;
             align-items: center;
-
+            position: relative;
+left: 10px;
+     
             .square,
             .square::before,
             .square::after {
@@ -295,5 +285,53 @@
     .crossAnimation {
         height: 100px;
         width: 100px;
+    }
+}
+
+
+
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+    z-index: 10;
+}
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+
     }
 }

@@ -92,8 +92,11 @@ html {
   animation: rotation 3s linear infinite;
 }
 
-/* Styles pour les appareils mobiles (jusqu'à 767px) */
+
 @media screen and (max-width: 767px) {
+  *{
+    max-width: 100%;
+  }
   .about{
     display: none;
 }
@@ -116,12 +119,20 @@ html {
   }
 
   header ul li .link {
-    font-size: 10px;
+    font-size: 12px;
     color: black;
     margin: 5px;
     text-decoration: none;
-    padding: 3px;
+    padding: 5px;
   }
+  .email{
+    width: 90% !important;
+
+  }
+  .area{
+    width: 90% !important;
+  }
+
 
   header ul li .link:hover {
     color: aliceblue;
@@ -131,6 +142,16 @@ html {
 }
 
 @media screen and (min-width: 320px) and (max-width: 361px) {
+  .email{
+    width: 90% !important;
+
+  }
+  .area{
+    width: 90% !important;
+  }
+  *{
+    max-width: 100%;
+  }
   header {
     display: flex;
     justify-content: space-between;
@@ -154,7 +175,7 @@ html {
     color: black;
     margin: 5px;
     text-decoration: none;
-    padding: 3px;
+    padding: 5px;
   }
 
   header ul li .link:hover {
@@ -184,11 +205,11 @@ html {
   }
 
   header ul li .link {
-    font-size: 12px;
+    font-size: 17px;
     color: black;
     margin: 5px;
     text-decoration: none;
-    padding: 3px;
+    padding: 8px;
   }
 
   header ul li .link:hover {
@@ -248,4 +269,28 @@ html {
   align-items: center !important;
 
 }
+
+
+
+.btns-container{
+  height: 100px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+
+.custom-type-animation-cursor::after {
+  content: '|';
+  animation: cursor 1.1s infinite step-start;
+}
+@keyframes cursor {
+  50% {
+    opacity: 0;
+  }
+}
+
 

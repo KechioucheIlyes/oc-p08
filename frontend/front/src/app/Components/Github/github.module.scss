@@ -12,11 +12,11 @@
 .cardsContainer {
     display: flex;
     justify-content: center;
-    
+
     .githubList {
         list-style-type: none;
 
-        width: 95%;
+
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -24,6 +24,7 @@
 
 
         .githubItem {
+   
             margin-bottom: 20px;
             display: flex;
             flex-direction: column;
@@ -191,7 +192,7 @@
 
         .githubList {
             list-style-type: none;
-            width: 100%;
+
             display: flex;
             flex-wrap: wrap;
             margin: 0;
@@ -398,7 +399,7 @@
       }
       .modalText .tech {
         display: flex;
-        
+
         background-color: #000;
         padding: 3px 7px;
         border-radius: 5px;
@@ -620,4 +621,10 @@
     background-color: #000;
     color: whitesmoke;
     padding: 10px;
+  }
+
+
+  .modalText{
+    border: 1px solid red;
+    width: 100%;
   }

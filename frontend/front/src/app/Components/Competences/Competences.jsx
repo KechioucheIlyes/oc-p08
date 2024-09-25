@@ -15,31 +15,21 @@ import phpic from "../../assets/php.png"
 import Progress from 'react-circle-progress-bar'
 
 const Competences = () => {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
 
-    useEffect(() => {
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.2,
-        };
-
-        const handleIntersection = (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                }
-            });
-        };
-
-        const observer = new IntersectionObserver(handleIntersection, observerOptions);
-        observer.observe(document.querySelector('#competences'));
-
-        return () => observer.disconnect();
-    }, []);
     return (
         <section id='competences' className={`${styles.competencesContainer} ${isVisible ? styles.visible : ''} ${styles.scrollEffect}`}>
-          
+               <svg className={styles.waves} xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
+                        <defs>
+                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g className={styles.parallax}>
+                            <use href="#gentle-wave" x="48" y="0" fill="rgba(246,246,246,0.9)" />
+                            <use href="#gentle-wave" x="48" y="3" fill="rgba(246,246,246,0.5)" />
+                            <use href="#gentle-wave" x="48" y="5" fill="rgba(246,246,246,0.3)" />
+                            <use href="#gentle-wave" x="48" y="7" fill="#000" />
+                        </g>
+      </svg>
             <div className={styles.competencesContains}>
                 <h1>Competences</h1>
                 <div className={styles.stacks}>
@@ -138,6 +128,18 @@ const Competences = () => {
 
               
 
+
+            <svg className={styles.waves} xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
+                        <defs>
+                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g className={styles.parallax}>
+                            <use href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+                            <use href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                            <use href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                            <use href="#gentle-wave" x="48" y="7" fill="#fff" />
+                        </g>
+                    </svg>
             </div>
 
         </section>

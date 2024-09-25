@@ -8,30 +8,12 @@ import Link from 'next/link'
 import discord from "../../assets/discord.png"
 
 const Reseaux = () => {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
 
-    useEffect(() => {
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.2,
-        };
 
-        const handleIntersection = (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                }
-            });
-        };
-
-        const observer = new IntersectionObserver(handleIntersection, observerOptions);
-        observer.observe(document.querySelector('#reseaux'));
-
-        return () => observer.disconnect();
-    }, []);
     return (
         <section id='reseaux' className={`${styles.reseauxContainer} ${isVisible ? styles.visible : ''} ${styles.scrollEffect}`}>
+            
             <h1>Mes Réseaux</h1>
             <div className={styles.reseauCards}>
                 <Link className={styles.gitContainer} href={"https://github.com/KechioucheIlyes"} target='_blank'>

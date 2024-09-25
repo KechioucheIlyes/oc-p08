@@ -51,7 +51,7 @@ import portfolio4 from "../../assets/portfolio/portfolio4.png"
 const Github = () => {
     const [infos, setInfos] = useState()
     const [infos2, setInfos2] = useState([])
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
     const [isDataLoaded, setIsDataLoaded] = useState(false);
     const [test, setTest] = useState([])
     const [open, setOpen] = useState(false);
@@ -68,10 +68,9 @@ const Github = () => {
           }
         };
     
-        // Ajoute l'écouteur d'événements
+
         document.addEventListener('mousedown', handleClickOutside);
     
-        // Retire l'écouteur d'événements lors de la fermeture de la modal
         return () => {
           document.removeEventListener('mousedown', handleClickOutside);
         };
@@ -120,26 +119,7 @@ const Github = () => {
     ]
 
 
-    useEffect(() => {
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.2,
-        };
 
-        const handleIntersection = (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                }
-            });
-        };
-
-        const observer = new IntersectionObserver(handleIntersection, observerOptions);
-        observer.observe(document.querySelector('#github'));
-
-        return () => observer.disconnect();
-    }, []);
 
 
     return (

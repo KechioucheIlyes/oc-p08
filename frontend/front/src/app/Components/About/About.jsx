@@ -6,34 +6,27 @@ import Link from 'next/link'
 import github from "../../assets/github.svg"
 import styles from "./about.module.css"
 
+import { TypeAnimation } from 'react-type-animation';
 
 
 
 
 
 const About = () => {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const [showTitles, setShowTitles] = useState(false);
+    const [cursorAnimName, setCursorAnimName] = useState(true);
+    const [cursorDesc, setCursorDesc] = useState(false);
+    const [cursorBtn, setCursorBtn] = useState(false);
+    const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
 
-    useEffect(() => {
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.2,
-        };
+   const handleUpdate = () => {
+    setShowTitles(true);
+    setCursorAnimName(false); 
+    
+   }
 
-        const handleIntersection = (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                }
-            });
-        };
 
-        const observer = new IntersectionObserver(handleIntersection, observerOptions);
-        observer.observe(document.querySelector('#about'));
-
-        return () => observer.disconnect();
-    }, []);
     return (
         <section
             id='about'
@@ -42,30 +35,89 @@ const About = () => {
 
             <div className={styles.infos}>
                 <div className={styles.fullName}>
-                    <h1>Kechiouche Ilyes</h1>
-                    <h2>Développeur Full-stack.</h2>
- 
+                <h1>
+                <TypeAnimation
+      cursor={false}
+      style={{
+        fontSize: '1em',
+      }}
+      className={CURSOR_CLASS_NAME}
+      sequence={[
+        'Kechiouche Ilyes',
+        1000,
+        handleUpdate,
+        (el) => 
+            {
+                el.classList.remove(CURSOR_CLASS_NAME)
+
+
+            },
+
+      ]}
+      repeat={false}
+    />
+
+                </h1>
+
+                <h2>
+                            {showTitles && (      
+                                <TypeAnimation
+                                sequence={[
+                                    'Développeur Front-End',
+                                    1000,
+                                    'Développeur Back-End',
+                                    1000,
+                                    'Développeur Full-Stack',
+                                    1000,
+                                    (el) => 
+                                        {
+                                            el.classList.remove(CURSOR_CLASS_NAME)
+                                            setCursorDesc(true)
+                            
+                                        },
+
+                                ]}
+                                speed={50}
+         
+                                repeat={false}
+                                className={CURSOR_CLASS_NAME}
+                                cursor={false}
+                            />
+                            
+                            
+                            )}
+                </h2>
 
                 </div>
                 <div className={styles.description}>
-                    <h3>Autodidacte de 25 ans et passionné par le développement web, l'UI/UX et l'accessibilité depuis 5 ans</h3>
+                    
+                <div className={styles.fullName}>
+
+<h3>
+        {cursorDesc && 
+        (<TypeAnimation
+                                        sequence={[
+                                            "Autodidacte et passionné par le développement web, l'UI/UX et l'accessibilité depuis 5 ans.",
+                                            1000,() =>{
+                                                setCursorBtn(true)
+                                            }
+
+                                        ]}
+                                        speed={50}
+                                    
+                                        repeat={false}
+                                    /> )}
+                            
+</h3>
+                </div>
                 </div>
 
-                <div className='btns-container'>
-                    <button className={styles.btnBlackAndWhite} ><Link className={styles.link} href={"mailto:rayanilyes75@gmail.com"}>Contact</Link> </button>
-                    <Link className={styles.btnWhiteAndBlack} href={"https://github.com/KechioucheIlyes"} target='_blank'><Image src={github} width={20} height={20} alt='github' priority /> Github</Link>
-
-                </div>
-
+               
 
             </div>
 
 
-            <div id="shapes" className={styles.shapes}>
-                <div id="triangle" className={`${styles.shape} ${styles.triangle}`}></div>
-                <div id="circle" className={`${styles.shape} ${styles.circle}`}></div>
-                <div id="square" className={`${styles.shape} ${styles.square}`}></div>
-            </div>
+
 
 
 
